@@ -1,0 +1,201 @@
+produto_id,nome,categoria,preco,custo
+1,Fone Bluetooth Basic,Eletrônicos,582.34,267.15
+2,Fone Bluetooth Basic,Eletrônicos,261.3,138.0
+3,Fone Bluetooth Plus,Eletrônicos,667.83,458.7
+4,Fone Bluetooth Plus,Eletrônicos,805.01,386.75
+5,Fone Bluetooth Pro,Eletrônicos,390.71,179.89
+6,Fone Bluetooth Pro,Eletrônicos,211.62,132.66
+7,Fone Bluetooth Max,Eletrônicos,42.38,22.02
+8,Fone Bluetooth Max,Eletrônicos,591.55,379.02
+9,Carregador Turbo Basic,Eletrônicos,213.21,139.92
+10,Carregador Turbo Basic,Eletrônicos,732.11,331.11
+11,Carregador Turbo Plus,Eletrônicos,728.93,506.13
+12,Carregador Turbo Plus,Eletrônicos,318.76,160.79
+13,Carregador Turbo Pro,Eletrônicos,862.3,489.62
+14,Carregador Turbo Pro,Eletrônicos,100.71,48.73
+15,Carregador Turbo Max,Eletrônicos,765.64,506.32
+16,Carregador Turbo Max,Eletrônicos,730.08,515.0
+17,Smart Speaker Basic,Eletrônicos,491.42,388.51
+18,Smart Speaker Basic,Eletrônicos,352.49,226.73
+19,Smart Speaker Plus,Eletrônicos,749.71,499.67
+20,Smart Speaker Plus,Eletrônicos,778.16,507.42
+21,Smart Speaker Pro,Eletrônicos,639.73,298.14
+22,Smart Speaker Pro,Eletrônicos,219.78,121.16
+23,Smart Speaker Max,Eletrônicos,89.3,47.46
+24,Smart Speaker Max,Eletrônicos,107.98,59.1
+25,Power Bank Basic,Eletrônicos,579.04,334.51
+26,Power Bank Basic,Eletrônicos,345.13,180.62
+27,Power Bank Plus,Eletrônicos,254.21,197.73
+28,Power Bank Plus,Eletrônicos,589.92,391.23
+29,Power Bank Pro,Eletrônicos,169.77,119.72
+30,Power Bank Pro,Eletrônicos,162.96,94.97
+31,Power Bank Max,Eletrônicos,890.77,600.38
+32,Power Bank Max,Eletrônicos,509.67,351.48
+33,Mouse sem fio Basic,Eletrônicos,761.55,549.53
+34,Mouse sem fio Basic,Eletrônicos,220.79,101.84
+35,Mouse sem fio Plus,Eletrônicos,296.91,161.43
+36,Mouse sem fio Plus,Eletrônicos,204.88,159.81
+37,Mouse sem fio Pro,Eletrônicos,791.08,443.11
+38,Mouse sem fio Pro,Eletrônicos,596.44,350.99
+39,Mouse sem fio Max,Eletrônicos,824.72,503.57
+40,Mouse sem fio Max,Eletrônicos,252.36,135.35
+41,Panela de Pressão Basic,Casa,513.57,278.33
+42,Panela de Pressão Basic,Casa,534.02,408.12
+43,Panela de Pressão Plus,Casa,370.87,195.36
+44,Panela de Pressão Plus,Casa,897.83,564.14
+45,Panela de Pressão Pro,Casa,99.09,46.22
+46,Panela de Pressão Pro,Casa,115.6,77.41
+47,Panela de Pressão Max,Casa,716.82,428.48
+48,Panela de Pressão Max,Casa,74.97,43.75
+49,Jogo de Cama Basic,Casa,896.58,569.5
+50,Jogo de Cama Basic,Casa,874.52,657.0
+51,Jogo de Cama Plus,Casa,29.11,20.44
+52,Jogo de Cama Plus,Casa,619.59,395.26
+53,Jogo de Cama Pro,Casa,254.07,171.33
+54,Jogo de Cama Pro,Casa,117.28,70.62
+55,Jogo de Cama Max,Casa,-418.73,328.22
+56,Jogo de Cama Max,Casa,790.63,428.67
+57,Liquidificador Basic,Casa,460.02,235.77
+58,Liquidificador Basic,Casa,823.03,621.13
+59,Liquidificador Plus,Casa,281.93,189.92
+60,Liquidificador Plus,Casa,555.5,279.69
+61,Liquidificador Pro,Casa,690.77,441.25
+62,Liquidificador Pro,Casa,704.97,448.1
+63,Liquidificador Max,Casa,19.5,10.99
+64,Liquidificador Max,Casa,36.16,28.03
+65,Cafeteira Basic,Casa,793.15,587.79
+66,Cafeteira Basic,Casa,289.92,136.34
+67,Cafeteira Plus,Casa,792.53,619.31
+68,Cafeteira Plus,Casa,94.46,58.57
+69,Cafeteira Pro,Casa,79.98,57.28
+70,Cafeteira Pro,Casa,693.7,343.34
+71,Cafeteira Max,Casa,437.72,281.21
+72,Cafeteira Max,Casa,252.51,190.73
+73,Ventilador Basic,Casa,391.78,205.34
+74,Ventilador Basic,Casa,494.12,348.59
+75,Ventilador Plus,Casa,196.21,109.7
+76,Ventilador Plus,Casa,895.73,606.82
+77,Ventilador Pro,Casa,404.97,255.6
+78,Ventilador Pro,Casa,125.6,66.4
+79,Ventilador Max,Casa,316.85,207.82
+80,Ventilador Max,Casa,221.73,116.87
+81,Camiseta Algodão Basic,Moda,81.54,54.7
+82,Camiseta Algodão Basic,Moda,220.7,169.25
+83,Camiseta Algodão Plus,Moda,776.34,368.61
+84,Camiseta Algodão Plus,Moda,228.68,156.45
+85,Camiseta Algodão Pro,Moda,207.74,103.1
+86,Camiseta Algodão Pro,Moda,843.19,547.96
+87,Camiseta Algodão Max,Moda,435.42,315.51
+88,Camiseta Algodão Max,Moda,730.4,377.36
+89,Tênis Casual Basic,Moda,104.4,62.73
+90,Tênis Casual Basic,Moda,392.17,240.58
+91,Tênis Casual Plus,Moda,661.32,453.45
+92,Tênis Casual Plus,Moda,886.05,429.24
+93,Tênis Casual Pro,Moda,373.71,212.55
+94,Tênis Casual Pro,Moda,778.13,417.88
+95,Tênis Casual Max,Moda,186.57,113.25
+96,Tênis Casual Max,Moda,390.68,213.89
+97,Boné Basic,Moda,239.08,184.84
+98,Boné Basic,Moda,409.4,307.65
+99,Boné Plus,Moda,503.84,235.65
+100,Boné Plus,Moda,899.37,667.88
+101,Boné Pro,Moda,872.69,675.66
+102,Boné Pro,Moda,766.7,389.64
+103,Boné Max,Moda,446.85,234.51
+104,Boné Max,Moda,372.32,175.18
+105,Bermuda Basic,Moda,352.88,280.49
+106,Bermuda Basic,Moda,252.64,183.02
+107,Bermuda Plus,Moda,419.86,251.1
+108,Bermuda Plus,Moda,862.4,688.54
+109,Bermuda Pro,Moda,508.63,356.77
+110,Bermuda Pro,Moda,155.38,86.06
+111,Bermuda Max,Moda,872.43,569.45
+112,Bermuda Max,Moda,496.67,353.53
+113,Sandália Basic,Moda,69.36,45.39
+114,Sandália Basic,Moda,-462.01,345.79
+115,Sandália Plus,Moda,157.7,124.0
+116,Sandália Plus,Moda,89.58,46.14
+117,Sandália Pro,Moda,543.23,372.83
+118,Sandália Pro,Moda,226.21,111.29
+119,Sandália Max,Moda,803.34,430.73
+120,Sandália Max,Moda,542.77,361.91
+121,Garrafa Térmica Basic,Esporte,388.34,254.09
+122,Garrafa Térmica Basic,Esporte,479.57,372.7
+123,Garrafa Térmica Plus,Esporte,198.95,139.4
+124,Garrafa Térmica Plus,Esporte,229.28,134.94
+125,Garrafa Térmica Pro,Esporte,610.76,338.97
+126,Garrafa Térmica Pro,Esporte,297.55,212.2
+127,Garrafa Térmica Max,Esporte,82.91,50.61
+128,Garrafa Térmica Max,Esporte,898.64,717.68
+129,Tapete Yoga Basic,Esporte,83.54,43.83
+130,Tapete Yoga Basic,Esporte,252.64,196.21
+131,Tapete Yoga Plus,Esporte,795.04,602.44
+132,Tapete Yoga Plus,Esporte,344.55,174.07
+133,Tapete Yoga Pro,Esporte,753.53,524.64
+134,Tapete Yoga Pro,Esporte,557.89,443.82
+135,Tapete Yoga Max,Esporte,595.15,269.45
+136,Tapete Yoga Max,Esporte,738.87,409.91
+137,Halteres 5kg Basic,Esporte,603.45,469.86
+138,Halteres 5kg Basic,Esporte,137.31,67.34
+139,Halteres 5kg Plus,Esporte,113.3,72.92
+140,Halteres 5kg Plus,Esporte,258.94,171.34
+141,Halteres 5kg Pro,Esporte,651.22,339.45
+142,Halteres 5kg Pro,Esporte,577.76,313.37
+143,Halteres 5kg Max,Esporte,449.4,344.63
+144,Halteres 5kg Max,Esporte,764.42,368.68
+145,Bola de Futebol Basic,Esporte,392.17,214.45
+146,Bola de Futebol Basic,Esporte,22.12,15.92
+147,Bola de Futebol Plus,Esporte,580.3,314.34
+148,Bola de Futebol Plus,Esporte,672.02,432.17
+149,Bola de Futebol Pro,Esporte,395.79,179.45
+150,Bola de Futebol Pro,Esporte,85.29,64.74
+151,Bola de Futebol Max,Esporte,815.36,522.61
+152,Bola de Futebol Max,Esporte,754.28,493.21
+153,Corda de Pular Basic,Esporte,149.47,73.93
+154,Corda de Pular Basic,Esporte,290.58,222.19
+155,Corda de Pular Plus,Esporte,720.38,541.18
+156,Corda de Pular Plus,Esporte,810.95,424.55
+157,Corda de Pular Pro,Esporte,238.84,116.07
+158,Corda de Pular Pro,Esporte,706.28,536.38
+159,Corda de Pular Max,Esporte,377.02,251.56
+160,Corda de Pular Max,Esporte,155.16,120.32
+161,Café Torrado 500g Basic,Alimentos,780.72,618.07
+162,Café Torrado 500g Basic,Alimentos,733.29,556.2
+163,Café Torrado 500g Plus,Alimentos,40.84,28.91
+164,Café Torrado 500g Plus,Alimentos,311.66,241.78
+165,Café Torrado 500g Pro,Alimentos,725.77,546.09
+166,Café Torrado 500g Pro,Alimentos,733.27,398.45
+167,Café Torrado 500g Max,Alimentos,712.68,347.67
+168,Café Torrado 500g Max,Alimentos,787.38,590.93
+169,Castanha de Caju Basic,Alimentos,214.96,158.17
+170,Castanha de Caju Basic,Alimentos,424.53,236.39
+171,Castanha de Caju Plus,Alimentos,719.7,381.2
+172,Castanha de Caju Plus,Alimentos,39.85,20.63
+173,Castanha de Caju Pro,Alimentos,-308.2,231.93
+174,Castanha de Caju Pro,Alimentos,870.83,476.95
+175,Castanha de Caju Max,Alimentos,584.15,344.58
+176,Castanha de Caju Max,Alimentos,883.39,563.32
+177,Tapioca Pronta Basic,Alimentos,846.47,415.08
+178,Tapioca Pronta Basic,Alimentos,873.92,447.88
+179,Tapioca Pronta Plus,Alimentos,866.99,470.7
+180,Tapioca Pronta Plus,Alimentos,114.5,68.94
+181,Tapioca Pronta Pro,Alimentos,660.85,369.94
+182,Tapioca Pronta Pro,Alimentos,553.07,347.88
+183,Tapioca Pronta Max,Alimentos,358.36,233.58
+184,Tapioca Pronta Max,Alimentos,243.41,169.92
+185,Cachaça Artesanal Basic,Alimentos,20.49,15.86
+186,Cachaça Artesanal Basic,Alimentos,493.38,346.25
+187,Cachaça Artesanal Plus,Alimentos,672.66,460.58
+188,Cachaça Artesanal Plus,Alimentos,339.88,161.27
+189,Cachaça Artesanal Pro,Alimentos,604.19,341.71
+190,Cachaça Artesanal Pro,Alimentos,295.56,220.73
+191,Cachaça Artesanal Max,Alimentos,653.1,362.54
+192,Cachaça Artesanal Max,Alimentos,291.48,172.83
+193,Doce de Leite Basic,Alimentos,373.51,206.73
+194,Doce de Leite Basic,Alimentos,131.14,78.31
+195,Doce de Leite Plus,Alimentos,847.46,582.26
+196,Doce de Leite Plus,Alimentos,814.37,541.91
+197,Doce de Leite Pro,Alimentos,284.14,182.35
+198,Doce de Leite Pro,Alimentos,19.36,10.66
+199,Doce de Leite Max,Alimentos,397.73,259.72
+200,Doce de Leite Max,Alimentos,595.8,365.07

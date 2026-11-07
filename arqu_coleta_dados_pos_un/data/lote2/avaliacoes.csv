@@ -1,0 +1,868 @@
+avaliacao_id,pedido_id,cliente_id,produto_id,nota,comentario,data_avaliacao
+6490,130001,1108,155,2,"Cor diferente da foto, fiquei decepcionado.",2026-07-17
+6491,130002,2712,62,4,Adorei! Já comprei de novo.,2026-07-12
+6492,130010,4144,62,1,Produto chegou com defeito e o suporte demorou a responder.,2026-07-22
+6493,130021,513,30,1,Produto chegou com defeito e o suporte demorou a responder. (Eletrônicos),2026-07-17
+6494,130025,289,57,4,"Qualidade acima do esperado, valeu cada centavo. (Casa)",2026-08-03
+6495,130030,599,180,5,"Ótimo custo-benefício, embalagem perfeita. (Alimentos)",2026-07-15
+6496,130033,3089,138,4,Adorei! Já comprei de novo.,2026-07-21
+6497,130041,3186,57,4,"Muito bom, recomendo para todos. (Casa)",2026-08-10
+6498,130052,3493,193,1,"Não funcionou, tive que pedir reembolso. (Alimentos)",2026-08-08
+6499,130062,5483,19,4,Entrega rápida e produto igual ao anunciado. (Eletrônicos),2026-07-21
+6500,130065,1804,88,5,"Ótimo custo-benefício, embalagem perfeita. (Moda)",2026-08-05
+6501,130072,5156,16,3,"Atende ao básico, entrega demorou um pouco. (Eletrônicos)",2026-07-24
+6502,130075,2183,115,2,"Não funcionou, tive que pedir reembolso. (Moda)",2026-08-02
+6503,130076,3345,15,4,Adorei! Já comprei de novo. (Eletrônicos),2026-08-02
+6504,130085,381,66,2,"Péssima qualidade, não recomendo.",2026-07-16
+6505,130088,4539,198,5,"Muito bom, recomendo para todos. (Alimentos)",2026-07-10
+6506,130089,4612,148,4,Entrega rápida e produto igual ao anunciado.,2026-08-15
+6507,130091,3421,120,4,"Produto excelente, chegou antes do prazo. (Moda)",2026-08-06
+6508,130094,4066,118,4,Entrega rápida e produto igual ao anunciado.,2026-07-24
+6509,130096,2165,175,4,"Produto excelente, chegou antes do prazo. (Alimentos)",2026-07-06
+6510,130097,3666,199,5,Adorei! Já comprei de novo.,2026-08-02
+6511,130098,1697,178,5,Entrega rápida e produto igual ao anunciado.,2026-07-06
+6512,130106,1639,156,0,"Muito bom, recomendo para todos. (Esporte)",2026-07-25
+6513,130117,5134,113,1,Atrasou muito a entrega e veio amassado.,2026-08-08
+6514,130137,2323,48,5,Adorei! Já comprei de novo.,2026-07-25
+6515,130140,4421,173,1,Produto chegou com defeito e o suporte demorou a responder.,2026-07-30
+6516,130141,1293,134,5,Entrega rápida e produto igual ao anunciado.,2026-07-31
+6517,130147,2986,156,4,"Qualidade acima do esperado, valeu cada centavo. (Esporte)",2026-08-03
+6518,130149,2867,180,4,"Qualidade acima do esperado, valeu cada centavo. (Alimentos)",2026-08-12
+6519,130157,2250,164,1,"Cor diferente da foto, fiquei decepcionado.",2026-08-17
+6520,130166,5548,112,5,"Produto excelente, chegou antes do prazo.",2026-08-08
+6521,130170,4314,80,5,"Muito bom, recomendo para todos.",2026-08-08
+6522,130172,3714,46,2,Produto chegou com defeito e o suporte demorou a responder. (Casa),2026-08-15
+6523,130184,2740,57,1,"Cor diferente da foto, fiquei decepcionado.",2026-07-12
+6524,130199,296,59,1,Atrasou muito a entrega e veio amassado.,2026-08-11
+6525,130200,2154,177,1,"Não funcionou, tive que pedir reembolso.",2026-07-11
+6526,130201,2073,19,4,Entrega rápida e produto igual ao anunciado.,2026-07-13
+6527,130207,4,186,4,"Produto excelente, chegou antes do prazo. (Alimentos)",2026-08-12
+6528,130222,3275,141,1,Produto chegou com defeito e o suporte demorou a responder. (Esporte),2026-07-27
+6529,130224,3813,7,1,Produto chegou com defeito e o suporte demorou a responder.,2026-08-14
+6530,130226,1071,91,5,Entrega rápida e produto igual ao anunciado. (Moda),2026-07-30
+6531,130227,3251,185,2,"Não funcionou, tive que pedir reembolso.",2026-07-23
+6532,130230,5158,21,4,"Produto excelente, chegou antes do prazo.",2026-08-16
+6533,130232,1650,155,4,"Produto excelente, chegou antes do prazo.",2026-07-28
+6534,130233,3242,155,4,"Qualidade acima do esperado, valeu cada centavo.",2026-08-07
+6535,130235,3646,200,5,Adorei! Já comprei de novo. (Alimentos),2026-07-27
+6536,130236,4651,62,3,"Produto ok, nada demais. (Casa)",2026-08-02
+6537,130237,5529,26,4,"Qualidade acima do esperado, valeu cada centavo. (Eletrônicos)",2026-08-05
+6538,130242,4810,71,5,"Muito bom, recomendo para todos. (Casa)",2026-08-01
+6539,130245,3106,192,1,"Não funcionou, tive que pedir reembolso. (Alimentos)",2026-07-30
+6540,130253,1726,92,5,"Qualidade acima do esperado, valeu cada centavo. (Moda)",2026-08-01
+6541,130257,4329,29,4,"Qualidade acima do esperado, valeu cada centavo. (Eletrônicos)",2026-07-27
+6542,130261,3600,48,2,"Não funcionou, tive que pedir reembolso.",2026-08-10
+6543,130264,314,85,4,"Muito bom, recomendo para todos.",2026-07-14
+6544,130269,5035,103,1,"Não funcionou, tive que pedir reembolso.",2026-07-14
+6545,130270,4575,12,3,Esperava um pouco mais pela descrição. (Eletrônicos),2026-08-07
+6546,130274,3417,35,5,"Muito bom, recomendo para todos.",2026-07-25
+6547,130276,1133,50,3,"Produto ok, nada demais. (Casa)",2026-07-24
+6548,130284,5110,165,1,Produto chegou com defeito e o suporte demorou a responder. (Alimentos),2026-07-20
+6549,130287,2142,153,5,"Produto excelente, chegou antes do prazo.",2026-07-14
+6550,130295,1650,145,5,Adorei! Já comprei de novo.,2026-08-04
+6551,130297,3228,154,1,Produto chegou com defeito e o suporte demorou a responder.,2026-08-04
+6552,130300,4991,17,5,Adorei! Já comprei de novo. (Eletrônicos),2026-07-28
+6553,130301,1316,127,1,Produto chegou com defeito e o suporte demorou a responder. (Esporte),2026-07-22
+6554,130303,3781,17,5,"Qualidade acima do esperado, valeu cada centavo.",2026-08-05
+6555,130306,411,108,4,"Ótimo custo-benefício, embalagem perfeita.",2026-07-28
+6556,130313,1293,92,3,"Atende ao básico, entrega demorou um pouco.",2026-08-14
+6557,130318,2471,164,5,"Muito bom, recomendo para todos.",2026-08-08
+6558,130319,4641,183,4,Adorei! Já comprei de novo.,2026-07-20
+6559,130326,5353,120,1,"Cor diferente da foto, fiquei decepcionado.",2026-07-08
+6560,130341,3519,191,1,"Péssima qualidade, não recomendo. (Alimentos)",2026-08-04
+6561,130350,4916,84,4,"Muito bom, recomendo para todos. (Moda)",2026-08-10
+6562,130351,1056,119,3,"Produto ok, nada demais.",2026-08-01
+6563,130356,3773,157,5,Entrega rápida e produto igual ao anunciado.,2026-08-02
+6564,130357,5585,193,1,"Cor diferente da foto, fiquei decepcionado. (Alimentos)",2026-08-13
+6565,130362,2677,95,2,"Não funcionou, tive que pedir reembolso. (Moda)",2026-07-07
+6566,130363,3742,31,2,"Não funcionou, tive que pedir reembolso.",2026-07-29
+6567,130368,2643,180,5,Entrega rápida e produto igual ao anunciado. (Alimentos),2026-08-17
+6568,130371,4456,123,5,"Qualidade acima do esperado, valeu cada centavo.",2026-07-16
+6569,130374,3579,97,5,Adorei! Já comprei de novo. (Moda),2026-07-20
+6570,130383,2027,118,5,Adorei! Já comprei de novo.,2026-08-09
+6571,130389,542,173,3,Razoável pelo preço.,2026-08-14
+6572,130397,3414,90,5,Entrega rápida e produto igual ao anunciado.,2026-07-24
+6573,130408,3594,137,5,Entrega rápida e produto igual ao anunciado.,2026-07-27
+6574,130419,3862,151,5,"Produto excelente, chegou antes do prazo.",2026-07-29
+6575,130424,5013,45,1,"Péssima qualidade, não recomendo.",2026-08-09
+6576,130431,4399,25,6,Atrasou muito a entrega e veio amassado.,2026-08-09
+6577,130432,2107,59,4,"Muito bom, recomendo para todos. (Casa)",2026-07-12
+6578,130439,1635,187,5,Adorei! Já comprei de novo.,2026-08-02
+6579,130453,3532,182,5,"Produto excelente, chegou antes do prazo. (Alimentos)",2026-08-07
+6580,130455,531,112,5,"Muito bom, recomendo para todos.",2026-08-05
+6581,130457,4004,165,4,Adorei! Já comprei de novo. (Alimentos),2026-07-27
+6582,130459,1026,24,5,"Produto excelente, chegou antes do prazo. (Eletrônicos)",2026-07-14
+6583,130460,1849,151,5,"Qualidade acima do esperado, valeu cada centavo.",2026-07-21
+6584,130461,1785,79,5,Adorei! Já comprei de novo. (Casa),2026-07-20
+6585,130464,4136,32,1,Atrasou muito a entrega e veio amassado. (Eletrônicos),2026-07-15
+6586,130465,5249,188,4,"Qualidade acima do esperado, valeu cada centavo. (Alimentos)",2026-07-23
+6587,130466,2023,76,4,"Produto excelente, chegou antes do prazo. (Casa)",2026-07-20
+6588,130474,4894,186,5,"Qualidade acima do esperado, valeu cada centavo. (Alimentos)",2026-07-08
+6589,130478,2854,53,3,Razoável pelo preço.,2026-08-11
+6590,130497,129,89,5,Adorei! Já comprei de novo. (Moda),2026-07-29
+6591,130498,2214,28,5,"Produto excelente, chegou antes do prazo.",2026-08-03
+6592,130505,5353,89,5,"Qualidade acima do esperado, valeu cada centavo. (Moda)",2026-08-10
+6593,130506,69,4,4,"Ótimo custo-benefício, embalagem perfeita.",2026-08-08
+6594,130509,291,36,1,Produto chegou com defeito e o suporte demorou a responder.,2026-08-12
+6595,130512,3588,27,3,"Atende ao básico, entrega demorou um pouco.",2026-07-20
+6596,130519,2331,192,3,"Atende ao básico, entrega demorou um pouco.",2026-07-20
+6597,130524,945,182,1,Produto chegou com defeito e o suporte demorou a responder.,2026-07-28
+6598,130530,4576,129,1,"Não funcionou, tive que pedir reembolso.",2026-07-13
+6599,130541,1253,8,5,"Qualidade acima do esperado, valeu cada centavo.",2026-08-08
+6600,130544,640,78,3,Esperava um pouco mais pela descrição.,2026-07-23
+6601,130550,1487,160,5,"Ótimo custo-benefício, embalagem perfeita. (Esporte)",2026-07-22
+6602,130557,3344,157,4,"Muito bom, recomendo para todos.",2026-07-17
+6603,130561,987,181,1,Atrasou muito a entrega e veio amassado. (Alimentos),2026-08-14
+6604,130564,719,183,1,Produto chegou com defeito e o suporte demorou a responder.,2026-08-02
+6605,130573,2165,120,5,Entrega rápida e produto igual ao anunciado.,2026-07-14
+6606,130574,5077,158,4,Adorei! Já comprei de novo.,2026-07-07
+6607,130581,1387,188,2,"Não funcionou, tive que pedir reembolso. (Alimentos)",2026-08-17
+6608,130585,2985,14,4,Entrega rápida e produto igual ao anunciado. (Eletrônicos),2026-07-25
+6609,130586,5535,119,4,"Ótimo custo-benefício, embalagem perfeita. (Moda)",2026-07-31
+6610,130593,805,69,5,"Muito bom, recomendo para todos. (Casa)",2026-07-29
+6611,130596,490,114,5,"Muito bom, recomendo para todos.",2026-07-19
+6612,130597,3318,24,1,Produto chegou com defeito e o suporte demorou a responder. (Eletrônicos),2026-07-28
+6613,130607,1276,183,4,Entrega rápida e produto igual ao anunciado.,2026-07-18
+6614,130608,1292,126,5,"Ótimo custo-benefício, embalagem perfeita. (Esporte)",2026-07-26
+6615,130609,2273,37,1,"Péssima qualidade, não recomendo. (Eletrônicos)",2026-07-24
+6616,130612,697,72,1,"Péssima qualidade, não recomendo. (Casa)",2026-07-30
+6617,130616,1060,59,3,Razoável pelo preço. (Casa),2026-08-04
+6618,130617,1121,184,3,"Atende ao básico, entrega demorou um pouco.",2026-08-03
+6619,130619,5554,54,1,"Péssima qualidade, não recomendo.",2026-08-07
+6620,130620,2311,167,3,Esperava um pouco mais pela descrição.,2026-07-08
+6621,130621,3822,192,5,"Produto excelente, chegou antes do prazo.",2026-08-07
+6622,130628,4089,64,2,"Não funcionou, tive que pedir reembolso.",2026-07-16
+6623,130640,290,173,2,Produto chegou com defeito e o suporte demorou a responder.,2026-08-03
+6624,130641,3969,182,0,"Péssima qualidade, não recomendo.",2026-07-28
+6625,130649,5003,2,1,Atrasou muito a entrega e veio amassado. (Eletrônicos),2026-08-05
+6626,130650,2221,65,5,"Produto excelente, chegou antes do prazo. (Casa)",2026-07-19
+6627,130654,1469,199,3,Esperava um pouco mais pela descrição. (Alimentos),2026-07-17
+6628,130659,1734,48,3,Esperava um pouco mais pela descrição. (Casa),2026-07-26
+6629,130666,2976,97,1,"Cor diferente da foto, fiquei decepcionado. (Moda)",2026-07-23
+6630,130677,2443,66,5,"Produto excelente, chegou antes do prazo. (Casa)",2026-08-01
+6631,130678,1263,11,2,"Não funcionou, tive que pedir reembolso. (Eletrônicos)",2026-08-16
+6632,130681,341,123,2,"Péssima qualidade, não recomendo.",2026-08-02
+6633,130683,5361,64,2,"Cor diferente da foto, fiquei decepcionado.",2026-08-17
+6634,130693,2517,105,5,"Muito bom, recomendo para todos. (Moda)",2026-07-20
+6635,130694,1679,11,5,"Qualidade acima do esperado, valeu cada centavo. (Eletrônicos)",2026-08-11
+6636,130698,3132,192,1,"Péssima qualidade, não recomendo.",2026-08-09
+6637,130704,4954,188,4,Adorei! Já comprei de novo. (Alimentos),2026-07-25
+6638,130706,2505,51,2,Produto chegou com defeito e o suporte demorou a responder. (Casa),2026-07-06
+6639,130708,769,49,3,Esperava um pouco mais pela descrição. (Casa),2026-08-02
+6640,130711,79,163,4,"Ótimo custo-benefício, embalagem perfeita. (Alimentos)",2026-07-18
+6641,130714,5001,71,1,Produto chegou com defeito e o suporte demorou a responder.,2026-08-13
+6642,130732,38,103,5,"Ótimo custo-benefício, embalagem perfeita.",2026-07-24
+6643,130734,4709,24,1,"Péssima qualidade, não recomendo.",2026-07-24
+6644,130736,423,156,5,"Muito bom, recomendo para todos. (Esporte)",2026-08-03
+6645,130739,145,75,2,Atrasou muito a entrega e veio amassado. (Casa),2026-07-23
+6646,130742,3346,59,1,"Péssima qualidade, não recomendo.",2026-08-12
+6647,130746,4052,94,5,"Produto excelente, chegou antes do prazo.",2026-07-21
+6648,130749,1529,80,4,"Qualidade acima do esperado, valeu cada centavo.",2026-07-19
+6649,130755,2705,144,5,"Muito bom, recomendo para todos.",2026-08-01
+6650,130757,719,85,2,"Cor diferente da foto, fiquei decepcionado. (Moda)",2026-07-20
+6651,130763,2219,158,4,Adorei! Já comprei de novo.,2026-07-11
+6652,130767,5397,158,5,"Qualidade acima do esperado, valeu cada centavo.",2026-08-02
+6653,130772,1521,156,1,"Péssima qualidade, não recomendo.",2026-07-19
+6654,130773,2802,69,2,Produto chegou com defeito e o suporte demorou a responder. (Casa),2026-08-03
+6655,130786,1687,127,4,"Muito bom, recomendo para todos.",2026-07-30
+6656,130794,11,10,3,Esperava um pouco mais pela descrição.,2026-07-31
+6657,130802,2037,94,2,Produto chegou com defeito e o suporte demorou a responder. (Moda),2026-07-29
+6658,130817,2854,54,4,"Ótimo custo-benefício, embalagem perfeita. (Casa)",2026-07-15
+6659,130825,1628,183,2,Atrasou muito a entrega e veio amassado. (Alimentos),2026-08-02
+6660,130827,4968,200,1,Atrasou muito a entrega e veio amassado.,2026-07-21
+6661,130830,718,51,5,"Produto excelente, chegou antes do prazo. (Casa)",2026-08-06
+6662,130834,550,196,5,Adorei! Já comprei de novo.,2026-07-28
+6663,130864,512,41,2,"Cor diferente da foto, fiquei decepcionado.",2026-08-03
+6664,130866,5278,18,2,"Não funcionou, tive que pedir reembolso.",2026-08-03
+6665,130868,5138,160,5,Entrega rápida e produto igual ao anunciado.,2026-07-14
+6666,130871,1421,190,5,"Muito bom, recomendo para todos. (Alimentos)",2026-08-07
+6667,130874,4167,178,2,"Péssima qualidade, não recomendo.",2026-07-26
+6668,130897,902,60,4,"Qualidade acima do esperado, valeu cada centavo.",2026-07-24
+6669,130903,2680,125,3,Razoável pelo preço. (Esporte),2026-08-05
+6670,130905,4992,197,2,Atrasou muito a entrega e veio amassado. (Alimentos),2026-07-25
+6671,130908,1974,89,4,Adorei! Já comprei de novo. (Moda),2026-08-04
+6672,130911,1496,160,5,"Qualidade acima do esperado, valeu cada centavo. (Esporte)",2026-08-02
+6673,130922,4547,10,4,Adorei! Já comprei de novo.,2026-07-13
+6674,130923,2255,135,1,Produto chegou com defeito e o suporte demorou a responder.,2026-08-18
+6675,130924,5246,194,1,"Cor diferente da foto, fiquei decepcionado.",2026-07-29
+6676,130928,2744,64,4,"Ótimo custo-benefício, embalagem perfeita. (Casa)",2026-08-03
+6677,130932,4049,186,4,"Qualidade acima do esperado, valeu cada centavo. (Alimentos)",2026-07-28
+6678,130933,5188,91,2,Atrasou muito a entrega e veio amassado. (Moda),2026-08-04
+6679,130939,5214,157,5,Entrega rápida e produto igual ao anunciado.,2026-08-08
+6680,130941,3152,81,10,Adorei! Já comprei de novo. (Moda),2026-08-02
+6681,130944,4688,144,2,"Péssima qualidade, não recomendo. (Esporte)",2026-07-30
+6682,130952,387,146,2,Produto chegou com defeito e o suporte demorou a responder. (Esporte),2026-08-10
+6683,130953,1518,168,4,"Muito bom, recomendo para todos. (Alimentos)",2026-08-02
+6684,130960,4443,61,4,"Qualidade acima do esperado, valeu cada centavo. (Casa)",2026-07-14
+6685,130966,2111,130,4,"Ótimo custo-benefício, embalagem perfeita.",2026-07-26
+6686,130967,3311,92,3,"Atende ao básico, entrega demorou um pouco. (Moda)",2026-07-09
+6687,130968,3536,46,5,"Produto excelente, chegou antes do prazo.",2026-08-05
+6688,130970,66,46,5,"Produto excelente, chegou antes do prazo. (Casa)",2026-07-26
+6689,130979,4106,44,1,"Cor diferente da foto, fiquei decepcionado. (Casa)",2026-08-05
+6690,130982,3083,109,5,"Muito bom, recomendo para todos. (Moda)",2026-08-05
+6691,130984,211,175,4,"Qualidade acima do esperado, valeu cada centavo. (Alimentos)",2026-07-18
+6692,130991,3976,74,5,"Ótimo custo-benefício, embalagem perfeita.",2026-08-04
+6693,130995,650,22,1,"Péssima qualidade, não recomendo.",2026-08-12
+6694,131005,37,25,1,"Não funcionou, tive que pedir reembolso.",2026-08-10
+6695,131006,4666,107,5,"Qualidade acima do esperado, valeu cada centavo. (Moda)",2026-07-31
+6696,131013,324,11,4,"Ótimo custo-benefício, embalagem perfeita. (Eletrônicos)",2026-07-15
+6697,131015,4865,169,3,"Atende ao básico, entrega demorou um pouco.",2026-07-21
+6698,131022,3498,70,4,Entrega rápida e produto igual ao anunciado. (Casa),2026-08-01
+6699,131034,4302,188,10,Adorei! Já comprei de novo. (Alimentos),2026-08-04
+6700,131035,3222,182,2,Produto chegou com defeito e o suporte demorou a responder. (Alimentos),2026-08-01
+6701,131039,5557,174,4,"Produto excelente, chegou antes do prazo. (Alimentos)",2026-08-10
+6702,131043,485,20,5,"Muito bom, recomendo para todos. (Eletrônicos)",2026-07-26
+6703,131047,575,37,5,"Ótimo custo-benefício, embalagem perfeita.",2026-07-23
+6704,131053,1600,17,5,"Produto excelente, chegou antes do prazo. (Eletrônicos)",2026-08-09
+6705,131063,2263,77,1,"Não funcionou, tive que pedir reembolso. (Casa)",2026-08-16
+6706,131065,3245,51,2,"Não funcionou, tive que pedir reembolso. (Casa)",2026-08-01
+6707,131066,401,12,1,Produto chegou com defeito e o suporte demorou a responder.,2026-08-08
+6708,131067,3539,65,4,Entrega rápida e produto igual ao anunciado.,2026-07-22
+6709,131068,176,113,4,Entrega rápida e produto igual ao anunciado. (Moda),2026-07-12
+6710,131081,3855,116,1,"Não funcionou, tive que pedir reembolso.",2026-07-25
+6711,131082,2238,15,2,Atrasou muito a entrega e veio amassado.,2026-08-05
+6712,131090,1057,105,4,"Produto excelente, chegou antes do prazo. (Moda)",2026-07-05
+6713,131094,4112,125,1,Produto chegou com defeito e o suporte demorou a responder. (Esporte),2026-07-26
+6714,131095,4236,180,4,"Produto excelente, chegou antes do prazo. (Alimentos)",2026-07-20
+6715,131101,4302,44,5,Entrega rápida e produto igual ao anunciado.,2026-08-13
+6716,131106,3928,140,4,"Ótimo custo-benefício, embalagem perfeita. (Esporte)",2026-07-15
+6717,131107,1032,200,5,"Produto excelente, chegou antes do prazo.",2026-08-19
+6718,131109,2428,91,5,"Muito bom, recomendo para todos. (Moda)",2026-08-03
+6719,131114,3915,32,5,"Muito bom, recomendo para todos. (Eletrônicos)",2026-07-25
+6720,131118,2858,44,1,Atrasou muito a entrega e veio amassado.,2026-08-08
+6721,131119,3034,179,2,"Péssima qualidade, não recomendo. (Alimentos)",2026-07-20
+6722,131125,2376,159,5,"Produto excelente, chegou antes do prazo. (Esporte)",2026-07-14
+6723,131134,434,123,5,Adorei! Já comprei de novo.,2026-07-24
+6724,131135,4639,92,4,"Ótimo custo-benefício, embalagem perfeita. (Moda)",2026-07-19
+6725,131141,2042,134,4,"Ótimo custo-benefício, embalagem perfeita. (Esporte)",2026-08-12
+6726,131148,2120,146,1,"Não funcionou, tive que pedir reembolso. (Esporte)",2026-08-12
+6727,131162,2119,55,5,"Muito bom, recomendo para todos. (Casa)",2026-08-06
+6728,131163,4825,127,2,"Cor diferente da foto, fiquei decepcionado.",2026-07-26
+6729,131176,687,89,3,Razoável pelo preço. (Moda),2026-07-17
+6730,131180,973,29,5,"Ótimo custo-benefício, embalagem perfeita. (Eletrônicos)",2026-08-11
+6731,131188,1068,35,5,"Qualidade acima do esperado, valeu cada centavo. (Eletrônicos)",2026-07-31
+6732,131194,166,27,4,"Muito bom, recomendo para todos. (Eletrônicos)",2026-07-28
+6733,131199,4167,45,5,Adorei! Já comprei de novo.,2026-08-07
+6734,131202,1955,88,4,"Muito bom, recomendo para todos.",2026-07-10
+6735,131204,3097,137,4,Adorei! Já comprei de novo. (Esporte),2026-07-25
+6736,131206,4227,177,1,"Cor diferente da foto, fiquei decepcionado.",2026-08-12
+6737,131207,4707,58,1,Atrasou muito a entrega e veio amassado.,2026-07-29
+6738,131209,3705,61,5,"Muito bom, recomendo para todos. (Casa)",2026-07-30
+6739,131210,4094,128,4,Adorei! Já comprei de novo. (Esporte),2026-08-03
+6740,131211,2395,88,2,Atrasou muito a entrega e veio amassado. (Moda),2026-07-15
+6741,131213,430,183,2,"Não funcionou, tive que pedir reembolso. (Alimentos)",2026-07-23
+6742,131215,2179,107,3,"Produto ok, nada demais. (Moda)",2026-08-15
+6743,131216,4575,169,4,Entrega rápida e produto igual ao anunciado.,2026-07-20
+6744,131222,1495,130,5,"Muito bom, recomendo para todos. (Esporte)",2026-08-14
+6745,131226,42,39,4,"Muito bom, recomendo para todos.",2026-07-15
+6746,131229,5405,58,4,Entrega rápida e produto igual ao anunciado. (Casa),2026-07-22
+6747,131239,5193,67,3,"Atende ao básico, entrega demorou um pouco.",2026-08-09
+6748,131244,2050,133,5,"Ótimo custo-benefício, embalagem perfeita.",2026-07-10
+6749,131257,2197,69,5,"Ótimo custo-benefício, embalagem perfeita. (Casa)",2026-08-13
+6750,131258,3520,37,3,Razoável pelo preço.,2026-08-03
+6751,131261,2821,39,5,"Produto excelente, chegou antes do prazo.",2026-07-24
+6752,131274,2331,162,4,"Qualidade acima do esperado, valeu cada centavo. (Alimentos)",2026-07-26
+6753,131278,4444,186,5,"Ótimo custo-benefício, embalagem perfeita.",2026-08-08
+6754,131284,4808,180,5,"Qualidade acima do esperado, valeu cada centavo.",2026-07-22
+6755,131290,130,22,4,"Produto excelente, chegou antes do prazo.",2026-07-29
+6756,131295,3151,79,5,Adorei! Já comprei de novo. (Casa),2026-07-15
+6757,131297,834,39,5,"Produto excelente, chegou antes do prazo.",2026-07-20
+6758,131298,5047,78,10,Atrasou muito a entrega e veio amassado.,2026-08-10
+6759,131299,3724,40,1,"Péssima qualidade, não recomendo.",2026-08-01
+6760,131307,1358,184,5,"Produto excelente, chegou antes do prazo. (Alimentos)",2026-08-01
+6761,131309,1263,97,4,"Qualidade acima do esperado, valeu cada centavo. (Moda)",2026-07-23
+6762,131312,2205,200,5,"Ótimo custo-benefício, embalagem perfeita.",2026-08-03
+6763,131322,4709,149,5,"Ótimo custo-benefício, embalagem perfeita.",2026-07-16
+6764,131326,1706,151,1,"Cor diferente da foto, fiquei decepcionado. (Esporte)",2026-07-22
+6765,131329,3161,158,3,"Atende ao básico, entrega demorou um pouco. (Esporte)",2026-07-15
+6766,131330,1260,93,5,Entrega rápida e produto igual ao anunciado.,2026-07-17
+6767,131332,2666,123,3,Esperava um pouco mais pela descrição.,2026-08-10
+6768,131344,5085,162,5,Adorei! Já comprei de novo.,2026-08-07
+6769,131348,3411,163,2,"Não funcionou, tive que pedir reembolso.",2026-07-17
+6770,131349,1994,100,4,Adorei! Já comprei de novo. (Moda),2026-07-10
+6771,131354,1883,152,2,Produto chegou com defeito e o suporte demorou a responder.,2026-08-11
+6772,131359,3548,109,0,"Péssima qualidade, não recomendo. (Moda)",2026-07-28
+6773,131362,562,87,1,"Péssima qualidade, não recomendo.",2026-07-08
+6774,131371,1960,95,5,"Muito bom, recomendo para todos. (Moda)",2026-07-15
+6775,131380,1572,42,5,"Ótimo custo-benefício, embalagem perfeita.",2026-07-17
+6776,131381,5158,43,1,"Péssima qualidade, não recomendo. (Casa)",2026-07-23
+6777,131387,1155,143,5,"Produto excelente, chegou antes do prazo.",2026-07-31
+6778,131391,4584,85,1,Produto chegou com defeito e o suporte demorou a responder.,2026-08-01
+6779,131396,1087,168,4,Adorei! Já comprei de novo. (Alimentos),2026-07-17
+6780,131404,73,117,5,Adorei! Já comprei de novo.,2026-07-30
+6781,131406,4020,116,1,"Não funcionou, tive que pedir reembolso. (Moda)",2026-07-30
+6782,131410,928,90,2,Produto chegou com defeito e o suporte demorou a responder.,2026-08-11
+6783,131415,3741,41,4,"Qualidade acima do esperado, valeu cada centavo.",2026-07-22
+6784,131417,389,159,1,"Péssima qualidade, não recomendo.",2026-08-07
+6785,131420,3602,163,5,"Ótimo custo-benefício, embalagem perfeita. (Alimentos)",2026-08-10
+6786,131423,3731,193,3,"Atende ao básico, entrega demorou um pouco. (Alimentos)",2026-07-29
+6787,131424,5169,187,1,Produto chegou com defeito e o suporte demorou a responder. (Alimentos),2026-07-25
+6788,131427,3949,56,2,"Cor diferente da foto, fiquei decepcionado. (Casa)",2026-07-07
+6789,131432,4961,45,2,Produto chegou com defeito e o suporte demorou a responder. (Casa),2026-07-09
+6790,131439,5273,36,4,"Muito bom, recomendo para todos.",2026-07-25
+6791,131440,2976,24,1,"Cor diferente da foto, fiquei decepcionado.",2026-07-21
+6792,131443,4789,135,4,"Produto excelente, chegou antes do prazo.",2026-07-28
+6793,131444,313,128,5,Entrega rápida e produto igual ao anunciado.,2026-08-04
+6794,131446,2979,152,5,"Qualidade acima do esperado, valeu cada centavo. (Esporte)",2026-08-06
+6795,131449,1949,52,5,Entrega rápida e produto igual ao anunciado. (Casa),2026-07-25
+6796,131452,3029,91,3,Esperava um pouco mais pela descrição. (Moda),2026-07-16
+6797,131454,4620,152,2,"Cor diferente da foto, fiquei decepcionado.",2026-07-26
+6798,131468,2266,87,4,"Produto excelente, chegou antes do prazo.",2026-08-04
+6799,131470,902,33,2,"Cor diferente da foto, fiquei decepcionado. (Eletrônicos)",2026-07-30
+6800,131475,4039,158,3,Razoável pelo preço. (Esporte),2026-07-17
+6801,131477,689,29,2,"Não funcionou, tive que pedir reembolso. (Eletrônicos)",2026-08-14
+6802,131478,4832,122,3,"Produto ok, nada demais.",2026-07-13
+6803,131479,2055,30,1,"Cor diferente da foto, fiquei decepcionado. (Eletrônicos)",2026-07-14
+6804,131487,2611,94,5,"Ótimo custo-benefício, embalagem perfeita.",2026-07-19
+6805,131490,1319,190,4,"Ótimo custo-benefício, embalagem perfeita.",2026-08-10
+6806,131492,2859,51,1,Produto chegou com defeito e o suporte demorou a responder.,2026-08-10
+6807,131495,4533,177,6,Entrega rápida e produto igual ao anunciado. (Alimentos),2026-07-21
+6808,131499,2424,33,4,"Qualidade acima do esperado, valeu cada centavo. (Eletrônicos)",2026-08-20
+6809,131500,5452,199,2,"Cor diferente da foto, fiquei decepcionado.",2026-08-09
+6810,131507,5454,100,3,Razoável pelo preço.,2026-07-31
+6811,131517,4491,144,4,Entrega rápida e produto igual ao anunciado. (Esporte),2026-07-31
+6812,131525,3179,54,2,Produto chegou com defeito e o suporte demorou a responder.,2026-07-13
+6813,131536,4970,197,2,"Não funcionou, tive que pedir reembolso. (Alimentos)",2026-07-17
+6814,131537,3492,172,4,"Muito bom, recomendo para todos. (Alimentos)",2026-07-22
+6815,131540,4727,148,2,"Não funcionou, tive que pedir reembolso.",2026-07-21
+6816,131546,20,120,5,"Muito bom, recomendo para todos. (Moda)",2026-07-29
+6817,131559,367,115,4,"Qualidade acima do esperado, valeu cada centavo. (Moda)",2026-08-08
+6818,131560,3267,110,5,Entrega rápida e produto igual ao anunciado.,2026-08-04
+6819,131561,4095,39,2,"Cor diferente da foto, fiquei decepcionado. (Eletrônicos)",2026-07-19
+6820,131562,4108,123,4,"Produto excelente, chegou antes do prazo. (Esporte)",2026-07-12
+6821,131567,5064,87,3,"Atende ao básico, entrega demorou um pouco. (Moda)",2026-08-13
+6822,131574,5473,3,5,"Qualidade acima do esperado, valeu cada centavo. (Eletrônicos)",2026-07-17
+6823,131576,1155,16,5,"Produto excelente, chegou antes do prazo.",2026-08-14
+6824,131578,2094,73,2,Atrasou muito a entrega e veio amassado. (Casa),2026-07-16
+6825,131580,5177,21,4,"Ótimo custo-benefício, embalagem perfeita. (Eletrônicos)",2026-08-05
+6826,131582,3694,67,4,"Ótimo custo-benefício, embalagem perfeita.",2026-07-20
+6827,131588,2125,23,5,"Ótimo custo-benefício, embalagem perfeita. (Eletrônicos)",2026-08-05
+6828,131590,3127,177,5,Adorei! Já comprei de novo.,2026-07-22
+6829,131591,5239,90,2,Atrasou muito a entrega e veio amassado.,2026-07-31
+6830,131613,1552,6,5,Entrega rápida e produto igual ao anunciado.,2026-08-14
+6831,131618,4548,167,1,"Péssima qualidade, não recomendo.",2026-07-31
+6832,131621,54,99,5,Entrega rápida e produto igual ao anunciado.,2026-07-10
+6833,131636,2677,24,4,"Produto excelente, chegou antes do prazo.",2026-07-16
+6834,131640,953,191,2,"Péssima qualidade, não recomendo. (Alimentos)",2026-08-02
+6835,131644,3018,166,1,Atrasou muito a entrega e veio amassado.,2026-07-15
+6836,131645,1572,134,4,Entrega rápida e produto igual ao anunciado. (Esporte),2026-08-03
+6837,131646,1540,79,4,"Produto excelente, chegou antes do prazo.",2026-08-18
+6838,131648,2369,67,4,"Ótimo custo-benefício, embalagem perfeita. (Casa)",2026-07-15
+6839,131649,3562,57,1,"Cor diferente da foto, fiquei decepcionado. (Casa)",2026-08-04
+6840,131650,2842,29,2,"Cor diferente da foto, fiquei decepcionado.",2026-07-28
+6841,131652,4914,42,0,"Péssima qualidade, não recomendo.",2026-07-22
+6842,131664,1445,157,4,"Muito bom, recomendo para todos.",2026-07-31
+6843,131669,59,61,3,Esperava um pouco mais pela descrição. (Casa),2026-07-24
+6844,131674,2948,105,4,Adorei! Já comprei de novo.,2026-07-25
+6845,131687,1910,179,1,"Péssima qualidade, não recomendo. (Alimentos)",2026-07-21
+6846,131689,2572,120,4,Entrega rápida e produto igual ao anunciado. (Moda),2026-08-10
+6847,131695,2644,74,5,"Muito bom, recomendo para todos.",2026-07-08
+6848,131699,846,178,4,"Muito bom, recomendo para todos. (Alimentos)",2026-07-06
+6849,131705,3189,34,2,"Péssima qualidade, não recomendo.",2026-08-04
+6850,131706,67,17,3,Razoável pelo preço. (Eletrônicos),2026-07-12
+6851,131707,2079,179,5,Adorei! Já comprei de novo.,2026-07-17
+6852,131708,4370,36,4,"Produto excelente, chegou antes do prazo.",2026-07-20
+6853,131714,3167,67,4,"Muito bom, recomendo para todos.",2026-08-08
+6854,131715,4790,46,5,"Ótimo custo-benefício, embalagem perfeita. (Casa)",2026-07-25
+6855,131722,1743,179,1,Produto chegou com defeito e o suporte demorou a responder.,2026-08-02
+6856,131724,1383,109,4,"Produto excelente, chegou antes do prazo.",2026-07-28
+6857,131739,3215,148,2,"Péssima qualidade, não recomendo. (Esporte)",2026-08-05
+6858,131740,294,21,5,"Produto excelente, chegou antes do prazo. (Eletrônicos)",2026-07-20
+6859,131745,4330,112,4,Adorei! Já comprei de novo.,2026-07-20
+6860,131746,4813,150,3,Esperava um pouco mais pela descrição.,2026-08-03
+6861,131750,4830,81,3,"Produto ok, nada demais. (Moda)",2026-08-01
+6862,131758,1662,164,5,"Ótimo custo-benefício, embalagem perfeita.",2026-07-23
+6863,131762,4906,194,5,Entrega rápida e produto igual ao anunciado.,2026-07-24
+6864,131782,1719,93,2,Produto chegou com defeito e o suporte demorou a responder.,2026-07-28
+6865,131787,2077,13,4,"Produto excelente, chegou antes do prazo. (Eletrônicos)",2026-07-26
+6866,131789,2858,41,4,Entrega rápida e produto igual ao anunciado. (Casa),2026-07-08
+6867,131791,406,107,2,"Não funcionou, tive que pedir reembolso.",2026-07-27
+6868,131794,3121,187,4,Entrega rápida e produto igual ao anunciado.,2026-08-08
+6869,131795,3593,117,5,Adorei! Já comprei de novo. (Moda),2026-08-13
+6870,131798,271,182,2,Produto chegou com defeito e o suporte demorou a responder. (Alimentos),2026-07-12
+6871,131800,1226,163,10,"Muito bom, recomendo para todos.",2026-07-12
+6872,131803,1087,71,4,"Qualidade acima do esperado, valeu cada centavo.",2026-07-29
+6873,131805,74,16,2,Atrasou muito a entrega e veio amassado. (Eletrônicos),2026-08-04
+6874,131807,2070,119,4,"Produto excelente, chegou antes do prazo.",2026-07-27
+6875,131813,2312,110,5,"Qualidade acima do esperado, valeu cada centavo.",2026-07-19
+6876,131815,5200,27,3,Esperava um pouco mais pela descrição. (Eletrônicos),2026-07-21
+6877,131822,5395,172,4,Adorei! Já comprei de novo.,2026-07-28
+6878,131841,3144,82,3,"Produto ok, nada demais. (Moda)",2026-07-20
+6879,131856,1264,57,4,"Muito bom, recomendo para todos.",2026-07-30
+6880,131868,1318,143,1,"Péssima qualidade, não recomendo. (Esporte)",2026-07-28
+6881,131874,877,53,5,"Produto excelente, chegou antes do prazo. (Casa)",2026-08-04
+6882,131883,40,189,4,"Qualidade acima do esperado, valeu cada centavo.",2026-07-24
+6883,131884,1981,132,2,Produto chegou com defeito e o suporte demorou a responder. (Esporte),2026-08-09
+6884,131895,3749,127,5,"Qualidade acima do esperado, valeu cada centavo.",2026-07-31
+6885,131906,2167,40,5,"Muito bom, recomendo para todos.",2026-08-02
+6886,131908,2751,30,5,"Muito bom, recomendo para todos. (Eletrônicos)",2026-07-12
+6887,131916,5370,9,5,"Muito bom, recomendo para todos.",2026-08-05
+6888,131919,2610,131,5,Adorei! Já comprei de novo.,2026-08-16
+6889,131930,1639,105,3,Razoável pelo preço.,2026-07-28
+6890,131934,4759,99,5,"Muito bom, recomendo para todos.",2026-07-24
+6891,131936,1411,98,0,Atrasou muito a entrega e veio amassado.,2026-07-20
+6892,131938,2762,43,5,"Produto excelente, chegou antes do prazo.",2026-07-27
+6893,131939,3957,92,4,Adorei! Já comprei de novo. (Moda),2026-08-14
+6894,131940,5110,87,3,"Produto ok, nada demais. (Moda)",2026-08-02
+6895,131948,4468,84,3,"Produto ok, nada demais. (Moda)",2026-07-14
+6896,131958,3186,24,2,"Cor diferente da foto, fiquei decepcionado.",2026-07-22
+6897,131962,2105,11,4,"Qualidade acima do esperado, valeu cada centavo.",2026-08-11
+6898,131965,5320,145,4,"Ótimo custo-benefício, embalagem perfeita.",2026-08-07
+6899,131966,382,66,2,"Cor diferente da foto, fiquei decepcionado. (Casa)",2026-07-17
+6900,131970,942,158,1,"Péssima qualidade, não recomendo.",2026-07-25
+6901,131971,1893,88,5,"Produto excelente, chegou antes do prazo.",2026-07-30
+6902,131972,5458,52,2,"Não funcionou, tive que pedir reembolso.",2026-08-04
+6903,131979,3407,131,5,Entrega rápida e produto igual ao anunciado.,2026-07-19
+6904,131982,5304,177,3,"Atende ao básico, entrega demorou um pouco. (Alimentos)",2026-07-14
+6905,131987,4835,146,4,Adorei! Já comprei de novo.,2026-07-12
+6906,131994,5185,72,4,Adorei! Já comprei de novo. (Casa),2026-07-30
+6907,131995,1787,106,3,"Produto ok, nada demais. (Moda)",2026-08-10
+6908,131997,4314,49,2,"Péssima qualidade, não recomendo.",2026-08-07
+6909,132003,2356,66,0,Entrega rápida e produto igual ao anunciado.,2026-07-20
+6910,132013,3908,187,5,Adorei! Já comprei de novo.,2026-08-02
+6911,132021,2127,164,5,Entrega rápida e produto igual ao anunciado.,2026-07-29
+6912,132023,4996,117,2,Produto chegou com defeito e o suporte demorou a responder. (Moda),2026-07-21
+6913,132026,1479,155,1,"Não funcionou, tive que pedir reembolso.",2026-08-02
+6914,132027,2205,33,5,Adorei! Já comprei de novo. (Eletrônicos),2026-07-14
+6915,132033,2811,45,5,"Muito bom, recomendo para todos. (Casa)",2026-08-05
+6916,132035,3684,7,4,Entrega rápida e produto igual ao anunciado.,2026-07-20
+6917,132040,4027,137,4,"Muito bom, recomendo para todos.",2026-07-30
+6918,132060,4623,187,4,Adorei! Já comprei de novo. (Alimentos),2026-07-24
+6919,132066,1299,1,1,Atrasou muito a entrega e veio amassado. (Eletrônicos),2026-08-02
+6920,132068,4072,29,5,"Ótimo custo-benefício, embalagem perfeita.",2026-08-15
+6921,132070,3204,180,1,Atrasou muito a entrega e veio amassado.,2026-07-12
+6922,132071,4954,166,1,Produto chegou com defeito e o suporte demorou a responder. (Alimentos),2026-07-29
+6923,132084,490,32,1,"Não funcionou, tive que pedir reembolso. (Eletrônicos)",2026-07-20
+6924,132090,798,28,1,"Não funcionou, tive que pedir reembolso. (Eletrônicos)",2026-07-21
+6925,132094,4681,160,6,Atrasou muito a entrega e veio amassado.,2026-07-16
+6926,132101,3875,14,5,Adorei! Já comprei de novo. (Eletrônicos),2026-08-03
+6927,132102,1638,33,4,Entrega rápida e produto igual ao anunciado.,2026-07-16
+6928,132105,3695,79,4,"Ótimo custo-benefício, embalagem perfeita.",2026-07-23
+6929,132114,3543,122,3,"Produto ok, nada demais.",2026-08-06
+6930,132117,3571,4,4,"Muito bom, recomendo para todos.",2026-07-22
+6931,132124,3892,51,5,"Ótimo custo-benefício, embalagem perfeita.",2026-07-30
+6932,132133,1246,163,5,"Qualidade acima do esperado, valeu cada centavo.",2026-07-17
+6933,132135,2140,68,3,"Atende ao básico, entrega demorou um pouco. (Casa)",2026-07-07
+6934,132140,1041,153,1,"Cor diferente da foto, fiquei decepcionado. (Esporte)",2026-07-19
+6935,132142,1979,1,1,"Péssima qualidade, não recomendo. (Eletrônicos)",2026-07-11
+6936,132149,3918,139,1,"Cor diferente da foto, fiquei decepcionado. (Esporte)",2026-08-15
+6937,132155,1277,93,2,"Não funcionou, tive que pedir reembolso.",2026-07-18
+6938,132157,2233,131,4,"Qualidade acima do esperado, valeu cada centavo.",2026-07-23
+6939,132158,1244,152,4,Adorei! Já comprei de novo. (Esporte),2026-07-17
+6940,132159,407,123,4,"Qualidade acima do esperado, valeu cada centavo. (Esporte)",2026-07-16
+6941,132165,1994,59,1,"Cor diferente da foto, fiquei decepcionado. (Casa)",2026-07-30
+6942,132167,3415,174,4,"Produto excelente, chegou antes do prazo. (Alimentos)",2026-07-26
+6943,132168,1479,51,1,Atrasou muito a entrega e veio amassado. (Casa),2026-08-05
+6944,132170,4731,51,2,"Péssima qualidade, não recomendo. (Casa)",2026-07-08
+6945,132171,2494,162,5,"Qualidade acima do esperado, valeu cada centavo. (Alimentos)",2026-08-02
+6946,132175,4681,167,4,"Ótimo custo-benefício, embalagem perfeita.",2026-07-29
+6947,132178,1303,73,4,"Produto excelente, chegou antes do prazo. (Casa)",2026-07-19
+6948,132179,2505,92,5,Entrega rápida e produto igual ao anunciado.,2026-07-27
+6949,132182,1659,70,5,Entrega rápida e produto igual ao anunciado.,2026-08-10
+6950,132184,59,11,4,Adorei! Já comprei de novo.,2026-07-23
+6951,132187,4752,113,5,Entrega rápida e produto igual ao anunciado. (Moda),2026-07-18
+6952,132193,628,182,1,Atrasou muito a entrega e veio amassado. (Alimentos),2026-07-14
+6953,132198,58,139,5,"Qualidade acima do esperado, valeu cada centavo.",2026-07-16
+6954,132199,451,81,5,Adorei! Já comprei de novo.,2026-07-22
+6955,132208,3026,4,4,"Muito bom, recomendo para todos. (Eletrônicos)",2026-07-21
+6956,132218,615,105,4,Adorei! Já comprei de novo. (Moda),2026-08-01
+6957,132222,4162,113,4,Entrega rápida e produto igual ao anunciado. (Moda),2026-07-28
+6958,132225,4565,98,5,Adorei! Já comprei de novo.,2026-08-06
+6959,132229,3404,97,5,"Muito bom, recomendo para todos. (Moda)",2026-08-03
+6960,132231,2897,45,5,"Qualidade acima do esperado, valeu cada centavo. (Casa)",2026-08-06
+6961,132253,2457,192,3,Razoável pelo preço.,2026-07-13
+6962,132254,2029,193,2,"Cor diferente da foto, fiquei decepcionado. (Alimentos)",2026-07-30
+6963,132261,2775,72,1,Atrasou muito a entrega e veio amassado. (Casa),2026-07-26
+6964,132264,2880,158,0,"Muito bom, recomendo para todos. (Esporte)",2026-08-03
+6965,132267,921,170,5,"Produto excelente, chegou antes do prazo. (Alimentos)",2026-07-17
+6966,132269,2035,40,5,"Ótimo custo-benefício, embalagem perfeita. (Eletrônicos)",2026-07-14
+6967,132271,2976,85,4,"Produto excelente, chegou antes do prazo. (Moda)",2026-08-01
+6968,132282,268,158,5,"Muito bom, recomendo para todos. (Esporte)",2026-07-15
+6969,132290,4984,155,1,"Não funcionou, tive que pedir reembolso.",2026-07-25
+6970,132291,3404,194,4,Adorei! Já comprei de novo. (Alimentos),2026-08-15
+6971,132294,2606,41,5,Entrega rápida e produto igual ao anunciado. (Casa),2026-07-30
+6972,132297,4120,7,2,Atrasou muito a entrega e veio amassado. (Eletrônicos),2026-07-10
+6973,132302,671,19,4,"Muito bom, recomendo para todos.",2026-07-12
+6974,132305,494,173,4,"Qualidade acima do esperado, valeu cada centavo.",2026-08-04
+6975,132306,366,123,5,Adorei! Já comprei de novo.,2026-07-18
+6976,132309,4628,74,5,"Muito bom, recomendo para todos.",2026-08-03
+6977,132313,5361,141,4,Adorei! Já comprei de novo. (Esporte),2026-08-12
+6978,132316,4485,144,3,"Atende ao básico, entrega demorou um pouco. (Esporte)",2026-07-23
+6979,132318,595,127,4,"Produto excelente, chegou antes do prazo. (Esporte)",2026-07-10
+6980,132319,668,6,1,"Não funcionou, tive que pedir reembolso.",2026-07-27
+6981,132322,5336,168,5,Entrega rápida e produto igual ao anunciado.,2026-08-12
+6982,132327,2890,187,4,Entrega rápida e produto igual ao anunciado. (Alimentos),2026-08-01
+6983,132335,2703,51,5,"Qualidade acima do esperado, valeu cada centavo. (Casa)",2026-07-16
+6984,132336,2146,76,2,Produto chegou com defeito e o suporte demorou a responder.,2026-07-27
+6985,132341,4796,157,5,"Muito bom, recomendo para todos.",2026-07-21
+6986,132347,5262,56,2,Atrasou muito a entrega e veio amassado.,2026-08-03
+6987,132354,3719,45,2,"Péssima qualidade, não recomendo. (Casa)",2026-07-08
+6988,132357,5284,152,5,"Produto excelente, chegou antes do prazo. (Esporte)",2026-07-23
+6989,132361,3419,163,3,Esperava um pouco mais pela descrição.,2026-07-15
+6990,132364,5199,114,5,"Ótimo custo-benefício, embalagem perfeita. (Moda)",2026-08-06
+6991,132370,4470,29,3,Razoável pelo preço.,2026-07-27
+6992,132371,2044,84,1,"Não funcionou, tive que pedir reembolso. (Moda)",2026-07-26
+6993,132378,4866,60,5,"Ótimo custo-benefício, embalagem perfeita. (Casa)",2026-08-01
+6994,132380,883,75,5,"Qualidade acima do esperado, valeu cada centavo. (Casa)",2026-07-27
+6995,132386,4935,64,2,"Péssima qualidade, não recomendo. (Casa)",2026-07-28
+6996,132392,144,10,2,Produto chegou com defeito e o suporte demorou a responder.,2026-08-04
+6997,132396,2996,42,4,"Muito bom, recomendo para todos. (Casa)",2026-07-15
+6998,132397,7,168,4,Adorei! Já comprei de novo.,2026-08-01
+6999,132403,3600,80,5,"Ótimo custo-benefício, embalagem perfeita.",2026-07-22
+7000,132408,4522,66,4,"Produto excelente, chegou antes do prazo. (Casa)",2026-07-23
+7001,132416,3206,36,3,"Produto ok, nada demais.",2026-07-23
+7002,132418,852,16,2,"Péssima qualidade, não recomendo.",2026-07-26
+7003,132432,4310,59,5,Adorei! Já comprei de novo.,2026-07-21
+7004,132433,1049,105,3,Razoável pelo preço. (Moda),2026-07-27
+7005,132438,4788,32,3,Esperava um pouco mais pela descrição.,2026-07-25
+7006,132462,1190,102,6,"Ótimo custo-benefício, embalagem perfeita. (Moda)",2026-08-02
+7007,132474,115,172,5,Entrega rápida e produto igual ao anunciado.,2026-07-27
+7008,132481,1541,2,5,Entrega rápida e produto igual ao anunciado. (Eletrônicos),2026-08-19
+7009,132482,388,93,2,"Cor diferente da foto, fiquei decepcionado. (Moda)",2026-07-24
+7010,132483,542,6,1,"Cor diferente da foto, fiquei decepcionado.",2026-07-27
+7011,132485,3548,154,1,"Péssima qualidade, não recomendo. (Esporte)",2026-08-01
+7012,132494,4753,77,2,Atrasou muito a entrega e veio amassado. (Casa),2026-07-28
+7013,132497,3452,163,1,Produto chegou com defeito e o suporte demorou a responder. (Alimentos),2026-08-06
+7014,132498,651,69,0,"Não funcionou, tive que pedir reembolso. (Casa)",2026-08-18
+7015,132513,5054,188,4,"Qualidade acima do esperado, valeu cada centavo. (Alimentos)",2026-08-20
+7016,132514,5509,60,1,"Cor diferente da foto, fiquei decepcionado.",2026-07-28
+7017,132515,5391,176,2,"Cor diferente da foto, fiquei decepcionado. (Alimentos)",2026-08-11
+7018,132516,199,165,4,Entrega rápida e produto igual ao anunciado.,2026-07-22
+7019,132527,1653,186,4,Entrega rápida e produto igual ao anunciado. (Alimentos),2026-08-09
+7020,132533,663,20,4,"Ótimo custo-benefício, embalagem perfeita.",2026-08-18
+7021,132541,4727,153,5,"Ótimo custo-benefício, embalagem perfeita. (Esporte)",2026-08-04
+7022,132556,4341,136,4,"Ótimo custo-benefício, embalagem perfeita.",2026-07-21
+7023,132559,842,41,3,Razoável pelo preço. (Casa),2026-07-14
+7024,132571,3884,1,5,"Qualidade acima do esperado, valeu cada centavo.",2026-07-13
+7025,132577,1924,30,4,Entrega rápida e produto igual ao anunciado.,2026-07-28
+7026,132578,602,47,4,"Muito bom, recomendo para todos.",2026-07-23
+7027,132581,2207,147,1,"Péssima qualidade, não recomendo.",2026-07-28
+7028,132587,5026,104,1,"Não funcionou, tive que pedir reembolso.",2026-07-27
+7029,132593,5217,45,3,"Atende ao básico, entrega demorou um pouco. (Casa)",2026-08-05
+7030,132596,54,8,5,Adorei! Já comprei de novo. (Eletrônicos),2026-07-17
+7031,132601,8,195,4,"Muito bom, recomendo para todos. (Alimentos)",2026-08-10
+7032,132604,2517,96,1,"Péssima qualidade, não recomendo.",2026-08-06
+7033,132607,852,40,4,Entrega rápida e produto igual ao anunciado. (Eletrônicos),2026-07-30
+7034,132608,460,193,4,"Muito bom, recomendo para todos.",2026-07-26
+7035,132613,4577,102,4,"Produto excelente, chegou antes do prazo. (Moda)",2026-07-28
+7036,132615,2059,176,2,Atrasou muito a entrega e veio amassado. (Alimentos),2026-07-25
+7037,132616,3133,15,3,Esperava um pouco mais pela descrição. (Eletrônicos),2026-07-24
+7038,132625,5301,152,5,"Ótimo custo-benefício, embalagem perfeita. (Esporte)",2026-07-30
+7039,132636,3752,192,2,Atrasou muito a entrega e veio amassado.,2026-08-03
+7040,132641,1384,179,5,"Ótimo custo-benefício, embalagem perfeita. (Alimentos)",2026-07-23
+7041,132646,3101,94,4,"Produto excelente, chegou antes do prazo.",2026-08-09
+7042,132648,5480,32,2,Produto chegou com defeito e o suporte demorou a responder. (Eletrônicos),2026-08-13
+7043,132654,4386,86,4,"Produto excelente, chegou antes do prazo.",2026-08-01
+7044,132657,1283,3,5,"Ótimo custo-benefício, embalagem perfeita. (Eletrônicos)",2026-08-01
+7045,132658,979,124,4,Entrega rápida e produto igual ao anunciado.,2026-08-01
+7046,132662,1147,152,4,Entrega rápida e produto igual ao anunciado. (Esporte),2026-07-30
+7047,132677,2949,45,5,"Qualidade acima do esperado, valeu cada centavo. (Casa)",2026-07-22
+7048,132681,2754,89,5,Adorei! Já comprei de novo.,2026-08-01
+7049,132686,2158,177,1,Atrasou muito a entrega e veio amassado. (Alimentos),2026-07-21
+7050,132690,127,136,4,Entrega rápida e produto igual ao anunciado.,2026-08-03
+7051,132691,2794,119,10,"Ótimo custo-benefício, embalagem perfeita. (Moda)",2026-08-03
+7052,132692,116,168,2,"Cor diferente da foto, fiquei decepcionado.",2026-08-05
+7053,132696,2219,153,3,Razoável pelo preço. (Esporte),2026-07-22
+7054,132699,3028,121,1,"Péssima qualidade, não recomendo.",2026-07-22
+7055,132710,3070,129,3,"Produto ok, nada demais.",2026-07-18
+7056,132712,3594,110,4,"Qualidade acima do esperado, valeu cada centavo.",2026-08-09
+7057,132713,864,187,2,Atrasou muito a entrega e veio amassado. (Alimentos),2026-07-25
+7058,132716,4229,184,5,"Qualidade acima do esperado, valeu cada centavo.",2026-08-19
+7059,132737,753,154,2,"Não funcionou, tive que pedir reembolso. (Esporte)",2026-08-02
+7060,132738,960,43,2,"Não funcionou, tive que pedir reembolso. (Casa)",2026-08-02
+7061,132739,3172,13,4,"Muito bom, recomendo para todos.",2026-07-20
+7062,132742,1462,114,4,"Qualidade acima do esperado, valeu cada centavo. (Moda)",2026-07-29
+7063,132743,3601,10,4,Entrega rápida e produto igual ao anunciado.,2026-07-20
+7064,132748,4166,132,5,"Qualidade acima do esperado, valeu cada centavo. (Esporte)",2026-07-11
+7065,132756,2734,30,4,"Produto excelente, chegou antes do prazo. (Eletrônicos)",2026-07-18
+7066,132761,3938,96,4,"Ótimo custo-benefício, embalagem perfeita.",2026-07-25
+7067,132766,2246,1,4,"Produto excelente, chegou antes do prazo. (Eletrônicos)",2026-07-21
+7068,132768,1998,24,5,Entrega rápida e produto igual ao anunciado.,2026-07-24
+7069,132777,1285,32,2,"Péssima qualidade, não recomendo. (Eletrônicos)",2026-08-04
+7070,132780,1003,9,2,Atrasou muito a entrega e veio amassado.,2026-07-23
+7071,132796,217,33,5,"Qualidade acima do esperado, valeu cada centavo.",2026-07-05
+7072,132799,185,110,5,Adorei! Já comprei de novo. (Moda),2026-07-28
+7073,132800,5107,128,3,"Atende ao básico, entrega demorou um pouco.",2026-07-27
+7074,132813,3688,58,5,Adorei! Já comprei de novo. (Casa),2026-07-20
+7075,132814,403,169,5,"Ótimo custo-benefício, embalagem perfeita.",2026-07-29
+7076,132818,1096,176,5,Adorei! Já comprei de novo.,2026-07-08
+7077,132833,971,70,5,"Qualidade acima do esperado, valeu cada centavo. (Casa)",2026-07-16
+7078,132836,1529,27,4,Adorei! Já comprei de novo. (Eletrônicos),2026-08-08
+7079,132838,2292,13,5,"Ótimo custo-benefício, embalagem perfeita. (Eletrônicos)",2026-07-26
+7080,132840,1708,188,1,"Não funcionou, tive que pedir reembolso. (Alimentos)",2026-07-18
+7081,132852,1742,126,2,"Péssima qualidade, não recomendo. (Esporte)",2026-08-01
+7082,132855,745,164,1,"Não funcionou, tive que pedir reembolso.",2026-08-05
+7083,132868,5193,177,5,Adorei! Já comprei de novo.,2026-07-27
+7084,132876,1445,9,1,"Não funcionou, tive que pedir reembolso. (Eletrônicos)",2026-07-16
+7085,132888,4510,119,3,Esperava um pouco mais pela descrição. (Moda),2026-07-22
+7086,132893,4618,73,5,Adorei! Já comprei de novo. (Casa),2026-07-30
+7087,132897,357,29,5,"Muito bom, recomendo para todos. (Eletrônicos)",2026-08-04
+7088,132898,4285,97,2,"Não funcionou, tive que pedir reembolso.",2026-08-04
+7089,132908,642,89,2,Produto chegou com defeito e o suporte demorou a responder. (Moda),2026-08-06
+7090,132912,4292,125,4,"Ótimo custo-benefício, embalagem perfeita. (Esporte)",2026-07-28
+7091,132915,258,13,4,"Ótimo custo-benefício, embalagem perfeita. (Eletrônicos)",2026-07-14
+7092,132920,3294,4,3,"Atende ao básico, entrega demorou um pouco.",2026-07-20
+7093,132923,3819,89,5,"Produto excelente, chegou antes do prazo.",2026-07-21
+7094,132926,2710,2,5,"Produto excelente, chegou antes do prazo.",2026-08-05
+7095,132927,437,147,5,"Qualidade acima do esperado, valeu cada centavo. (Esporte)",2026-07-12
+7096,132928,3414,186,2,Produto chegou com defeito e o suporte demorou a responder.,2026-07-28
+7097,132931,1207,65,5,"Muito bom, recomendo para todos. (Casa)",2026-07-20
+7098,132945,3346,39,5,"Muito bom, recomendo para todos.",2026-08-09
+7099,132957,3574,115,3,"Atende ao básico, entrega demorou um pouco. (Moda)",2026-07-08
+7100,132959,2079,30,10,Entrega rápida e produto igual ao anunciado.,2026-07-27
+7101,132960,2338,134,4,"Ótimo custo-benefício, embalagem perfeita.",2026-07-17
+7102,132968,4485,114,2,"Péssima qualidade, não recomendo.",2026-07-15
+7103,132969,1206,33,2,"Péssima qualidade, não recomendo.",2026-07-29
+7104,132974,1841,30,2,"Cor diferente da foto, fiquei decepcionado.",2026-07-26
+7105,132978,2138,108,4,"Ótimo custo-benefício, embalagem perfeita.",2026-08-01
+7106,132985,4924,119,2,"Péssima qualidade, não recomendo.",2026-07-18
+7107,132986,1264,71,6,Atrasou muito a entrega e veio amassado. (Casa),2026-07-19
+7108,132990,1726,51,1,"Cor diferente da foto, fiquei decepcionado.",2026-08-06
+7109,132994,568,149,5,"Ótimo custo-benefício, embalagem perfeita.",2026-07-15
+7110,132996,299,82,1,"Péssima qualidade, não recomendo. (Moda)",2026-07-26
+7111,133000,371,82,4,"Muito bom, recomendo para todos. (Moda)",2026-07-31
+7112,133001,2279,164,5,"Qualidade acima do esperado, valeu cada centavo. (Alimentos)",2026-08-08
+7113,133007,5146,121,3,Razoável pelo preço.,2026-07-20
+7114,133014,3769,168,5,Entrega rápida e produto igual ao anunciado.,2026-07-16
+7115,133016,1279,105,2,Produto chegou com defeito e o suporte demorou a responder.,2026-07-19
+7116,133029,1814,162,4,Adorei! Já comprei de novo. (Alimentos),2026-07-16
+7117,133037,432,127,2,"Péssima qualidade, não recomendo. (Esporte)",2026-08-11
+7118,133041,1472,173,1,Produto chegou com defeito e o suporte demorou a responder. (Alimentos),2026-07-12
+7119,133043,276,59,2,"Não funcionou, tive que pedir reembolso.",2026-07-20
+7120,133048,2885,119,5,"Ótimo custo-benefício, embalagem perfeita.",2026-08-19
+7121,133052,2256,72,4,Adorei! Já comprei de novo.,2026-08-19
+7122,133053,2820,176,3,Esperava um pouco mais pela descrição.,2026-08-19
+7123,133056,4165,175,4,"Ótimo custo-benefício, embalagem perfeita. (Alimentos)",2026-08-11
+7124,133058,1975,39,5,"Produto excelente, chegou antes do prazo.",2026-07-23
+7125,133064,4341,152,3,Esperava um pouco mais pela descrição. (Esporte),2026-07-19
+7126,133067,5299,96,5,"Qualidade acima do esperado, valeu cada centavo.",2026-07-26
+7127,133073,2899,145,5,"Qualidade acima do esperado, valeu cada centavo. (Esporte)",2026-07-09
+7128,133083,567,119,5,"Ótimo custo-benefício, embalagem perfeita.",2026-07-14
+7129,133088,1858,64,3,"Atende ao básico, entrega demorou um pouco. (Casa)",2026-07-19
+7130,133094,1892,86,5,"Muito bom, recomendo para todos.",2026-08-12
+7131,133095,4441,61,5,"Qualidade acima do esperado, valeu cada centavo.",2026-07-20
+7132,133098,3195,1,5,Entrega rápida e produto igual ao anunciado.,2026-07-24
+7133,133100,3133,38,4,Adorei! Já comprei de novo. (Eletrônicos),2026-07-24
+7134,133105,338,70,1,Produto chegou com defeito e o suporte demorou a responder. (Casa),2026-08-08
+7135,133107,4983,79,5,"Muito bom, recomendo para todos.",2026-07-08
+7136,133108,5574,129,4,"Ótimo custo-benefício, embalagem perfeita. (Esporte)",2026-08-12
+7137,133113,496,145,1,Produto chegou com defeito e o suporte demorou a responder.,2026-08-03
+7138,133118,4115,132,1,"Não funcionou, tive que pedir reembolso. (Esporte)",2026-07-22
+7139,133120,371,132,4,"Produto excelente, chegou antes do prazo. (Esporte)",2026-08-09
+7140,133122,2511,108,4,"Qualidade acima do esperado, valeu cada centavo.",2026-08-04
+7141,133125,4097,86,5,"Qualidade acima do esperado, valeu cada centavo.",2026-08-06
+7142,133129,405,174,2,Atrasou muito a entrega e veio amassado. (Alimentos),2026-08-17
+7143,133130,5528,74,2,"Não funcionou, tive que pedir reembolso. (Casa)",2026-08-15
+7144,133139,4822,19,1,Atrasou muito a entrega e veio amassado.,2026-07-13
+7145,133143,5013,19,6,"Qualidade acima do esperado, valeu cada centavo.",2026-08-11
+7146,133150,5092,173,0,Entrega rápida e produto igual ao anunciado. (Alimentos),2026-07-28
+7147,133151,713,79,3,"Produto ok, nada demais. (Casa)",2026-07-31
+7148,133154,74,187,4,Adorei! Já comprei de novo.,2026-07-29
+7149,133155,1268,50,4,"Ótimo custo-benefício, embalagem perfeita.",2026-07-29
+7150,133161,605,82,5,"Ótimo custo-benefício, embalagem perfeita.",2026-07-26
+7151,133170,3309,30,3,"Produto ok, nada demais.",2026-07-27
+7152,133173,8,5,3,"Produto ok, nada demais.",2026-07-18
+7153,133181,4651,84,2,Produto chegou com defeito e o suporte demorou a responder. (Moda),2026-07-11
+7154,133182,4323,124,3,"Atende ao básico, entrega demorou um pouco. (Esporte)",2026-07-25
+7155,133184,5528,185,5,Adorei! Já comprei de novo. (Alimentos),2026-07-20
+7156,133185,5554,130,5,"Muito bom, recomendo para todos.",2026-08-02
+7157,133186,324,69,4,"Muito bom, recomendo para todos.",2026-08-05
+7158,133188,4247,194,5,Entrega rápida e produto igual ao anunciado. (Alimentos),2026-07-12
+7159,133191,3540,32,5,Adorei! Já comprei de novo. (Eletrônicos),2026-08-05
+7160,133197,3207,87,6,"Ótimo custo-benefício, embalagem perfeita.",2026-07-24
+7161,133206,2220,88,5,"Ótimo custo-benefício, embalagem perfeita. (Moda)",2026-08-09
+7162,133207,3919,95,5,Adorei! Já comprei de novo. (Moda),2026-07-26
+7163,133214,2843,68,5,Adorei! Já comprei de novo.,2026-07-24
+7164,133223,3947,124,5,"Qualidade acima do esperado, valeu cada centavo.",2026-07-26
+7165,133224,1346,115,10,"Ótimo custo-benefício, embalagem perfeita.",2026-07-05
+7166,133226,3758,110,5,Adorei! Já comprei de novo.,2026-08-01
+7167,133228,4987,78,4,"Produto excelente, chegou antes do prazo. (Casa)",2026-08-13
+7168,133229,1990,65,4,Adorei! Já comprei de novo.,2026-08-03
+7169,133230,1942,8,4,"Muito bom, recomendo para todos. (Eletrônicos)",2026-08-17
+7170,133243,4261,137,2,"Não funcionou, tive que pedir reembolso. (Esporte)",2026-08-10
+7171,133249,2807,20,5,"Ótimo custo-benefício, embalagem perfeita. (Eletrônicos)",2026-07-16
+7172,133253,2091,164,5,Entrega rápida e produto igual ao anunciado.,2026-07-10
+7173,133257,2503,54,4,"Ótimo custo-benefício, embalagem perfeita. (Casa)",2026-07-30
+7174,133261,2688,186,3,Razoável pelo preço.,2026-08-12
+7175,133264,5102,47,1,Atrasou muito a entrega e veio amassado. (Casa),2026-08-05
+7176,133267,4878,70,2,Produto chegou com defeito e o suporte demorou a responder.,2026-08-03
+7177,133276,4862,182,10,Esperava um pouco mais pela descrição.,2026-08-07
+7178,133277,876,77,5,Entrega rápida e produto igual ao anunciado.,2026-08-03
+7179,133278,1830,157,2,"Não funcionou, tive que pedir reembolso. (Esporte)",2026-07-14
+7180,133280,2342,41,4,"Qualidade acima do esperado, valeu cada centavo. (Casa)",2026-07-23
+7181,133288,892,108,5,"Muito bom, recomendo para todos. (Moda)",2026-08-06
+7182,133290,4825,96,5,Entrega rápida e produto igual ao anunciado. (Moda),2026-07-18
+7183,133294,1962,97,1,Atrasou muito a entrega e veio amassado.,2026-08-16
+7184,133295,1540,52,5,"Muito bom, recomendo para todos.",2026-07-21
+7185,133296,3833,177,4,Adorei! Já comprei de novo. (Alimentos),2026-07-27
+7186,133299,807,133,5,"Ótimo custo-benefício, embalagem perfeita.",2026-07-27
+7187,133306,981,84,5,"Muito bom, recomendo para todos. (Moda)",2026-08-05
+7188,133313,4049,11,1,"Péssima qualidade, não recomendo.",2026-07-26
+7189,133322,3646,112,2,"Péssima qualidade, não recomendo. (Moda)",2026-07-24
+7190,133334,4474,54,3,"Produto ok, nada demais.",2026-07-31
+7191,133335,3477,16,5,Entrega rápida e produto igual ao anunciado.,2026-07-10
+7192,133343,3531,27,5,"Qualidade acima do esperado, valeu cada centavo. (Eletrônicos)",2026-08-07
+7193,133346,4380,188,4,Entrega rápida e produto igual ao anunciado.,2026-07-31
+7194,133348,3849,85,4,Entrega rápida e produto igual ao anunciado.,2026-07-21
+7195,133350,4472,100,2,"Não funcionou, tive que pedir reembolso.",2026-08-02
+7196,133358,5119,120,4,Entrega rápida e produto igual ao anunciado. (Moda),2026-08-04
+7197,133363,4497,38,5,"Muito bom, recomendo para todos.",2026-08-20
+7198,133367,2170,89,3,Razoável pelo preço. (Moda),2026-08-05
+7199,133370,4039,9,1,"Não funcionou, tive que pedir reembolso. (Eletrônicos)",2026-08-12
+7200,133372,3438,96,2,"Péssima qualidade, não recomendo. (Moda)",2026-07-07
+7201,133374,4187,12,5,"Muito bom, recomendo para todos. (Eletrônicos)",2026-07-28
+7202,133375,4044,162,5,"Produto excelente, chegou antes do prazo.",2026-07-22
+7203,133377,136,10,5,"Qualidade acima do esperado, valeu cada centavo.",2026-07-28
+7204,133385,4412,20,4,Adorei! Já comprei de novo.,2026-07-30
+7205,133388,2194,33,1,"Cor diferente da foto, fiquei decepcionado.",2026-07-05
+7206,133398,3989,177,5,"Ótimo custo-benefício, embalagem perfeita. (Alimentos)",2026-08-07
+7207,133402,688,119,2,Atrasou muito a entrega e veio amassado.,2026-07-09
+7208,133403,2439,117,5,"Produto excelente, chegou antes do prazo.",2026-07-17
+7209,133405,520,115,4,"Qualidade acima do esperado, valeu cada centavo. (Moda)",2026-07-15
+7210,133407,3757,53,5,Adorei! Já comprei de novo. (Casa),2026-07-26
+7211,133409,1391,24,3,"Atende ao básico, entrega demorou um pouco.",2026-07-29
+7212,133410,2322,48,1,Produto chegou com defeito e o suporte demorou a responder. (Casa),2026-08-09
+7213,133416,50,180,5,"Produto excelente, chegou antes do prazo. (Alimentos)",2026-08-13
+7214,133422,5156,126,2,"Péssima qualidade, não recomendo.",2026-07-23
+7215,133438,3447,68,3,Esperava um pouco mais pela descrição.,2026-07-25
+7216,133443,4916,129,4,Entrega rápida e produto igual ao anunciado. (Esporte),2026-08-02
+7217,133447,3994,54,5,"Produto excelente, chegou antes do prazo.",2026-08-11
+7218,133452,2579,73,1,Produto chegou com defeito e o suporte demorou a responder.,2026-07-28
+7219,133455,5564,164,5,"Produto excelente, chegou antes do prazo. (Alimentos)",2026-08-10
+7220,133468,4991,66,4,"Produto excelente, chegou antes do prazo. (Casa)",2026-07-17
+7221,133475,2417,113,5,"Ótimo custo-benefício, embalagem perfeita. (Moda)",2026-07-27
+7222,133477,4518,51,1,"Não funcionou, tive que pedir reembolso.",2026-08-08
+7223,133479,3152,77,4,"Muito bom, recomendo para todos.",2026-08-03
+7224,133481,4558,33,4,Adorei! Já comprei de novo. (Eletrônicos),2026-08-10
+7225,133483,245,86,5,"Ótimo custo-benefício, embalagem perfeita.",2026-08-14
+7226,133484,4002,148,4,"Produto excelente, chegou antes do prazo. (Esporte)",2026-07-26
+7227,133486,1069,35,2,Produto chegou com defeito e o suporte demorou a responder. (Eletrônicos),2026-07-22
+7228,133489,2778,94,3,"Produto ok, nada demais. (Moda)",2026-08-06
+7229,133492,2863,159,5,"Ótimo custo-benefício, embalagem perfeita. (Esporte)",2026-07-23
+7230,133494,5158,120,2,Atrasou muito a entrega e veio amassado. (Moda),2026-07-29
+7231,133495,2682,33,3,Razoável pelo preço.,2026-07-31
+7232,133502,3677,68,5,Adorei! Já comprei de novo. (Casa),2026-08-03
+7233,133515,4117,179,1,"Péssima qualidade, não recomendo.",2026-08-04
+7234,133522,169,50,1,"Péssima qualidade, não recomendo.",2026-07-20
+7235,133525,1653,14,2,Produto chegou com defeito e o suporte demorou a responder. (Eletrônicos),2026-08-13
+7236,133526,40,187,5,Entrega rápida e produto igual ao anunciado. (Alimentos),2026-08-17
+7237,133530,3271,143,4,"Produto excelente, chegou antes do prazo.",2026-07-18
+7238,133532,5500,192,3,"Produto ok, nada demais. (Alimentos)",2026-07-13
+7239,133535,2952,67,5,"Muito bom, recomendo para todos. (Casa)",2026-07-14
+7240,133536,4240,129,1,Atrasou muito a entrega e veio amassado.,2026-07-21
+7241,133537,1255,17,4,"Muito bom, recomendo para todos.",2026-07-10
+7242,133538,1870,179,3,"Atende ao básico, entrega demorou um pouco.",2026-07-23
+7243,133539,4846,88,3,Esperava um pouco mais pela descrição.,2026-07-18
+7244,133541,4537,86,1,"Não funcionou, tive que pedir reembolso. (Moda)",2026-08-05
+7245,133545,729,164,2,Produto chegou com defeito e o suporte demorou a responder. (Alimentos),2026-07-26
+7246,133546,974,171,1,"Não funcionou, tive que pedir reembolso. (Alimentos)",2026-07-13
+7247,133550,3193,12,5,Entrega rápida e produto igual ao anunciado.,2026-08-07
+7248,133552,1316,89,2,"Cor diferente da foto, fiquei decepcionado.",2026-08-14
+7249,133558,4548,55,2,"Não funcionou, tive que pedir reembolso. (Casa)",2026-07-16
+7250,133570,42,180,1,Produto chegou com defeito e o suporte demorou a responder. (Alimentos),2026-08-11
+7251,133573,405,86,3,Razoável pelo preço.,2026-07-31
+7252,133591,3003,15,5,Entrega rápida e produto igual ao anunciado.,2026-07-31
+7253,133592,4407,32,1,"Não funcionou, tive que pedir reembolso. (Eletrônicos)",2026-08-15
+7254,133597,34,187,1,Atrasou muito a entrega e veio amassado.,2026-07-22
+7255,133602,3921,39,4,Adorei! Já comprei de novo.,2026-08-04
+7256,133607,2563,76,1,"Péssima qualidade, não recomendo.",2026-07-19
+7257,133613,4619,165,4,"Qualidade acima do esperado, valeu cada centavo.",2026-08-15
+7258,133617,3288,131,2,"Cor diferente da foto, fiquei decepcionado. (Esporte)",2026-08-07
+7259,133618,4565,104,5,"Ótimo custo-benefício, embalagem perfeita.",2026-07-16
+7260,133620,3843,94,4,"Produto excelente, chegou antes do prazo. (Moda)",2026-08-14
+7261,133623,864,1,2,"Péssima qualidade, não recomendo. (Eletrônicos)",2026-07-13
+7262,133630,1445,117,1,Atrasou muito a entrega e veio amassado.,2026-08-08
+7263,133635,4785,19,2,"Péssima qualidade, não recomendo. (Eletrônicos)",2026-08-08
+7264,133644,3677,133,5,"Muito bom, recomendo para todos.",2026-07-22
+7265,133646,3985,45,3,Razoável pelo preço.,2026-07-13
+7266,133650,1679,143,3,Razoável pelo preço.,2026-07-14
+7267,133655,3370,4,4,"Produto excelente, chegou antes do prazo.",2026-08-06
+7268,133659,5460,114,4,"Muito bom, recomendo para todos. (Moda)",2026-08-04
+7269,133664,4097,92,4,Adorei! Já comprei de novo. (Moda),2026-08-16
+7270,133673,5291,59,3,"Atende ao básico, entrega demorou um pouco. (Casa)",2026-07-26
+7271,133685,4759,132,5,"Ótimo custo-benefício, embalagem perfeita.",2026-07-15
+7272,133686,1049,129,4,Adorei! Já comprei de novo.,2026-07-30
+7273,133690,486,26,5,"Qualidade acima do esperado, valeu cada centavo. (Eletrônicos)",2026-07-20
+7274,133697,733,42,4,"Muito bom, recomendo para todos. (Casa)",2026-07-27
+7275,133699,2508,15,5,"Muito bom, recomendo para todos. (Eletrônicos)",2026-07-11
+7276,133701,384,150,3,"Atende ao básico, entrega demorou um pouco.",2026-07-21
+7277,133709,2251,189,5,Entrega rápida e produto igual ao anunciado. (Alimentos),2026-07-21
+7278,133717,4166,6,4,"Ótimo custo-benefício, embalagem perfeita. (Eletrônicos)",2026-07-16
+7279,133719,3495,172,4,Adorei! Já comprei de novo. (Alimentos),2026-07-26
+7280,133720,981,85,5,"Ótimo custo-benefício, embalagem perfeita.",2026-08-14
+7281,133730,5361,147,2,Atrasou muito a entrega e veio amassado.,2026-08-01
+7282,133737,2285,148,4,"Muito bom, recomendo para todos. (Esporte)",2026-08-01
+7283,133738,618,162,5,"Produto excelente, chegou antes do prazo.",2026-08-03
+7284,133742,686,72,5,Entrega rápida e produto igual ao anunciado.,2026-07-27
+7285,133747,2328,178,5,"Produto excelente, chegou antes do prazo.",2026-08-11
+7286,133750,4871,47,4,"Ótimo custo-benefício, embalagem perfeita.",2026-08-03
+7287,133751,3756,34,3,Esperava um pouco mais pela descrição.,2026-07-17
+7288,133754,3744,104,1,"Não funcionou, tive que pedir reembolso.",2026-07-14
+7289,133755,1791,3,3,"Atende ao básico, entrega demorou um pouco. (Eletrônicos)",2026-07-21
+7290,133758,2565,25,5,"Qualidade acima do esperado, valeu cada centavo.",2026-07-30
+7291,133762,764,17,4,"Ótimo custo-benefício, embalagem perfeita. (Eletrônicos)",2026-08-12
+7292,133773,2958,194,3,Esperava um pouco mais pela descrição. (Alimentos),2026-07-24
+7293,133778,3109,151,5,Entrega rápida e produto igual ao anunciado.,2026-07-17
+7294,133783,3262,60,1,"Cor diferente da foto, fiquei decepcionado.",2026-08-10
+7295,133786,779,187,4,"Muito bom, recomendo para todos.",2026-08-06
+7296,133787,1211,100,3,Esperava um pouco mais pela descrição.,2026-07-06
+7297,133790,381,145,5,"Muito bom, recomendo para todos. (Esporte)",2026-07-27
+7298,133793,2801,75,1,"Não funcionou, tive que pedir reembolso. (Casa)",2026-07-26
+7299,133797,80,54,2,Produto chegou com defeito e o suporte demorou a responder. (Casa),2026-07-23
+7300,133800,2723,67,4,Entrega rápida e produto igual ao anunciado. (Casa),2026-07-28
+7301,133802,472,51,4,"Muito bom, recomendo para todos.",2026-07-15
+7302,133804,1330,87,5,Adorei! Já comprei de novo. (Moda),2026-07-19
+7303,133808,3603,60,5,Entrega rápida e produto igual ao anunciado.,2026-07-15
+7304,133809,1268,16,4,"Qualidade acima do esperado, valeu cada centavo. (Eletrônicos)",2026-08-15
+7305,133817,3203,4,2,"Péssima qualidade, não recomendo. (Eletrônicos)",2026-07-19
+7306,133822,385,20,1,"Péssima qualidade, não recomendo. (Eletrônicos)",2026-07-06
+7307,133825,1470,97,3,"Atende ao básico, entrega demorou um pouco.",2026-08-06
+7308,133827,4878,26,5,"Ótimo custo-benefício, embalagem perfeita. (Eletrônicos)",2026-07-26
+7309,133828,501,174,1,"Não funcionou, tive que pedir reembolso. (Alimentos)",2026-07-23
+7310,133829,1436,11,1,Produto chegou com defeito e o suporte demorou a responder.,2026-08-11
+7311,133843,2717,160,5,"Ótimo custo-benefício, embalagem perfeita. (Esporte)",2026-08-15
+7312,133845,4044,28,5,Entrega rápida e produto igual ao anunciado. (Eletrônicos),2026-07-11
+7313,133846,3419,157,2,"Não funcionou, tive que pedir reembolso. (Esporte)",2026-07-21
+7314,133853,2466,81,3,Razoável pelo preço. (Moda),2026-07-27
+7315,133860,4341,181,1,"Péssima qualidade, não recomendo.",2026-07-09
+7316,133863,5534,123,5,"Qualidade acima do esperado, valeu cada centavo. (Esporte)",2026-07-28
+7317,133869,593,46,1,Atrasou muito a entrega e veio amassado.,2026-07-17
+7318,133870,2985,97,5,Entrega rápida e produto igual ao anunciado. (Moda),2026-08-03
+7319,133871,4526,23,1,Atrasou muito a entrega e veio amassado.,2026-08-06
+7320,133872,822,58,5,Adorei! Já comprei de novo.,2026-08-02
+7321,133876,3259,53,5,"Qualidade acima do esperado, valeu cada centavo.",2026-08-06
+7322,133877,942,53,5,"Qualidade acima do esperado, valeu cada centavo.",2026-08-10
+7323,133883,4484,29,1,"Não funcionou, tive que pedir reembolso. (Eletrônicos)",2026-07-31
+7324,133894,2050,88,2,"Não funcionou, tive que pedir reembolso. (Moda)",2026-08-20
+7325,133896,3522,164,5,"Qualidade acima do esperado, valeu cada centavo.",2026-08-01
+7326,133899,3836,27,2,Produto chegou com defeito e o suporte demorou a responder. (Eletrônicos),2026-07-31
+7327,133904,3754,54,1,"Péssima qualidade, não recomendo. (Casa)",2026-08-13
+7328,133915,2007,82,3,Razoável pelo preço. (Moda),2026-07-11
+7329,133916,387,148,2,"Não funcionou, tive que pedir reembolso. (Esporte)",2026-07-20
+7330,133919,718,125,1,Produto chegou com defeito e o suporte demorou a responder. (Esporte),2026-08-02
+7331,133927,4619,26,5,Adorei! Já comprei de novo.,2026-08-01
+7332,133939,5239,5,5,"Qualidade acima do esperado, valeu cada centavo.",2026-07-09
+7333,133940,5340,180,5,"Produto excelente, chegou antes do prazo. (Alimentos)",2026-07-25
+7334,133941,309,194,3,Razoável pelo preço. (Alimentos),2026-07-09
+7335,133943,1186,98,4,"Ótimo custo-benefício, embalagem perfeita. (Moda)",2026-08-02
+7336,133945,2605,194,1,"Péssima qualidade, não recomendo. (Alimentos)",2026-07-24
+7337,133946,4597,163,4,"Ótimo custo-benefício, embalagem perfeita.",2026-07-28
+7338,133947,3972,10,1,Atrasou muito a entrega e veio amassado.,2026-07-25
+7339,133948,81,186,1,"Não funcionou, tive que pedir reembolso.",2026-08-04
+7340,133952,2340,191,4,Adorei! Já comprei de novo. (Alimentos),2026-08-05
+7341,133955,5153,112,5,"Muito bom, recomendo para todos. (Moda)",2026-08-06
+7342,133956,3037,179,5,"Qualidade acima do esperado, valeu cada centavo. (Alimentos)",2026-07-20
+7343,133964,4315,42,2,Atrasou muito a entrega e veio amassado.,2026-07-10
+7344,133965,3953,193,10,Razoável pelo preço. (Alimentos),2026-07-23
+7345,133969,2107,122,5,"Qualidade acima do esperado, valeu cada centavo.",2026-07-28
+7346,133970,1481,28,2,"Não funcionou, tive que pedir reembolso.",2026-07-17
+7347,133973,4572,17,4,"Produto excelente, chegou antes do prazo. (Eletrônicos)",2026-07-26
+7348,133980,2773,80,4,"Ótimo custo-benefício, embalagem perfeita.",2026-07-19
+7349,133981,3853,13,5,"Muito bom, recomendo para todos.",2026-07-23
+7350,133983,883,94,3,Razoável pelo preço. (Moda),2026-07-24
+7351,133991,258,67,2,Produto chegou com defeito e o suporte demorou a responder.,2026-07-12
+7352,133992,2480,179,2,"Cor diferente da foto, fiquei decepcionado.",2026-07-06
+7353,133994,3529,67,2,Atrasou muito a entrega e veio amassado. (Casa),2026-07-20
+7354,133996,3925,55,5,"Produto excelente, chegou antes do prazo. (Casa)",2026-07-28
+7355,133998,5463,155,5,"Ótimo custo-benefício, embalagem perfeita.",2026-08-01
+7356,133999,2688,58,4,"Muito bom, recomendo para todos.",2026-07-13

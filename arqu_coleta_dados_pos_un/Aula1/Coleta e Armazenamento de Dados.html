@@ -1,0 +1,615 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Coleta e Armazenamento de Dados</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+/* Conceito: caderno de laboratório. Papel quadriculado frio, tinta azul-marinho, marca-texto âmbar. As cores bronze, prata e ouro só aparecem onde representam as camadas. */
+:root{
+  --bg:#F2F5FA; --surface:#FFFFFF; --ink:#0F1B2E; --muted:#4A5A72; --line:#D5DDEA;
+  --accent:#2447E0; --accent-ink:#FFFFFF; --signal:#F5B301; --signal-ink:#2A1E00;
+  --bronze:#A8672B; --prata:#6F7E93; --ouro:#C99100; --grid:rgba(36,71,224,.07);
+  --f-display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0A1220; --surface:#111C30; --ink:#E8EEF8; --muted:#9BAAC2; --line:#243350;
+    --accent:#7F9CFF; --accent-ink:#0A1220; --signal:#FFC83D; --signal-ink:#2A1E00;
+    --bronze:#D9965A; --prata:#A9B6C9; --ouro:#F2C230; --grid:rgba(127,156,255,.08); color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0A1220; --surface:#111C30; --ink:#E8EEF8; --muted:#9BAAC2; --line:#243350;
+  --accent:#7F9CFF; --accent-ink:#0A1220; --signal:#FFC83D; --signal-ink:#2A1E00;
+  --bronze:#D9965A; --prata:#A9B6C9; --ouro:#F2C230; --grid:rgba(127,156,255,.08); color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:auto}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.6;margin:0}
+a{color:var(--accent);text-underline-offset:3px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px}
+h1,h2,h3,h4{font-family:var(--f-display);line-height:1.12;text-wrap:balance;margin:0}
+.mono{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase}
+code{font-family:var(--f-mono);font-size:.88em}
+
+
+.hero{background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:32px 32px;border-bottom:1px solid var(--line)}
+.hero .wrap{padding-block:72px 56px}
+.hero h1{font-size:clamp(2.5rem,8vw,5.4rem);font-weight:800;letter-spacing:-.03em;margin-top:18px;max-width:14ch}
+.hero h1 mark{background:linear-gradient(transparent 58%,var(--signal) 58%,var(--signal) 92%,transparent 92%);color:inherit;padding:0 .05em}
+.lead{font-size:clamp(1.15rem,2.8vw,1.55rem);color:var(--muted);margin:16px 0 0;font-family:var(--f-display);max-width:34ch}
+.meta{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:32px 0 0}
+.meta li{background:var(--surface);border:1px solid var(--line);padding:8px 14px;border-radius:8px;font-size:.95rem}
+.meta li span{display:block;font-family:var(--f-mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.cue{margin-top:32px;font-family:var(--f-mono);font-size:.8rem;color:var(--muted)}
+.cue kbd{border:1px solid var(--line);background:var(--surface);border-radius:4px;padding:1px 7px;font-family:inherit}
+
+section.part{padding-block:56px 72px;border-bottom:1px solid var(--line)}
+.part-head{max-width:720px;margin-bottom:40px}
+.part-head .mono{color:var(--accent);display:block;margin-bottom:10px}
+.part-head h2{font-size:clamp(2rem,5vw,3.1rem);font-weight:800;letter-spacing:-.02em}
+.part-head p{color:var(--muted);margin:14px 0 0;font-size:1.1rem}
+h3.sub{font-size:1.5rem;margin:44px 0 16px}
+
+.tablist{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:24px}
+.tablist button{font:inherit;font-weight:600;font-size:.95rem;color:var(--ink);background:var(--surface);border:1px solid var(--line);padding:9px 16px;border-radius:8px;cursor:pointer}
+.tablist button:hover{border-color:var(--accent)}
+.tablist button[aria-selected="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+
+ul.plain{margin:0;padding-left:1.1em}
+ul.plain li{margin:6px 0;max-width:68ch}
+ul.chips{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0;padding:0}
+ul.chips li{font-family:var(--f-mono);font-size:.78rem;border:1px solid var(--line);background:var(--surface);padding:3px 10px;border-radius:999px;color:var(--muted)}
+
+/* disciplina */
+.topics{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+.topic,.feat{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;min-width:0}
+.topic h3,.feat h3{font-size:1.2rem;margin-bottom:8px}
+.topic p,.feat p{margin:0;color:var(--muted);font-size:.97rem}
+.callout{margin-top:28px;background:var(--ink);color:var(--bg);border-radius:12px;padding:22px 24px;display:flex;gap:16px;align-items:baseline;flex-wrap:wrap}
+.callout strong{font-family:var(--f-display);font-size:1.4rem;color:var(--signal)}
+.callout p{margin:0;flex:1 1 360px}
+
+/* arquitetura */
+.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-bottom:10px}
+.node{background:var(--surface);border:1px solid var(--line);border-top-width:5px;border-radius:10px;padding:12px 10px;text-align:center;font-family:var(--f-display);font-weight:700;min-width:0}
+.node small{display:block;font-family:var(--f-body);font-weight:400;font-size:.78rem;color:var(--muted);margin-top:2px}
+.node.n-src{border-top-color:var(--muted)}
+.node.n-bronze{border-top-color:var(--bronze)}
+.node.n-prata{border-top-color:var(--prata)}
+.node.n-ouro{border-top-color:var(--ouro)}
+.node.n-use{border-top-color:var(--accent)}
+.band{border:1px dashed var(--line);border-radius:10px;padding:10px 14px;font-size:.9rem;color:var(--muted);background:color-mix(in srgb,var(--surface) 70%,transparent)}
+.band b{color:var(--ink)}
+.band.b-os{grid-column:2 / 6}
+.band.b-ice{grid-column:3 / 6;border-style:solid;border-color:var(--accent)}
+.band.b-meta{grid-column:1 / 7}
+.layer{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--line);border-radius:12px;padding:22px}
+.layer.bronze{border-left-color:var(--bronze)}
+.layer.bronze-off{border-left-color:var(--muted)}
+.layer.prata{border-left-color:var(--prata)}
+.layer.ouro{border-left-color:var(--ouro)}
+.layer-lead{font-family:var(--f-display);font-size:1.3rem;font-weight:700;margin:0 0 10px}
+.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:14px}
+
+/* agenda */
+ol.agenda{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:12px;background:var(--surface);overflow:hidden}
+.ag{display:grid;grid-template-columns:70px 1fr auto;gap:16px;align-items:start;padding:16px 20px;border-top:1px solid var(--line)}
+.ag:first-child{border-top:0}
+.ah{font-family:var(--f-mono);font-weight:600;color:var(--accent);padding-top:2px}
+.ab{min-width:0}
+.ab h4{font-size:1.1rem}
+.ab p{margin:4px 0 0;color:var(--muted);font-size:.96rem;max-width:62ch}
+.atag{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:3px 10px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.t-din{border-color:var(--signal);color:var(--ink);background:color-mix(in srgb,var(--signal) 22%,transparent)}
+.t-pra{border-color:var(--accent);color:var(--accent)}
+.t-chk{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.t-ent{background:var(--signal);color:var(--signal-ink);border-color:var(--signal)}
+.ag.pause{background:var(--bg)}
+.ag.pause .ab h4{font-weight:500;color:var(--muted);font-size:1rem}
+
+/* caso 1 */
+.case-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:14px}
+.otab{background:var(--surface);border:1px solid var(--line);border-top:5px solid var(--ouro);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.otab code{font-weight:600;overflow-wrap:anywhere}
+.otab .mono{color:var(--muted);font-size:.7rem}
+.otab p{margin:0;font-size:.97rem}
+.trilhas{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:14px}
+.trilha{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;position:relative;min-width:0}
+.trilha-k{font-family:var(--f-mono);font-weight:600;background:var(--accent);color:var(--accent-ink);width:30px;height:30px;border-radius:50%;display:grid;place-items:center;margin-bottom:10px}
+.trilha h3{font-size:1.25rem;margin-bottom:6px}
+.trilha p{margin:0;color:var(--muted);font-size:.97rem}
+
+/* bootcamp */
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px;min-width:0}
+.card h3{font-size:1.3rem;margin-bottom:10px}
+ul.roles{list-style:none;margin:0;padding:0}
+ul.roles li{display:grid;grid-template-columns:150px 1fr;gap:12px;padding:8px 0;border-top:1px solid var(--line)}
+ul.roles li:first-child{border-top:0}
+ul.roles span{color:var(--muted)}
+ul.rubrica{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+ul.rubrica li{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) 36px;gap:14px;align-items:center}
+.rb-bar{display:block;height:12px;background:var(--bg);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.rb-bar i{display:block;height:100%;background:var(--accent)}
+.rb-pts{font-family:var(--f-mono);font-weight:600;text-align:right}
+.rb-total{margin:14px 0 0;color:var(--muted);font-size:.92rem}
+ol.pitch{list-style:none;margin:0;padding:0;display:grid;gap:0}
+ol.pitch li{display:grid;grid-template-columns:70px 1fr;gap:14px;padding:12px 0;border-top:1px solid var(--line)}
+ol.pitch li:first-child{border-top:0}
+.rt-time{font-family:var(--f-mono);font-weight:600;color:var(--accent)}
+ol.pitch h4{font-size:1.05rem}
+ol.pitch p{margin:2px 0 0;color:var(--muted);font-size:.95rem}
+.note{color:var(--muted);font-size:.92rem;margin:12px 0 0}
+
+/* ambiente */
+ul.serv{list-style:none;margin:0;padding:0}
+ul.serv li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-top:1px solid var(--line);flex-wrap:wrap}
+ul.serv li:first-child{border-top:0}
+ul.serv code{color:var(--accent)}
+ol.check{margin:0;padding-left:1.3em}
+ol.check li{margin:8px 0;padding-left:4px;max-width:60ch}
+
+.end .wrap{padding-block:88px}
+.end h2{font-size:clamp(2.2rem,7vw,4.6rem);font-weight:800;letter-spacing:-.03em;max-width:16ch}
+.end .eq{font-family:var(--f-display);font-size:clamp(1.2rem,3vw,1.8rem);margin:18px 0 0}
+.end .eq mark{background:var(--signal);color:var(--signal-ink);padding:0 .25em;border-radius:3px}
+.end p{color:var(--muted)}
+
+
+/* paginação */
+.pager{position:sticky;bottom:0;z-index:10;display:flex;align-items:center;gap:12px;padding:12px 20px calc(12px + env(safe-area-inset-bottom,0px));background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:blur(8px);border-top:1px solid var(--line)}
+.pg-btn{font:inherit;font-weight:600;font-size:.98rem;color:var(--ink);background:var(--surface);border:1px solid var(--line);padding:10px 18px;border-radius:8px;cursor:pointer;white-space:nowrap}
+.pg-btn:hover:not(:disabled){border-color:var(--accent)}
+.pg-btn:disabled{opacity:.4;cursor:default}
+.pg-next{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.pg-next:disabled{background:var(--surface);color:var(--muted);border-color:var(--line)}
+.dots{display:flex;gap:4px;flex:1;justify-content:center;min-width:0}
+.dot{width:26px;height:26px;border:0;background:transparent;cursor:pointer;position:relative;padding:0}
+.dot::after{content:"";position:absolute;inset:9px;border-radius:50%;background:var(--line)}
+.dot[aria-current="true"]::after{background:var(--accent);inset:7px}
+.pg-count{font-family:var(--f-mono);font-size:.78rem;color:var(--muted);white-space:nowrap}
+@media (max-width:640px){.dots{display:none}.pg-count{display:block;flex:1;text-align:center}.pg-btn{padding:10px 12px;font-size:.92rem}.dot{width:18px}}
+
+@media (max-width:820px){
+  .flow{grid-template-columns:1fr 1fr}
+  .band.b-os,.band.b-ice,.band.b-meta{grid-column:1 / -1}
+  section.part{padding-block:56px}
+  .ag{grid-template-columns:60px 1fr}
+  .ag .atag{grid-column:2;justify-self:start}
+  ul.roles li{grid-template-columns:1fr;gap:2px}
+}
+@media (max-width:520px){
+  .hero .wrap{padding-block:48px 40px}
+  ul.rubrica li{grid-template-columns:1fr 36px;gap:6px 12px}
+  .rb-bar{grid-column:1 / -1;order:3}
+}
+
+/* tópicos e figuras */
+.sv{color:var(--ink);width:100%;height:auto;display:block}
+.sv-box{fill:var(--surface);stroke:var(--muted);stroke-width:1.4}
+.sv-soft{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.sv-ghost{fill:none;stroke:var(--muted);stroke-width:1.4;stroke-dasharray:6 4}
+.sv-acc{fill:color-mix(in srgb,var(--accent) 12%,var(--surface));stroke:var(--accent);stroke-width:1.6}
+.sv-sig{fill:color-mix(in srgb,var(--signal) 32%,var(--surface));stroke:var(--signal);stroke-width:1.8}
+.sv-bz{fill:color-mix(in srgb,var(--bronze) 16%,var(--surface));stroke:var(--bronze);stroke-width:1.6}
+.sv-pr{fill:color-mix(in srgb,var(--prata) 18%,var(--surface));stroke:var(--prata);stroke-width:1.6}
+.sv-ou{fill:color-mix(in srgb,var(--ouro) 18%,var(--surface));stroke:var(--ouro);stroke-width:1.6}
+.sv-t{font:500 13px var(--f-body);fill:currentColor}
+.sv-t2{font:500 11.5px var(--f-body);fill:currentColor}
+.sv-tb{font:700 14px var(--f-display);fill:currentColor}
+.sv-ts{font:400 11.5px var(--f-body);fill:var(--muted)}
+.sv-tm{font:600 10.5px var(--f-mono);fill:var(--muted);letter-spacing:.08em}
+.sv-ta{font:600 12px var(--f-body);fill:var(--accent)}
+.sv-code{font:500 11.5px var(--f-mono);fill:currentColor}
+.sv-codea{font:600 11.5px var(--f-mono);fill:var(--accent)}
+.sv-l{stroke:currentColor;stroke-width:1.6;fill:none}
+.sv-la{stroke:var(--accent);stroke-width:2;fill:none}
+.sv-ld{stroke:var(--muted);stroke-width:1.4;fill:none;stroke-dasharray:5 4}
+.sv-lda{stroke:var(--accent);stroke-width:1.8;fill:none;stroke-dasharray:6 4}
+.sv-ls{stroke:var(--signal);stroke-width:3.2;fill:none}
+.sv-ar{fill:currentColor}
+.sv-ara{fill:var(--accent)}
+.sv-dot{fill:var(--accent)}
+.sv-k0{fill:color-mix(in srgb,var(--accent) 30%,var(--surface));stroke:var(--accent);stroke-width:1.4}
+.sv-k1{fill:color-mix(in srgb,var(--signal) 45%,var(--surface));stroke:var(--signal);stroke-width:1.4}
+.sv-k2{fill:color-mix(in srgb,var(--bronze) 30%,var(--surface));stroke:var(--bronze);stroke-width:1.4}
+.sv-lk0{stroke:var(--accent);stroke-width:1.6;opacity:.8}
+.sv-lk1{stroke:var(--signal);stroke-width:1.6;opacity:.95}
+.sv-lk2{stroke:var(--bronze);stroke-width:1.6;opacity:.8}
+.fig{margin:0 0 28px}
+.fig-scroll{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px 18px}
+.fig figcaption{margin-top:10px;color:var(--muted);font-size:.95rem;max-width:80ch}
+.tpage .part-head{max-width:820px;margin-bottom:28px}
+.back{font:inherit;font-size:.9rem;font-weight:600;color:var(--accent);background:none;border:0;padding:0 0 18px;cursor:pointer}
+.back:hover{text-decoration:underline}
+ul.book{margin-top:16px}
+ul.chips li.bk{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.ideas{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:14px;margin-bottom:28px}
+.idea{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 20px;min-width:0}
+.idea h4{font-size:1.1rem;margin-bottom:6px}
+.idea p{margin:0;color:var(--muted);font-size:.97rem}
+.ask{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--signal);border-radius:12px;padding:16px 20px;margin-top:14px}
+.ask .mono{color:var(--muted);font-size:.7rem}
+.ask p{margin:4px 0 0;font-family:var(--f-display);font-size:1.25rem;font-weight:700;line-height:1.3;max-width:62ch}
+.ask.link{border-left-color:var(--accent)}
+.ask.link p{font-family:var(--f-body);font-weight:400;font-size:1rem}
+button.topic{font:inherit;color:inherit;text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:6px}
+button.topic:hover{border-color:var(--accent)}
+button.topic .cap{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+button.topic .open{margin-top:auto;padding-top:8px;font-weight:600;color:var(--accent)}
+</style>
+
+<main>
+<section id="inicio" class="hero" data-page data-title="Início">
+  <div class="wrap">
+    <span class="mono">Pós-graduação · Engenharia de Dados</span>
+    <h1>Coleta e <mark>armazenamento</mark> de dados</h1>
+    <p class="lead">Object storage, Spark e Iceberg, do dado cru ao painel, ao modelo e à IA generativa.</p>
+    <ul class="meta">
+      <li><span>Armazenamento</span>Object storage</li>
+      <li><span>Tabelas</span>Apache Iceberg</li>
+      <li><span>Processamento</span>Spark (PySpark)</li>
+      <li><span>Consumo</span>Painel e IA</li>
+    </ul>
+    <p class="cue">Use <kbd>←</kbd> <kbd>→</kbd> ou os botões abaixo para mudar de página</p>
+  </div>
+</section>
+
+<section id="disciplina" class="part" data-page data-title="O que vamos ver">
+  <div class="wrap">
+    <header class="part-head">
+      <span class="mono">Parte 1</span>
+      <h2>O que vamos ver</h2>
+      <p>Seis blocos da ementa. Clique em um cartão para abrir a página com o conteúdo e as imagens.</p>
+    </header>
+    <figure class="fig"><div class="fig-scroll"><svg class="sv" viewBox="0 0 760 180" role="img" aria-label="O ciclo de vida da engenharia de dados: geração, ingestão, armazenamento, transformação e serviço, com seis correntes subjacentes atravessando todas as etapas" style="min-width:640px"><defs><marker id="ar-lc" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ar" d="M0 0L10 5L0 10z"/></marker><marker id="arA-lc" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ara" d="M0 0L10 5L0 10z"/></marker></defs><text class="sv-tm" x="60" y="14" text-anchor="middle">CAP. 5</text><rect class="sv-acc" x="1" y="22" width="118" height="62" rx="8"/><text class="sv-tb" x="60.0" y="49.5" text-anchor="middle">Geração</text><text class="sv-ts" x="60.0" y="66.5" text-anchor="middle">sistemas de origem</text><polyline class="sv-l" points="119,53 161,53" marker-end="url(#ar-lc)"/><text class="sv-tm" x="220" y="14" text-anchor="middle">CAP. 7</text><rect class="sv-acc" x="161" y="22" width="118" height="62" rx="8"/><text class="sv-tb" x="220.0" y="49.5" text-anchor="middle">Ingestão</text><text class="sv-ts" x="220.0" y="66.5" text-anchor="middle">batch e streaming</text><polyline class="sv-l" points="279,53 321,53" marker-end="url(#ar-lc)"/><text class="sv-tm" x="380" y="14" text-anchor="middle">CAP. 6</text><rect class="sv-acc" x="321" y="22" width="118" height="62" rx="8"/><text class="sv-tb" x="380.0" y="49.5" text-anchor="middle">Armazenamento</text><text class="sv-ts" x="380.0" y="66.5" text-anchor="middle">object storage, DW</text><polyline class="sv-l" points="439,53 481,53" marker-end="url(#ar-lc)"/><text class="sv-tm" x="540" y="14" text-anchor="middle">CAP. 8</text><rect class="sv-acc" x="481" y="22" width="118" height="62" rx="8"/><text class="sv-tb" x="540.0" y="49.5" text-anchor="middle">Transformação</text><text class="sv-ts" x="540.0" y="66.5" text-anchor="middle">limpar e modelar</text><polyline class="sv-l" points="599,53 641,53" marker-end="url(#ar-lc)"/><text class="sv-tm" x="700" y="14" text-anchor="middle">CAP. 9</text><rect class="sv-acc" x="641" y="22" width="118" height="62" rx="8"/><text class="sv-tb" x="700.0" y="49.5" text-anchor="middle">Serviço</text><text class="sv-ts" x="700.0" y="66.5" text-anchor="middle">analytics, ML e IA</text><rect class="sv-soft" x="0" y="104" width="760" height="68" rx="8"/><text class="sv-tm" x="380" y="121" text-anchor="middle">CORRENTES SUBJACENTES · ATRAVESSAM TODAS AS ETAPAS</text><rect class="sv-box" x="12" y="128" width="116" height="36" rx="6"/><text class="sv-t2" x="70" y="151" text-anchor="middle">Segurança</text><rect class="sv-box" x="136" y="128" width="116" height="36" rx="6"/><text class="sv-t2" x="194" y="143" text-anchor="middle">Gestão</text><text class="sv-t2" x="194" y="157" text-anchor="middle">de dados</text><rect class="sv-box" x="260" y="128" width="116" height="36" rx="6"/><text class="sv-t2" x="318" y="151" text-anchor="middle">DataOps</text><rect class="sv-box" x="384" y="128" width="116" height="36" rx="6"/><text class="sv-t2" x="442" y="143" text-anchor="middle">Arquitetura</text><text class="sv-t2" x="442" y="157" text-anchor="middle">de dados</text><rect class="sv-box" x="508" y="128" width="116" height="36" rx="6"/><text class="sv-t2" x="566" y="151" text-anchor="middle">Orquestração</text><rect class="sv-box" x="632" y="128" width="116" height="36" rx="6"/><text class="sv-t2" x="690" y="143" text-anchor="middle">Engenharia</text><text class="sv-t2" x="690" y="157" text-anchor="middle">de software</text></svg></div><figcaption>Mapa do livro: cinco etapas em sequência e seis correntes que atravessam todas elas. Os seis tópicos abaixo se encaixam neste mapa.</figcaption></figure>
+    <div class="topics">
+<button type="button" class="topic" data-goto="t1"><span class="cap">Cap. 1 · Engenharia de dados</span><h3>Big Data e o caminho do Hadoop até hoje</h3><p>Como a engenharia de dados deixou de ser operar clusters e virou projetar o ciclo de vida do dado.</p><span class="open">Abrir página →</span></button>
+<button type="button" class="topic" data-goto="t2"><span class="cap">Cap. 7 · Ingestão</span><h3>Ingestão, ETL/ELT e pipelines</h3><p>Levar o dado da origem até onde será usado, sem perder, duplicar nem quebrar quando a origem muda.</p><span class="open">Abrir página →</span></button>
+<button type="button" class="topic" data-goto="t3"><span class="cap">Cap. 8 · Consultas e transformação</span><h3>Spark: DataFrames e Spark SQL</h3><p>Como o Spark divide o trabalho entre máquinas e por que algumas operações custam muito mais que outras.</p><span class="open">Abrir página →</span></button>
+<button type="button" class="topic" data-goto="t4"><span class="cap">Cap. 3 · Arquitetura</span><h3>Data Lake, Data Warehouse e Lakehouse</h3><p>Três maneiras de organizar o dado analítico, e o que cada uma ganha e perde.</p><span class="open">Abrir página →</span></button>
+<button type="button" class="topic" data-goto="t5"><span class="cap">Cap. 2 · Correntes subjacentes</span><h3>Qualidade, governança e linhagem</h3><p>O que mantém o dado confiável depois que o pipeline já está rodando.</p><span class="open">Abrir página →</span></button>
+<button type="button" class="topic" data-goto="t6"><span class="cap">Cap. 9 · Servir dados</span><h3>Dados para Analytics, ML e IA generativa</h3><p>A Ouro é onde o trabalho vira valor: painel, modelo, assistente e dado de volta para a operação.</p><span class="open">Abrir página →</span></button>
+    </div>
+  </div>
+</section>
+
+<section id="t1" class="part tpage" data-page data-title="Big Data e o caminho do Hadoop até hoje">
+  <div class="wrap">
+    <button type="button" class="back" data-goto="disciplina">← Todos os tópicos</button>
+    <header class="part-head">
+      <span class="mono">Parte 1 · Tópico 1 de 6</span>
+      <h2>Big Data e o caminho do Hadoop até hoje</h2>
+      <p>Como a engenharia de dados deixou de ser operar clusters e virou projetar o ciclo de vida do dado.</p>
+      <ul class="chips book" aria-label="Capítulos do livro"><li class="bk">Livro</li><li>Cap. 1 · Engenharia de dados</li><li>Cap. 2 · O ciclo de vida</li><li>Cap. 4 · Escolhendo tecnologias</li></ul>
+    </header>
+    
+    <figure class="fig"><div class="fig-scroll"><svg class="sv" viewBox="0 0 760 210" role="img" aria-label="Linha do tempo em quatro eras, de warehouses e BI até o ciclo de vida do dado, com uma seta indicando que o trabalho sobe de nível" style="min-width:640px"><defs><marker id="ar-1a" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ar" d="M0 0L10 5L0 10z"/></marker><marker id="arA-1a" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ara" d="M0 0L10 5L0 10z"/></marker></defs><rect class="sv-box" x="1" y="10" width="170" height="74" rx="8"/><text class="sv-tm" x="86" y="30" text-anchor="middle">ATÉ ~2000</text><text class="sv-tb" x="86" y="52" text-anchor="middle">Warehouses e BI</text><text class="sv-ts" x="86" y="70" text-anchor="middle">SQL, DBAs, relatórios</text><line class="sv-ld" x1="86" y1="84" x2="86" y2="106"/><circle class="sv-dot" cx="86" cy="110" r="4"/><text class="sv-ts" x="86" y="132" text-anchor="middle">Data warehouse</text><text class="sv-ts" x="86" y="147" text-anchor="middle">Inmon e Kimball</text><rect class="sv-box" x="197" y="10" width="170" height="74" rx="8"/><text class="sv-tm" x="282" y="30" text-anchor="middle">ANOS 2000</text><text class="sv-tb" x="282" y="52" text-anchor="middle">Nasce o Big Data</text><text class="sv-ts" x="282" y="70" text-anchor="middle">MapReduce e Hadoop</text><line class="sv-ld" x1="282" y1="84" x2="282" y2="106"/><circle class="sv-dot" cx="282" cy="110" r="4"/><text class="sv-ts" x="282" y="132" text-anchor="middle">2004 · artigo do MapReduce</text><text class="sv-ts" x="282" y="147" text-anchor="middle">2006 · Hadoop e Amazon S3</text><rect class="sv-box" x="393" y="10" width="170" height="74" rx="8"/><text class="sv-tm" x="478" y="30" text-anchor="middle">ANOS 2010</text><text class="sv-tb" x="478" y="52" text-anchor="middle">Engenharia de Big Data</text><text class="sv-ts" x="478" y="70" text-anchor="middle">Spark, clusters, nuvem</text><line class="sv-ld" x1="478" y1="84" x2="478" y2="106"/><circle class="sv-dot" cx="478" cy="110" r="4"/><text class="sv-ts" x="478" y="132" text-anchor="middle">2014 · Spark 1.0 e Airflow</text><text class="sv-ts" x="478" y="147" text-anchor="middle">2018 · Iceberg na Apache</text><rect class="sv-acc" x="589" y="10" width="170" height="74" rx="8"/><text class="sv-tm" x="674" y="30" text-anchor="middle">ANOS 2020</text><text class="sv-tb" x="674" y="52" text-anchor="middle">Ciclo de vida do dado</text><text class="sv-ts" x="674" y="70" text-anchor="middle">serviços gerenciados</text><line class="sv-ld" x1="674" y1="84" x2="674" y2="106"/><circle class="sv-dot" cx="674" cy="110" r="4"/><text class="sv-ts" x="674" y="132" text-anchor="middle">2022 · ChatGPT</text><text class="sv-ts" x="674" y="147" text-anchor="middle">2020s · IA e agentes</text><text class="sv-ta" x="380" y="184" text-anchor="middle">o trabalho sobe de nível: menos operar cluster, mais arquitetura, custo e qualidade</text><polyline class="sv-la" points="1,198 757,198" marker-end="url(#arA-1a)"/></svg></div><figcaption>Quatro eras da engenharia de dados. As datas são marcos conhecidos, não limites rígidos.</figcaption></figure>
+<figure class="fig"><div class="fig-scroll"><svg class="sv" viewBox="0 0 760 240" role="img" aria-label="Comparação: no Hadoop clássico cada nó tem CPU e disco juntos; hoje as máquinas de computação ficam separadas do object storage" style="min-width:640px"><defs><marker id="ar-1b" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ar" d="M0 0L10 5L0 10z"/></marker><marker id="arA-1b" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ara" d="M0 0L10 5L0 10z"/></marker></defs><text class="sv-tb" x="190" y="16" text-anchor="middle">Hadoop clássico: disco e CPU no mesmo nó</text><rect class="sv-soft" x="10" y="34" width="108" height="142" rx="8"/><rect class="sv-acc" x="20" y="46" width="88" height="50" rx="8"/><text class="sv-tb" x="64.0" y="76.0" text-anchor="middle">CPU</text><rect class="sv-bz" x="20" y="106" width="88" height="58" rx="8"/><text class="sv-tb" x="64.0" y="131.5" text-anchor="middle">disco</text><text class="sv-ts" x="64.0" y="148.5" text-anchor="middle">HDFS</text><rect class="sv-soft" x="130" y="34" width="108" height="142" rx="8"/><rect class="sv-acc" x="140" y="46" width="88" height="50" rx="8"/><text class="sv-tb" x="184.0" y="76.0" text-anchor="middle">CPU</text><rect class="sv-bz" x="140" y="106" width="88" height="58" rx="8"/><text class="sv-tb" x="184.0" y="131.5" text-anchor="middle">disco</text><text class="sv-ts" x="184.0" y="148.5" text-anchor="middle">HDFS</text><rect class="sv-soft" x="250" y="34" width="108" height="142" rx="8"/><rect class="sv-acc" x="260" y="46" width="88" height="50" rx="8"/><text class="sv-tb" x="304.0" y="76.0" text-anchor="middle">CPU</text><rect class="sv-bz" x="260" y="106" width="88" height="58" rx="8"/><text class="sv-tb" x="304.0" y="131.5" text-anchor="middle">disco</text><text class="sv-ts" x="304.0" y="148.5" text-anchor="middle">HDFS</text><text class="sv-ts" x="190" y="200" text-anchor="middle">Precisa de mais disco? Compra CPU junto.</text><line class="sv-ld" x1="382" y1="8" x2="382" y2="236"/><text class="sv-tb" x="572" y="16" text-anchor="middle">Hoje: computação e armazenamento separados</text><rect class="sv-acc" x="410" y="34" width="105" height="52" rx="8"/><text class="sv-tb" x="462.5" y="56.5" text-anchor="middle">Spark</text><text class="sv-ts" x="462.5" y="73.5" text-anchor="middle">sob demanda</text><polyline class="sv-l" points="462,88 462,136" marker-end="url(#ar-1b)" marker-start="url(#ar-1b)"/><rect class="sv-acc" x="527" y="34" width="105" height="52" rx="8"/><text class="sv-tb" x="579.5" y="56.5" text-anchor="middle">Motor SQL</text><text class="sv-ts" x="579.5" y="73.5" text-anchor="middle">sob demanda</text><polyline class="sv-l" points="579,88 579,136" marker-end="url(#ar-1b)" marker-start="url(#ar-1b)"/><rect class="sv-acc" x="644" y="34" width="105" height="52" rx="8"/><text class="sv-tb" x="696.5" y="56.5" text-anchor="middle">Treino de ML</text><text class="sv-ts" x="696.5" y="73.5" text-anchor="middle">sob demanda</text><polyline class="sv-l" points="696,88 696,136" marker-end="url(#ar-1b)" marker-start="url(#ar-1b)"/><text class="sv-ts" x="580" y="116" text-anchor="start">lê e grava</text><rect class="sv-bz" x="410" y="138" width="339" height="62" rx="8"/><text class="sv-tb" x="579.5" y="165.5" text-anchor="middle">Object storage</text><text class="sv-ts" x="579.5" y="182.5" text-anchor="middle">S3, MinIO · Parquet + Iceberg</text><text class="sv-ts" x="580" y="222" text-anchor="middle">Computação liga e desliga. O dado continua lá.</text></svg></div><figcaption>O que mudou entre as duas arquiteturas: a ligação entre computar e guardar foi cortada. Cada lado escala e custa por si.</figcaption></figure>
+    <h3 class="sub">Ideias-chave</h3>
+    <div class="ideas">
+<article class="idea"><h4>Uma definição simples</h4><p>Engenharia de dados é construir e manter os sistemas que transformam dado cru em informação confiável para análise e machine learning.</p></article>
+<article class="idea"><h4>Quatro eras</h4><p>Warehouses e BI até cerca de 2000. Nos anos 2000, o Big Data com MapReduce e Hadoop. Nos anos 2010, a engenharia de Big Data com Spark e clusters. Nos anos 2020, a engenharia do ciclo de vida.</p></article>
+<article class="idea"><h4>O trabalho subiu de nível</h4><p>Com ferramentas gerenciadas e mais simples, sobra menos configuração de cluster. O que fica é o que não se automatiza: arquitetura, custo, qualidade, segurança e entender o negócio.</p></article>
+<article class="idea"><h4>Guardar e computar viraram coisas separadas</h4><p>No Hadoop clássico disco e CPU cresciam juntos. Com object storage, o dado fica barato e durável, e a computação liga só quando há trabalho.</p></article>
+<article class="idea"><h4>Construir ou comprar</h4><p>O livro pede para olhar custo total, custo de oportunidade e tamanho do time. Descreve engenheiros de abstração (usam serviços prontos) e de construção (criam as próprias ferramentas), e três estágios de maturidade em dados.</p></article>
+    </div>
+    <div class="ask"><span class="mono">Para pensar</span><p>Qual ferramenta que vocês usam hoje vai virar legado? Que dor ela resolveu e que dor nova trouxe?</p></div>
+    <div class="ask link"><span class="mono">No nosso caso</span><p>No nosso caso o MinIO faz o papel do S3 e o Spark é a computação. Dá para parar o Spark e as tabelas continuam lá.</p></div>
+  </div>
+</section>
+
+<section id="t2" class="part tpage" data-page data-title="Ingestão, ETL/ELT e pipelines">
+  <div class="wrap">
+    <button type="button" class="back" data-goto="disciplina">← Todos os tópicos</button>
+    <header class="part-head">
+      <span class="mono">Parte 1 · Tópico 2 de 6</span>
+      <h2>Ingestão, ETL/ELT e pipelines</h2>
+      <p>Levar o dado da origem até onde será usado, sem perder, duplicar nem quebrar quando a origem muda.</p>
+      <ul class="chips book" aria-label="Capítulos do livro"><li class="bk">Livro</li><li>Cap. 7 · Ingestão</li><li>Cap. 8 · Transformação</li></ul>
+    </header>
+    
+    <figure class="fig"><div class="fig-scroll"><svg class="sv" viewBox="0 0 760 238" role="img" aria-label="Dois fluxos: em ETL a transformação ocorre entre a fonte e o destino; em ELT o dado cru é carregado primeiro e transformado dentro do destino" style="min-width:640px"><defs><marker id="ar-2a" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ar" d="M0 0L10 5L0 10z"/></marker><marker id="arA-2a" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ara" d="M0 0L10 5L0 10z"/></marker></defs><text class="sv-tm" x="1" y="14" text-anchor="start">ETL · transforma antes de carregar</text><rect class="sv-box" x="1" y="26" width="100" height="56" rx="8"/><text class="sv-tb" x="51.0" y="59.0" text-anchor="middle">Fonte</text><polyline class="sv-l" points="101,54 211,54" marker-end="url(#ar-2a)"/><text class="sv-ts" x="156" y="46" text-anchor="middle">extrai</text><rect class="sv-sig" x="211" y="26" width="190" height="56" rx="8"/><text class="sv-tb" x="306.0" y="50.5" text-anchor="middle">Transformação</text><text class="sv-ts" x="306.0" y="67.5" text-anchor="middle">em servidor intermediário</text><polyline class="sv-l" points="401,54 491,54" marker-end="url(#ar-2a)"/><text class="sv-ts" x="446" y="46" text-anchor="middle">carrega</text><rect class="sv-box" x="491" y="26" width="120" height="56" rx="8"/><text class="sv-tb" x="551.0" y="50.5" text-anchor="middle">Destino</text><text class="sv-ts" x="551.0" y="67.5" text-anchor="middle">já limpo</text><text class="sv-ts" x="640" y="50" text-anchor="start">o cru não fica</text><text class="sv-ts" x="640" y="65" text-anchor="start">guardado no destino</text><text class="sv-tm" x="1" y="124" text-anchor="start">ELT · carrega primeiro, transforma dentro</text><rect class="sv-box" x="1" y="136" width="100" height="56" rx="8"/><text class="sv-tb" x="51.0" y="169.0" text-anchor="middle">Fonte</text><polyline class="sv-l" points="101,164 211,164" marker-end="url(#ar-2a)"/><text class="sv-ts" x="156" y="156" text-anchor="middle">extrai e carrega</text><rect class="sv-bz" x="211" y="136" width="190" height="56" rx="8"/><text class="sv-tb" x="306.0" y="160.5" text-anchor="middle">Bronze</text><text class="sv-ts" x="306.0" y="177.5" text-anchor="middle">cru, como veio</text><polyline class="sv-l" points="401,164 491,164" marker-end="url(#ar-2a)"/><text class="sv-ts" x="446" y="156" text-anchor="middle">transforma</text><rect class="sv-sig" x="491" y="136" width="120" height="56" rx="8"/><text class="sv-tb" x="551.0" y="160.5" text-anchor="middle">Prata e Ouro</text><text class="sv-ts" x="551.0" y="177.5" text-anchor="middle">dentro do destino</text><text class="sv-ts" x="640" y="160" text-anchor="start">o cru fica guardado:</text><text class="sv-ts" x="640" y="175" text-anchor="start">dá para refazer</text><rect class="sv-sig" x="1" y="214" width="14" height="14" rx="3"/><text class="sv-ts" x="22" y="225" text-anchor="start">onde acontece a transformação</text></svg></div><figcaption>A diferença está em onde fica a transformação. Em ELT o dado cru chega ao destino antes de ser tratado, como na nossa Bronze.</figcaption></figure>
+<figure class="fig"><div class="fig-scroll"><svg class="sv" viewBox="0 0 760 196" role="img" aria-label="Três formas de mover dados: push, em que a origem inicia; pull, em que o destino pede; poll, em que o destino pergunta periodicamente se houve mudança" style="min-width:640px"><defs><marker id="ar-2b" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ar" d="M0 0L10 5L0 10z"/></marker><marker id="arA-2b" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ara" d="M0 0L10 5L0 10z"/></marker></defs><text class="sv-tm" x="120" y="12" text-anchor="middle">PUSH</text><text class="sv-ts" x="120" y="28" text-anchor="middle">quando o dado nasce</text><rect class="sv-sig" x="0" y="40" width="80" height="56" rx="8"/><text class="sv-tb" x="40.0" y="73.0" text-anchor="middle">Origem</text><rect class="sv-box" x="160" y="40" width="80" height="56" rx="8"/><text class="sv-tb" x="200.0" y="73.0" text-anchor="middle">Destino</text><polyline class="sv-l" points="80,68 160,68" marker-end="url(#ar-2b)"/><text class="sv-ts" x="120" y="60" text-anchor="middle">envia</text><text class="sv-ts" x="120" y="128" text-anchor="middle">A origem decide quando.</text><text class="sv-tm" x="380" y="12" text-anchor="middle">PULL</text><text class="sv-ts" x="380" y="28" text-anchor="middle">sob demanda</text><rect class="sv-box" x="260" y="40" width="80" height="56" rx="8"/><text class="sv-tb" x="300.0" y="73.0" text-anchor="middle">Origem</text><rect class="sv-sig" x="420" y="40" width="80" height="56" rx="8"/><text class="sv-tb" x="460.0" y="73.0" text-anchor="middle">Destino</text><polyline class="sv-l" points="420,58 340,58" marker-end="url(#ar-2b)"/><text class="sv-ts" x="380" y="50" text-anchor="middle">pede</text><polyline class="sv-ld" points="340,80 420,80" marker-end="url(#ar-2b)"/><text class="sv-ts" x="380" y="94" text-anchor="middle">dados</text><text class="sv-ts" x="380" y="128" text-anchor="middle">O destino decide quando.</text><text class="sv-tm" x="640" y="12" text-anchor="middle">POLL</text><text class="sv-ts" x="640" y="28" text-anchor="middle">a cada intervalo fixo</text><rect class="sv-box" x="520" y="40" width="80" height="56" rx="8"/><text class="sv-tb" x="560.0" y="73.0" text-anchor="middle">Origem</text><rect class="sv-sig" x="680" y="40" width="80" height="56" rx="8"/><text class="sv-tb" x="720.0" y="73.0" text-anchor="middle">Destino</text><polyline class="sv-l" points="680,58 600,58" marker-end="url(#ar-2b)"/><text class="sv-ts" x="640" y="50" text-anchor="middle">mudou algo?</text><polyline class="sv-ld" points="600,80 680,80" marker-end="url(#ar-2b)"/><text class="sv-ts" x="640" y="94" text-anchor="middle">sim: dados</text><text class="sv-ts" x="640" y="128" text-anchor="middle">O destino pergunta de tempos</text><text class="sv-ts" x="640" y="143" text-anchor="middle">em tempos e só busca se algo mudou.</text><text class="sv-ts" x="380" y="182" text-anchor="middle">Em qualquer um, o destino precisa tolerar repetição e atraso.</text></svg></div><figcaption>O destaque amarelo marca quem inicia a conversa. Isso muda quem precisa estar de pé e quem guarda o estado.</figcaption></figure>
+<figure class="fig"><div class="fig-scroll"><svg class="sv" viewBox="0 0 760 150" role="img" aria-label="Batch processa pacotes com começo e fim; streaming processa eventos conforme chegam, e janelas agrupam por tempo" style="min-width:640px"><defs><marker id="ar-2c" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ar" d="M0 0L10 5L0 10z"/></marker><marker id="arA-2c" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ara" d="M0 0L10 5L0 10z"/></marker></defs><text class="sv-tm" x="1" y="12" text-anchor="start">BATCH · pacotes com começo e fim</text><rect class="sv-soft" x="1" y="22" width="108" height="54" rx="8"/><text class="sv-ts" x="55" y="40" text-anchor="middle">lote 08h</text><circle class="sv-dot" cx="23" cy="60" r="5"/><circle class="sv-dot" cx="45" cy="60" r="5"/><circle class="sv-dot" cx="67" cy="60" r="5"/><circle class="sv-dot" cx="89" cy="60" r="5"/><polyline class="sv-l" points="55,76 55,100" marker-end="url(#ar-2c)"/><rect class="sv-soft" x="121" y="22" width="108" height="54" rx="8"/><text class="sv-ts" x="175" y="40" text-anchor="middle">lote 09h</text><circle class="sv-dot" cx="143" cy="60" r="5"/><circle class="sv-dot" cx="165" cy="60" r="5"/><circle class="sv-dot" cx="187" cy="60" r="5"/><circle class="sv-dot" cx="209" cy="60" r="5"/><polyline class="sv-l" points="175,76 175,100" marker-end="url(#ar-2c)"/><rect class="sv-soft" x="241" y="22" width="108" height="54" rx="8"/><text class="sv-ts" x="295" y="40" text-anchor="middle">lote 10h</text><circle class="sv-dot" cx="263" cy="60" r="5"/><circle class="sv-dot" cx="285" cy="60" r="5"/><circle class="sv-dot" cx="307" cy="60" r="5"/><circle class="sv-dot" cx="329" cy="60" r="5"/><polyline class="sv-l" points="295,76 295,100" marker-end="url(#ar-2c)"/><rect class="sv-box" x="1" y="100" width="348" height="38" rx="8"/><text class="sv-t" x="175.0" y="124.0" text-anchor="middle">processa cada lote inteiro, de tempos em tempos</text><text class="sv-tm" x="410" y="12" text-anchor="start">STREAMING · fluxo sem fim</text><line class="sv-ld" x1="410" y1="50" x2="548" y2="50"/><circle class="sv-dot" cx="424" cy="50" r="5"/><circle class="sv-dot" cx="450" cy="50" r="5"/><circle class="sv-dot" cx="476" cy="50" r="5"/><circle class="sv-dot" cx="502" cy="50" r="5"/><circle class="sv-dot" cx="528" cy="50" r="5"/><polyline class="sv-l" points="540,50 572,50" marker-end="url(#ar-2c)"/><rect class="sv-acc" x="574" y="24" width="176" height="52" rx="8"/><text class="sv-tb" x="662.0" y="46.5" text-anchor="middle">processa ao chegar</text><text class="sv-ts" x="662.0" y="63.5" text-anchor="middle">cada evento, um a um</text><polyline class="sv-l" points="662,76 662,100" marker-end="url(#ar-2c)"/><rect class="sv-box" x="410" y="100" width="340" height="38" rx="8"/><text class="sv-t" x="580.0" y="124.0" text-anchor="middle">janelas agrupam eventos por tempo (ex.: 5 min)</text></svg></div><figcaption>Quase todo dado nasce como fluxo. Batch o agrupa por tempo; streaming o trata ao chegar. A escolha depende da latência que o negócio precisa.</figcaption></figure>
+    <h3 class="sub">Ideias-chave</h3>
+    <div class="ideas">
+<article class="idea"><h4>Ingestão é a parte mais frágil</h4><p>A origem muda sem avisar: coluna nova, tipo diferente, atraso. Um bom pipeline parte do princípio de que isso vai acontecer.</p></article>
+<article class="idea"><h4>Perguntas de projeto</h4><p>Os dados são limitados ou contínuos? Qual a frequência? Síncrono ou assíncrono? Qual o formato e o esquema? Quanta vazão? Se falhar, o que se recupera?</p></article>
+<article class="idea"><h4>Batch é streaming em pacotes</h4><p>Quase todo dado nasce como fluxo de eventos. Batch agrupa por tempo; streaming trata ao chegar. A escolha vem da latência que o negócio realmente precisa.</p></article>
+<article class="idea"><h4>Push, pull ou poll</h4><p>Quem inicia? A origem envia (push), o destino busca (pull) ou pergunta de tempos em tempos se algo mudou (poll). Em bancos, o CDC lê o registro de mudanças e envia só o que mudou.</p></article>
+<article class="idea"><h4>ETL ou ELT</h4><p>No ELT o cru é carregado primeiro e transformado dentro do destino. É o que a Bronze faz: guarda como veio e deixa a limpeza para a Prata. O cru guardado permite refazer.</p></article>
+    </div>
+    <div class="ask"><span class="mono">Para pensar</span><p>Se o mesmo arquivo chegar duas vezes, o que acontece com o seu pipeline?</p></div>
+    <div class="ask link"><span class="mono">No nosso caso</span><p>Na Bronze cada lote tem um identificador, e reexecutar o mesmo lote não duplica linhas. Você vai ver isso funcionando no caso prático.</p></div>
+  </div>
+</section>
+
+<section id="t3" class="part tpage" data-page data-title="Spark: DataFrames e Spark SQL">
+  <div class="wrap">
+    <button type="button" class="back" data-goto="disciplina">← Todos os tópicos</button>
+    <header class="part-head">
+      <span class="mono">Parte 1 · Tópico 3 de 6</span>
+      <h2>Spark: DataFrames e Spark SQL</h2>
+      <p>Como o Spark divide o trabalho entre máquinas e por que algumas operações custam muito mais que outras.</p>
+      <ul class="chips book" aria-label="Capítulos do livro"><li class="bk">Livro</li><li>Cap. 8 · Consultas e transformação</li><li>Cap. 3 · Sistemas distribuídos</li></ul>
+    </header>
+    <p class="note" style="margin:0 0 24px">O livro trata consultas e processamento distribuído de forma geral. Os exemplos de Spark desta página são nossos.</p>
+    <figure class="fig"><div class="fig-scroll"><svg class="sv" viewBox="0 0 760 280" role="img" aria-label="Antes do shuffle cada partição mistura as chaves A, B e C; depois do shuffle cada partição contém uma única chave" style="min-width:640px"><defs><marker id="ar-3a" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ar" d="M0 0L10 5L0 10z"/></marker><marker id="arA-3a" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ara" d="M0 0L10 5L0 10z"/></marker></defs><rect class="sv-acc" x="0" y="90" width="150" height="90" rx="8"/><text class="sv-tb" x="75.0" y="124.0" text-anchor="middle">Estágio 1</text><text class="sv-ts" x="75.0" y="141.0" text-anchor="middle">ler · filter</text><text class="sv-ts" x="75.0" y="156.0" text-anchor="middle">select · withColumn</text><text class="sv-ts" x="75" y="202" text-anchor="middle">cada partição é tratada</text><text class="sv-ts" x="75" y="217" text-anchor="middle">sozinha, sem rede</text><polyline class="sv-l" points="150,135 200,135" marker-end="url(#ar-3a)"/><text class="sv-tm" x="250" y="30" text-anchor="middle">partições antes</text><text class="sv-tm" x="510" y="30" text-anchor="middle">partições depois</text><line class="sv-lk0" x1="300" y1="69" x2="460" y2="69"/><line class="sv-lk1" x1="300" y1="69" x2="460" y2="135"/><line class="sv-lk2" x1="300" y1="69" x2="460" y2="201"/><line class="sv-lk0" x1="300" y1="135" x2="460" y2="69"/><line class="sv-lk1" x1="300" y1="135" x2="460" y2="135"/><line class="sv-lk2" x1="300" y1="135" x2="460" y2="201"/><line class="sv-lk0" x1="300" y1="201" x2="460" y2="69"/><line class="sv-lk1" x1="300" y1="201" x2="460" y2="135"/><line class="sv-lk2" x1="300" y1="201" x2="460" y2="201"/><rect class="sv-soft" x="200" y="44" width="100" height="50" rx="8"/><rect class="sv-soft" x="460" y="44" width="100" height="50" rx="8"/><rect class="sv-k0" x="210" y="58" width="22" height="22" rx="4"/><text class="sv-t2" x="221" y="74" text-anchor="middle">A</text><rect class="sv-k0" x="470" y="58" width="22" height="22" rx="4"/><text class="sv-t2" x="481" y="74" text-anchor="middle">A</text><rect class="sv-k1" x="238" y="58" width="22" height="22" rx="4"/><text class="sv-t2" x="249" y="74" text-anchor="middle">B</text><rect class="sv-k0" x="498" y="58" width="22" height="22" rx="4"/><text class="sv-t2" x="509" y="74" text-anchor="middle">A</text><rect class="sv-k2" x="266" y="58" width="22" height="22" rx="4"/><text class="sv-t2" x="277" y="74" text-anchor="middle">C</text><rect class="sv-k0" x="526" y="58" width="22" height="22" rx="4"/><text class="sv-t2" x="537" y="74" text-anchor="middle">A</text><rect class="sv-soft" x="200" y="110" width="100" height="50" rx="8"/><rect class="sv-soft" x="460" y="110" width="100" height="50" rx="8"/><rect class="sv-k1" x="210" y="124" width="22" height="22" rx="4"/><text class="sv-t2" x="221" y="140" text-anchor="middle">B</text><rect class="sv-k1" x="470" y="124" width="22" height="22" rx="4"/><text class="sv-t2" x="481" y="140" text-anchor="middle">B</text><rect class="sv-k2" x="238" y="124" width="22" height="22" rx="4"/><text class="sv-t2" x="249" y="140" text-anchor="middle">C</text><rect class="sv-k1" x="498" y="124" width="22" height="22" rx="4"/><text class="sv-t2" x="509" y="140" text-anchor="middle">B</text><rect class="sv-k0" x="266" y="124" width="22" height="22" rx="4"/><text class="sv-t2" x="277" y="140" text-anchor="middle">A</text><rect class="sv-k1" x="526" y="124" width="22" height="22" rx="4"/><text class="sv-t2" x="537" y="140" text-anchor="middle">B</text><rect class="sv-soft" x="200" y="176" width="100" height="50" rx="8"/><rect class="sv-soft" x="460" y="176" width="100" height="50" rx="8"/><rect class="sv-k2" x="210" y="190" width="22" height="22" rx="4"/><text class="sv-t2" x="221" y="206" text-anchor="middle">C</text><rect class="sv-k2" x="470" y="190" width="22" height="22" rx="4"/><text class="sv-t2" x="481" y="206" text-anchor="middle">C</text><rect class="sv-k0" x="238" y="190" width="22" height="22" rx="4"/><text class="sv-t2" x="249" y="206" text-anchor="middle">A</text><rect class="sv-k2" x="498" y="190" width="22" height="22" rx="4"/><text class="sv-t2" x="509" y="206" text-anchor="middle">C</text><rect class="sv-k1" x="266" y="190" width="22" height="22" rx="4"/><text class="sv-t2" x="277" y="206" text-anchor="middle">B</text><rect class="sv-k2" x="526" y="190" width="22" height="22" rx="4"/><text class="sv-t2" x="537" y="206" text-anchor="middle">C</text><polyline class="sv-l" points="560,135 610,135" marker-end="url(#ar-3a)"/><rect class="sv-acc" x="610" y="90" width="150" height="90" rx="8"/><text class="sv-tb" x="685.0" y="124.0" text-anchor="middle">Estágio 2</text><text class="sv-ts" x="685.0" y="141.0" text-anchor="middle">groupBy · agg</text><text class="sv-ts" x="685.0" y="156.0" text-anchor="middle">uma chave por partição</text><text class="sv-ta" x="380" y="252" text-anchor="middle">SHUFFLE: os dados cruzam a rede</text><text class="sv-ta" x="380" y="267" text-anchor="middle">e são reagrupados pela chave</text></svg></div><figcaption>O mecanismo do shuffle. Antes, cada partição mistura as chaves. Depois, cada uma guarda uma chave só. Para chegar lá, tudo passa pela rede.</figcaption></figure>
+<figure class="fig"><div class="fig-scroll"><svg class="sv" viewBox="0 0 760 205" role="img" aria-label="SQL e DataFrame convergem no mesmo plano lógico, que o otimizador reescreve antes de virar plano físico executado em paralelo" style="min-width:640px"><defs><marker id="ar-3b" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ar" d="M0 0L10 5L0 10z"/></marker><marker id="arA-3b" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ara" d="M0 0L10 5L0 10z"/></marker></defs><rect class="sv-box" x="0" y="22" width="170" height="44" rx="8"/><text class="sv-code" x="85" y="49" text-anchor="middle">spark.sql("SELECT …")</text><rect class="sv-box" x="0" y="82" width="170" height="44" rx="8"/><text class="sv-code" x="85" y="109" text-anchor="middle">df.groupBy(…).agg(…)</text><polyline class="sv-l" points="170,44 205,70" marker-end="url(#ar-3b)"/><polyline class="sv-l" points="170,104 205,90" marker-end="url(#ar-3b)"/><rect class="sv-box" x="205" y="50" width="105" height="60" rx="8"/><text class="sv-tb" x="257.5" y="76.5" text-anchor="middle">Plano</text><text class="sv-ts" x="257.5" y="93.5" text-anchor="middle">lógico</text><polyline class="sv-l" points="310,80 345,80" marker-end="url(#ar-3b)"/><rect class="sv-sig" x="345" y="50" width="130" height="60" rx="8"/><text class="sv-tb" x="410.0" y="76.5" text-anchor="middle">Otimizador</text><text class="sv-ts" x="410.0" y="93.5" text-anchor="middle">reescreve o plano</text><polyline class="sv-l" points="475,80 510,80" marker-end="url(#ar-3b)"/><rect class="sv-box" x="510" y="50" width="105" height="60" rx="8"/><text class="sv-tb" x="562.5" y="76.5" text-anchor="middle">Plano</text><text class="sv-ts" x="562.5" y="93.5" text-anchor="middle">físico</text><polyline class="sv-l" points="615,80 650,80" marker-end="url(#ar-3b)"/><rect class="sv-acc" x="650" y="50" width="110" height="60" rx="8"/><text class="sv-tb" x="705.0" y="76.5" text-anchor="middle">Executores</text><text class="sv-ts" x="705.0" y="93.5" text-anchor="middle">rodam em paralelo</text><line class="sv-ld" x1="410" y1="110" x2="410" y2="126"/><text class="sv-ts" x="410" y="142" text-anchor="middle">empurra filtros para a leitura</text><text class="sv-ts" x="410" y="157" text-anchor="middle">lê só as colunas usadas</text><text class="sv-ts" x="410" y="172" text-anchor="middle">poda partições</text><text class="sv-ts" x="410" y="187" text-anchor="middle">escolhe o tipo de join</text><text class="sv-codea" x="562" y="142" text-anchor="middle">df.explain()</text><text class="sv-ts" x="562" y="158" text-anchor="middle">mostra este plano</text><polyline class="sv-lda" points="562,128 562,112" marker-end="url(#arA-3b)"/></svg></div><figcaption>SQL e DataFrame descrevem o que se quer. O motor planeja, otimiza e só então executa. Por isso a escolha entre os dois é de legibilidade.</figcaption></figure>
+    <h3 class="sub">Ideias-chave</h3>
+    <div class="ideas">
+<article class="idea"><h4>Um motor planeja antes de executar</h4><p>DataFrame e SQL descrevem o que se quer. O motor monta um plano, otimiza e só então executa. O Spark é lazy: nada roda até uma ação como count, show ou write.</p></article>
+<article class="idea"><h4>DataFrame e SQL são o mesmo plano</h4><p>O otimizador trata os dois do mesmo jeito. Escolha pela clareza para quem vai ler o código.</p></article>
+<article class="idea"><h4>Shuffle é o custo escondido</h4><p>filter e select trabalham dentro da partição. groupBy, join e orderBy reagrupam dados entre máquinas, passando por rede e disco.</p></article>
+<article class="idea"><h4>Ler menos é o melhor desempenho</h4><p>Formato colunar, poda de partições e filtros empurrados para a leitura evitam abrir arquivos que não importam. O livro lista isso entre as otimizações de consulta.</p></article>
+<article class="idea"><h4>Joins distribuídos</h4><p>Se uma tabela é pequena, copiá-la para todos os executores (broadcast) evita embaralhar a grande. Senão, as duas são reagrupadas pela chave.</p></article>
+<article class="idea"><h4>Batch e streaming com a mesma API</h4><p>Em streaming, janelas fixas, deslizantes ou de sessão agrupam eventos por tempo.</p></article>
+    </div>
+    <div class="ask"><span class="mono">Para pensar</span><p>Antes de rodar, olhem df.explain(): quantas trocas de dados (Exchange) aparecem no plano?</p></div>
+    <div class="ask link"><span class="mono">No nosso caso</span><p>Na Prata, deduplicar pedidos usa uma janela, que reagrupa por chave: é um shuffle. Vamos abrir a Spark UI e ver.</p></div>
+  </div>
+</section>
+
+<section id="t4" class="part tpage" data-page data-title="Data Lake, Data Warehouse e Lakehouse">
+  <div class="wrap">
+    <button type="button" class="back" data-goto="disciplina">← Todos os tópicos</button>
+    <header class="part-head">
+      <span class="mono">Parte 1 · Tópico 4 de 6</span>
+      <h2>Data Lake, Data Warehouse e Lakehouse</h2>
+      <p>Três maneiras de organizar o dado analítico, e o que cada uma ganha e perde.</p>
+      <ul class="chips book" aria-label="Capítulos do livro"><li class="bk">Livro</li><li>Cap. 3 · Arquitetura</li><li>Cap. 6 · Armazenamento</li><li>Cap. 8 · Modelagem</li></ul>
+    </header>
+    
+    <figure class="fig"><div class="fig-scroll"><svg class="sv" viewBox="0 0 760 312" role="img" aria-label="Três colunas empilhadas: o data warehouse tem camada de tabela acoplada ao armazenamento; o data lake não tem camada de tabela; o lakehouse tem camada de tabela sobre object storage" style="min-width:640px"><defs><marker id="ar-4a" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ar" d="M0 0L10 5L0 10z"/></marker><marker id="arA-4a" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ara" d="M0 0L10 5L0 10z"/></marker></defs><text class="sv-tb" x="115" y="16" text-anchor="middle">Data warehouse</text><rect class="sv-box" x="0" y="30" width="230" height="44" rx="8"/><text class="sv-t" x="115.0" y="57.0" text-anchor="middle">BI e SQL</text><rect class="sv-acc" x="0" y="84" width="230" height="76" rx="8"/><text class="sv-tb" x="115.0" y="118.5" text-anchor="middle">Tabelas, esquema</text><text class="sv-ts" x="115.0" y="135.5" text-anchor="middle">e transações</text><rect class="sv-box" x="0" y="170" width="230" height="70" rx="8"/><text class="sv-tb" x="115.0" y="201.5" text-anchor="middle">Armazenamento do DW</text><text class="sv-ts" x="115.0" y="218.5" text-anchor="middle">acoplado ao motor</text><text class="sv-ts" x="115" y="266" text-anchor="middle">esquema na escrita</text><text class="sv-ts" x="115" y="281" text-anchor="middle">dado estruturado</text><text class="sv-ts" x="115" y="296" text-anchor="middle">consistência forte</text><text class="sv-tb" x="380" y="16" text-anchor="middle">Data lake</text><rect class="sv-box" x="265" y="30" width="230" height="44" rx="8"/><text class="sv-t" x="380.0" y="57.0" text-anchor="middle">Vários motores</text><rect class="sv-ghost" x="265" y="84" width="230" height="76" rx="8"/><text class="sv-tb" x="380.0" y="118.5" text-anchor="middle">Sem camada de tabela</text><text class="sv-ts" x="380.0" y="135.5" text-anchor="middle">nada garante consistência</text><rect class="sv-soft" x="265" y="170" width="230" height="70" rx="8"/><text class="sv-tb" x="380.0" y="201.5" text-anchor="middle">Arquivos em object storage</text><text class="sv-ts" x="380.0" y="218.5" text-anchor="middle">CSV, JSON, Parquet…</text><text class="sv-ts" x="380" y="266" text-anchor="middle">esquema na leitura</text><text class="sv-ts" x="380" y="281" text-anchor="middle">qualquer formato, barato</text><text class="sv-ts" x="380" y="296" text-anchor="middle">risco de data swamp</text><text class="sv-tb" x="645" y="16" text-anchor="middle">Lakehouse</text><rect class="sv-box" x="530" y="30" width="230" height="44" rx="8"/><text class="sv-t" x="645.0" y="57.0" text-anchor="middle">SQL · ML · IA</text><rect class="sv-acc" x="530" y="84" width="230" height="76" rx="8"/><text class="sv-tb" x="645.0" y="118.5" text-anchor="middle">Iceberg · Delta · Hudi</text><text class="sv-ts" x="645.0" y="135.5" text-anchor="middle">metadados, transações, versões</text><rect class="sv-bz" x="530" y="170" width="230" height="70" rx="8"/><text class="sv-tb" x="645.0" y="201.5" text-anchor="middle">Object storage + Parquet</text><text class="sv-ts" x="645.0" y="218.5" text-anchor="middle">arquivos abertos e baratos</text><text class="sv-ts" x="645" y="266" text-anchor="middle">tabelas confiáveis</text><text class="sv-ts" x="645" y="281" text-anchor="middle">sobre armazenamento barato</text><text class="sv-ts" x="645" y="296" text-anchor="middle">um dado, vários motores</text></svg></div><figcaption>Compare a camada do meio. O lake não tem. O warehouse tem, mas presa ao seu armazenamento. O lakehouse a coloca sobre arquivos abertos.</figcaption></figure>
+<figure class="fig"><div class="fig-scroll"><svg class="sv" viewBox="0 0 952 215" role="img" aria-label="Cadeia de leitura de uma tabela Iceberg: motor, catálogo, arquivo de metadados, lista de manifests, manifests e arquivos Parquet" style="min-width:780px"><defs><marker id="ar-4b" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ar" d="M0 0L10 5L0 10z"/></marker><marker id="arA-4b" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ara" d="M0 0L10 5L0 10z"/></marker></defs><text class="sv-tm" x="1" y="18" text-anchor="start">COMO UMA CONSULTA ENCONTRA OS DADOS NUMA TABELA ICEBERG</text><rect class="sv-box" x="1" y="32" width="138" height="64" rx="8"/><text class="sv-tb" x="70.0" y="60.5" text-anchor="middle">Motor</text><text class="sv-ts" x="70.0" y="77.5" text-anchor="middle">Spark, Trino</text><polyline class="sv-l" points="139,64 163,64" marker-end="url(#ar-4b)"/><rect class="sv-acc" x="163" y="32" width="138" height="64" rx="8"/><text class="sv-tb" x="232.0" y="53.0" text-anchor="middle">Catálogo</text><text class="sv-ts" x="232.0" y="70.0" text-anchor="middle">aponta para o</text><text class="sv-ts" x="232.0" y="85.0" text-anchor="middle">metadado atual</text><polyline class="sv-l" points="301,64 325,64" marker-end="url(#ar-4b)"/><rect class="sv-acc" x="325" y="32" width="138" height="64" rx="8"/><text class="sv-tb" x="394.0" y="53.0" text-anchor="middle">metadata.json</text><text class="sv-ts" x="394.0" y="70.0" text-anchor="middle">esquema,</text><text class="sv-ts" x="394.0" y="85.0" text-anchor="middle">partições, versões</text><polyline class="sv-l" points="463,64 487,64" marker-end="url(#ar-4b)"/><rect class="sv-acc" x="487" y="32" width="138" height="64" rx="8"/><text class="sv-tb" x="556.0" y="53.0" text-anchor="middle">Lista de manifests</text><text class="sv-ts" x="556.0" y="70.0" text-anchor="middle">uma por versão</text><text class="sv-ts" x="556.0" y="85.0" text-anchor="middle">da tabela</text><polyline class="sv-l" points="625,64 649,64" marker-end="url(#ar-4b)"/><rect class="sv-acc" x="649" y="32" width="138" height="64" rx="8"/><text class="sv-tb" x="718.0" y="53.0" text-anchor="middle">Manifests</text><text class="sv-ts" x="718.0" y="70.0" text-anchor="middle">lista arquivos</text><text class="sv-ts" x="718.0" y="85.0" text-anchor="middle">e estatísticas</text><polyline class="sv-l" points="787,64 811,64" marker-end="url(#ar-4b)"/><rect class="sv-bz" x="811" y="32" width="138" height="64" rx="8"/><text class="sv-tb" x="880.0" y="60.5" text-anchor="middle">Arquivos Parquet</text><text class="sv-ts" x="880.0" y="77.5" text-anchor="middle">os dados em si</text><polyline class="sv-l" points="163,108 163,116 787,116 787,108"/><text class="sv-ts" x="475.0" y="136" text-anchor="middle">metadados: pequenos, lidos primeiro</text><polyline class="sv-l" points="811,108 811,116 949,116 949,108"/><text class="sv-ts" x="880.0" y="136" text-anchor="middle">dados</text><text class="sv-ta" x="475" y="184" text-anchor="middle">Cada gravação cria um novo metadata.json e uma nova lista de manifests.</text><text class="sv-ta" x="475" y="199" text-anchor="middle">Os arquivos antigos continuam lá: é isso que permite o time travel.</text></svg></div><figcaption>O motor não lista pastas. Segue o ponteiro do catálogo até os manifests, que dizem exatamente quais arquivos Parquet fazem parte da versão pedida.</figcaption></figure>
+    <h3 class="sub">Ideias-chave</h3>
+    <div class="ideas">
+<article class="idea"><h4>Data warehouse</h4><p>Dado estruturado e modelado, com SQL e consistência. O esquema é definido na escrita. Os warehouses em nuvem separam computação e armazenamento, mas o dado vive dentro do produto.</p></article>
+<article class="idea"><h4>Data lake</h4><p>Guarda qualquer formato em object storage, barato e durável. O esquema é definido na leitura. Sem disciplina vira data swamp: ninguém sabe o que há ali nem se pode confiar.</p></article>
+<article class="idea"><h4>Lakehouse</h4><p>Mantém o dado em arquivos abertos, como Parquet, no object storage e acrescenta uma camada de tabela com metadados, transações e versões. Iceberg, Delta Lake e Hudi são essa camada.</p></article>
+<article class="idea"><h4>Por que objeto imutável pede formato de tabela</h4><p>No object storage, alterar um objeto é reescrevê-lo. Sem camada de tabela, atualizar 400 linhas vira reescrever pastas e deixar leitores vendo um estado pela metade. Com metadados, troca-se só a lista de arquivos.</p></article>
+<article class="idea"><h4>Medalhão é organização, não rival</h4><p>Bronze, Prata e Ouro são camadas dentro do lake. Na Ouro, a modelagem dimensional (Kimball), as tabelas largas e o Data Vault continuam valendo.</p></article>
+<article class="idea"><h4>Formatos de arquivo</h4><p>Parquet e ORC são colunares e servem bem a analytics. Avro é por linha e serve a troca de eventos. Arrow é para dados em memória.</p></article>
+    </div>
+    <div class="ask"><span class="mono">Para pensar</span><p>Se objetos são imutáveis, como atualizar 400 pedidos sem reescrever tudo?</p></div>
+    <div class="ask link"><span class="mono">No nosso caso</span><p>Abram o console do MinIO e comparem os buckets landing e warehouse. Na pasta metadata de uma tabela Iceberg está a cadeia do desenho acima.</p></div>
+  </div>
+</section>
+
+<section id="t5" class="part tpage" data-page data-title="Qualidade, governança e linhagem">
+  <div class="wrap">
+    <button type="button" class="back" data-goto="disciplina">← Todos os tópicos</button>
+    <header class="part-head">
+      <span class="mono">Parte 1 · Tópico 5 de 6</span>
+      <h2>Qualidade, governança e linhagem</h2>
+      <p>O que mantém o dado confiável depois que o pipeline já está rodando.</p>
+      <ul class="chips book" aria-label="Capítulos do livro"><li class="bk">Livro</li><li>Cap. 2 · Correntes subjacentes</li><li>Cap. 10 · Segurança e privacidade</li></ul>
+    </header>
+    
+    <figure class="fig"><div class="fig-scroll"><svg class="sv" viewBox="0 0 760 262" role="img" aria-label="Grafo de linhagem de dados do pedido bruto ao painel; uma mudança no esquema de bronze.pedidos destaca todas as tabelas e consumidores a jusante" style="min-width:640px"><defs><marker id="ar-5a" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ar" d="M0 0L10 5L0 10z"/></marker><marker id="arA-5a" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ara" d="M0 0L10 5L0 10z"/></marker></defs><polyline class="sv-l" points="126,83.0 159,83.0" marker-end="url(#ar-5a)"/><polyline class="sv-ls" points="284,83.0 317,83.0" marker-end="url(#ar-5a)"/><polyline class="sv-ls" points="442,83.0 475,83.0" marker-end="url(#ar-5a)"/><polyline class="sv-ls" points="600,83.0 633,83.0" marker-end="url(#ar-5a)"/><polyline class="sv-l" points="126,183.0 159,183.0" marker-end="url(#ar-5a)"/><polyline class="sv-l" points="284,183.0 317,183.0" marker-end="url(#ar-5a)"/><polyline class="sv-l" points="442,183.0 475,183.0" marker-end="url(#ar-5a)"/><polyline class="sv-ls" points="600,183.0 633,183.0" marker-end="url(#ar-5a)"/><polyline class="sv-ls" points="442,83.0 475,183.0" marker-end="url(#ar-5a)"/><polyline class="sv-l" points="442,183.0 475,83.0" marker-end="url(#ar-5a)"/><rect class="sv-box" x="1" y="60" width="125" height="46" rx="8"/><text class="sv-tb" x="63.5" y="79.5" text-anchor="middle">pedidos.jsonl</text><text class="sv-ts" x="63.5" y="96.5" text-anchor="middle">landing</text><rect class="sv-sig" x="159" y="60" width="125" height="46" rx="8"/><text class="sv-tb" x="221.5" y="79.5" text-anchor="middle">pedidos</text><text class="sv-ts" x="221.5" y="96.5" text-anchor="middle">bronze</text><rect class="sv-sig" x="317" y="60" width="125" height="46" rx="8"/><text class="sv-tb" x="379.5" y="79.5" text-anchor="middle">pedidos</text><text class="sv-ts" x="379.5" y="96.5" text-anchor="middle">prata</text><rect class="sv-sig" x="475" y="60" width="125" height="46" rx="8"/><text class="sv-tb" x="537.5" y="79.5" text-anchor="middle">vendas_diarias</text><text class="sv-ts" x="537.5" y="96.5" text-anchor="middle">ouro</text><rect class="sv-sig" x="633" y="60" width="125" height="46" rx="8"/><text class="sv-tb" x="695.5" y="79.5" text-anchor="middle">Painel</text><text class="sv-ts" x="695.5" y="96.5" text-anchor="middle">de vendas</text><rect class="sv-box" x="1" y="160" width="125" height="46" rx="8"/><text class="sv-tb" x="63.5" y="179.5" text-anchor="middle">clientes.csv</text><text class="sv-ts" x="63.5" y="196.5" text-anchor="middle">landing</text><rect class="sv-box" x="159" y="160" width="125" height="46" rx="8"/><text class="sv-tb" x="221.5" y="179.5" text-anchor="middle">clientes</text><text class="sv-ts" x="221.5" y="196.5" text-anchor="middle">bronze</text><rect class="sv-box" x="317" y="160" width="125" height="46" rx="8"/><text class="sv-tb" x="379.5" y="179.5" text-anchor="middle">clientes</text><text class="sv-ts" x="379.5" y="196.5" text-anchor="middle">prata</text><rect class="sv-sig" x="475" y="160" width="125" height="46" rx="8"/><text class="sv-tb" x="537.5" y="179.5" text-anchor="middle">clientes_360</text><text class="sv-ts" x="537.5" y="196.5" text-anchor="middle">ouro</text><rect class="sv-sig" x="633" y="160" width="125" height="46" rx="8"/><text class="sv-tb" x="695.5" y="179.5" text-anchor="middle">Modelo</text><text class="sv-ts" x="695.5" y="196.5" text-anchor="middle">de ML</text><text class="sv-ta" x="221.5" y="46" text-anchor="middle">ESQUEMA MUDOU AQUI</text><rect class="sv-sig" x="1" y="236" width="14" height="14" rx="3"/><text class="sv-ts" x="22" y="247" text-anchor="start">afetado por uma mudança em bronze.pedidos</text><rect class="sv-box" x="331" y="236" width="14" height="14" rx="3"/><text class="sv-ts" x="352" y="247" text-anchor="start">não afetado</text></svg></div><figcaption>Linhagem em ação: mudou o esquema de bronze.pedidos, e o grafo mostra de imediato o que pode quebrar adiante, inclusive o modelo de ML.</figcaption></figure>
+<figure class="fig"><div class="fig-scroll"><svg class="sv" viewBox="0 0 760 235" role="img" aria-label="Portão de qualidade: registros da Bronze passam por regras; os válidos seguem para a Prata, os suspeitos vão para a quarentena, são revisados e reprocessados; cada execução gera um relatório" style="min-width:640px"><defs><marker id="ar-5b" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ar" d="M0 0L10 5L0 10z"/></marker><marker id="arA-5b" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ara" d="M0 0L10 5L0 10z"/></marker></defs><rect class="sv-bz" x="0" y="85" width="110" height="50" rx="8"/><text class="sv-tb" x="55.0" y="106.5" text-anchor="middle">Bronze</text><text class="sv-ts" x="55.0" y="123.5" text-anchor="middle">registros crus</text><polyline class="sv-l" points="110,110 190,110" marker-end="url(#ar-5b)"/><rect class="sv-acc" x="190" y="70" width="150" height="80" rx="8"/><text class="sv-tb" x="265.0" y="99.0" text-anchor="middle">Regras de qualidade</text><text class="sv-ts" x="265.0" y="116.0" text-anchor="middle">tipo · chave única</text><text class="sv-ts" x="265.0" y="131.0" text-anchor="middle">domínio · e-mail</text><polyline class="sv-l" points="340,90 385,90 385,41 430,41" marker-end="url(#ar-5b)"/><text class="sv-ts" x="393" y="68" text-anchor="start">passa</text><rect class="sv-pr" x="430" y="15" width="120" height="52" rx="8"/><text class="sv-tb" x="490.0" y="37.5" text-anchor="middle">Prata</text><text class="sv-ts" x="490.0" y="54.5" text-anchor="middle">dado válido</text><polyline class="sv-l" points="340,130 385,130 385,179 430,179" marker-end="url(#ar-5b)"/><text class="sv-ts" x="393" y="156" text-anchor="start">falha</text><rect class="sv-sig" x="430" y="153" width="120" height="52" rx="8"/><text class="sv-tb" x="490.0" y="175.5" text-anchor="middle">Quarentena</text><text class="sv-ts" x="490.0" y="192.5" text-anchor="middle">dado suspeito</text><polyline class="sv-l" points="550,179 620,179" marker-end="url(#ar-5b)"/><text class="sv-ts" x="585" y="171" text-anchor="middle">analisa</text><rect class="sv-box" x="620" y="153" width="140" height="52" rx="8"/><text class="sv-tb" x="690.0" y="175.5" text-anchor="middle">Revisão</text><text class="sv-ts" x="690.0" y="192.5" text-anchor="middle">alguém corrige a causa</text><polyline class="sv-lda" points="690,153 690,110 340,110" marker-end="url(#arA-5b)"/><text class="sv-ta" x="515" y="103" text-anchor="middle">corrige e reprocessa</text><polyline class="sv-l" points="265,150 265,180" marker-end="url(#ar-5b)"/><text class="sv-ts" x="273" y="169" text-anchor="start">mede</text><rect class="sv-box" x="190" y="180" width="150" height="46" rx="8"/><text class="sv-tb" x="265.0" y="199.5" text-anchor="middle">Relatório de qualidade</text><text class="sv-ts" x="265.0" y="216.5" text-anchor="middle">tabela dq_resultados</text></svg></div><figcaption>Qualidade como mecanismo. Nada é descartado em silêncio: o que falha é isolado, explicado e pode voltar ao fluxo.</figcaption></figure>
+    <h3 class="sub">Ideias-chave</h3>
+    <div class="ideas">
+<article class="idea"><h4>Não é uma etapa, é uma corrente</h4><p>O livro coloca segurança, gestão de dados, DataOps, arquitetura, orquestração e engenharia de software por baixo de todas as etapas do ciclo.</p></article>
+<article class="idea"><h4>Qualidade tem dimensões</h4><p>Exatidão, completude e atualidade são as que o livro destaca, além de unicidade, validade e consistência. Cada regra mede uma delas.</p></article>
+<article class="idea"><h4>Governança</h4><p>Garantir que o dado seja seguro, tenha qualidade e possa ser encontrado, com dono e definições claras. Metadados de negócio, técnicos e operacionais sustentam isso.</p></article>
+<article class="idea"><h4>Linhagem</h4><p>De onde o dado veio e quem o usa. Serve para análise de impacto (se isto mudar, quem quebra?) e para auditoria.</p></article>
+<article class="idea"><h4>DataOps</h4><p>Automação, observabilidade e resposta a incidentes aplicadas a dados. Saber que quebrou antes do usuário: frescor, volume, esquema e distribuição.</p></article>
+<article class="idea"><h4>Segurança e privacidade</h4><p>Menor privilégio, criptografia e tratamento de dado pessoal antes de espalhá-lo. Vale em dobro para o dado que alimenta IA.</p></article>
+    </div>
+    <div class="ask"><span class="mono">Para pensar</span><p>Quem é o dono da tabela de vendas? Se ninguém sabe, o que acontece quando ela quebrar numa segunda-feira?</p></div>
+    <div class="ask link"><span class="mono">No nosso caso</span><p>A Prata mede a qualidade antes e depois, isola o que falha em uma quarentena e registra o relatório numa tabela.</p></div>
+  </div>
+</section>
+
+<section id="t6" class="part tpage" data-page data-title="Dados para Analytics, ML e IA generativa">
+  <div class="wrap">
+    <button type="button" class="back" data-goto="disciplina">← Todos os tópicos</button>
+    <header class="part-head">
+      <span class="mono">Parte 1 · Tópico 6 de 6</span>
+      <h2>Dados para Analytics, ML e IA generativa</h2>
+      <p>A Ouro é onde o trabalho vira valor: painel, modelo, assistente e dado de volta para a operação.</p>
+      <ul class="chips book" aria-label="Capítulos do livro"><li class="bk">Livro</li><li>Cap. 9 · Servir dados</li><li>Cap. 11 · O futuro</li></ul>
+    </header>
+    <p class="note" style="margin:0 0 24px">O livro é de 2022 e não trata de RAG. A ideia de servir dados com confiança se estende a ele.</p>
+    <figure class="fig"><div class="fig-scroll"><svg class="sv" viewBox="0 0 760 330" role="img" aria-label="A camada Ouro no centro alimentando painel, IA generativa e ML, com previsões voltando à Ouro e reverse ETL levando segmentos ao CRM" style="min-width:640px"><defs><marker id="ar-6a" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ar" d="M0 0L10 5L0 10z"/></marker><marker id="arA-6a" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ara" d="M0 0L10 5L0 10z"/></marker></defs><rect class="sv-ou" x="300" y="128" width="160" height="76" rx="8"/><text class="sv-tb" x="380.0" y="155.0" text-anchor="middle">Ouro</text><text class="sv-ts" x="380.0" y="172.0" text-anchor="middle">uma fonte,</text><text class="sv-ts" x="380.0" y="187.0" text-anchor="middle">vários consumos</text><rect class="sv-acc" x="0" y="14" width="230" height="66" rx="8"/><text class="sv-tb" x="115.0" y="36.0" text-anchor="middle">Painel (analytics)</text><text class="sv-ts" x="115.0" y="53.0" text-anchor="middle">negócio, operacional</text><text class="sv-ts" x="115.0" y="68.0" text-anchor="middle">ou embarcado</text><rect class="sv-acc" x="530" y="14" width="230" height="66" rx="8"/><text class="sv-tb" x="645.0" y="36.0" text-anchor="middle">IA generativa</text><text class="sv-ts" x="645.0" y="53.0" text-anchor="middle">texto → embeddings →</text><text class="sv-ts" x="645.0" y="68.0" text-anchor="middle">busca + LLM (RAG)</text><rect class="sv-acc" x="0" y="250" width="230" height="66" rx="8"/><text class="sv-tb" x="115.0" y="272.0" text-anchor="middle">ML tradicional</text><text class="sv-ts" x="115.0" y="289.0" text-anchor="middle">features → modelo →</text><text class="sv-ts" x="115.0" y="304.0" text-anchor="middle">previsões</text><rect class="sv-acc" x="530" y="250" width="230" height="66" rx="8"/><text class="sv-tb" x="645.0" y="272.0" text-anchor="middle">Reverse ETL</text><text class="sv-ts" x="645.0" y="289.0" text-anchor="middle">dado tratado volta</text><text class="sv-ts" x="645.0" y="304.0" text-anchor="middle">ao CRM e a e-mails</text><polyline class="sv-l" points="300,140 232,72" marker-end="url(#ar-6a)"/><text class="sv-ts" x="258" y="108" text-anchor="end">lê vendas_diarias</text><polyline class="sv-l" points="460,140 528,72" marker-end="url(#ar-6a)"/><text class="sv-ts" x="502" y="108" text-anchor="start">lê avaliacoes</text><polyline class="sv-l" points="305,200 232,258" marker-end="url(#ar-6a)"/><text class="sv-ts" x="258" y="232" text-anchor="end">lê features</text><polyline class="sv-lda" points="232,296 335,206" marker-end="url(#arA-6a)"/><text class="sv-ta" x="294" y="276" text-anchor="start">grava previsões</text><polyline class="sv-l" points="460,192 528,258" marker-end="url(#ar-6a)"/><text class="sv-ts" x="500" y="232" text-anchor="start">envia segmentos</text></svg></div><figcaption>Uma fonte, vários consumos. Repare nas duas setas que voltam: as previsões entram de novo no lakehouse, e o reverse ETL leva o dado de volta à operação.</figcaption></figure>
+<figure class="fig"><div class="fig-scroll"><svg class="sv" viewBox="0 0 764 245" role="img" aria-label="Duas pistas do RAG: indexação, que limpa, gera embeddings e grava na tabela Iceberg e no índice vetorial; consulta, que embute a pergunta, busca por similaridade e entrega as evidências ao LLM" style="min-width:640px"><defs><marker id="ar-6b" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ar" d="M0 0L10 5L0 10z"/></marker><marker id="arA-6b" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path class="sv-ara" d="M0 0L10 5L0 10z"/></marker></defs><g transform="translate(2,0)"><text class="sv-tm" x="1" y="16" text-anchor="start">INDEXAÇÃO · feita antes, no pipeline</text><rect class="sv-ou" x="0" y="30" width="110" height="55" rx="8"/><text class="sv-tb" x="55.0" y="54.0" text-anchor="middle">Avaliações</text><text class="sv-ts" x="55.0" y="71.0" text-anchor="middle">tabela Ouro</text><polyline class="sv-l" points="110,57 150,57" marker-end="url(#ar-6b)"/><rect class="sv-sig" x="150" y="30" width="130" height="55" rx="8"/><text class="sv-tb" x="215.0" y="54.0" text-anchor="middle">Limpar</text><text class="sv-ts" x="215.0" y="71.0" text-anchor="middle">e mascarar PII</text><polyline class="sv-l" points="280,57 320,57" marker-end="url(#ar-6b)"/><rect class="sv-acc" x="320" y="30" width="110" height="55" rx="8"/><text class="sv-tb" x="375.0" y="54.0" text-anchor="middle">Embeddings</text><text class="sv-ts" x="375.0" y="71.0" text-anchor="middle">um modelo só</text><polyline class="sv-l" points="430,57 470,57" marker-end="url(#ar-6b)"/><rect class="sv-ou" x="470" y="30" width="130" height="55" rx="8"/><text class="sv-tb" x="535.0" y="54.0" text-anchor="middle">Tabela Iceberg</text><text class="sv-ts" x="535.0" y="71.0" text-anchor="middle">fonte da verdade</text><polyline class="sv-l" points="600,57 640,57" marker-end="url(#ar-6b)"/><rect class="sv-acc" x="640" y="30" width="120" height="55" rx="8"/><text class="sv-tb" x="700.0" y="54.0" text-anchor="middle">Índice vetorial</text><text class="sv-ts" x="700.0" y="71.0" text-anchor="middle">pode ser refeito</text><text class="sv-tm" x="1" y="158" text-anchor="start">CONSULTA · feita a cada pergunta</text><rect class="sv-box" x="0" y="170" width="110" height="55" rx="8"/><text class="sv-tb" x="55.0" y="194.0" text-anchor="middle">Pergunta</text><text class="sv-ts" x="55.0" y="211.0" text-anchor="middle">do usuário</text><polyline class="sv-l" points="110,197 150,197" marker-end="url(#ar-6b)"/><rect class="sv-acc" x="150" y="170" width="130" height="55" rx="8"/><text class="sv-tb" x="215.0" y="194.0" text-anchor="middle">Embedding</text><text class="sv-ts" x="215.0" y="211.0" text-anchor="middle">da pergunta</text><polyline class="sv-l" points="280,197 320,197" marker-end="url(#ar-6b)"/><rect class="sv-acc" x="320" y="170" width="130" height="55" rx="8"/><text class="sv-tb" x="385.0" y="194.0" text-anchor="middle">Busca top-k</text><text class="sv-ts" x="385.0" y="211.0" text-anchor="middle">+ filtros</text><polyline class="sv-l" points="450,197 490,197" marker-end="url(#ar-6b)"/><rect class="sv-sig" x="490" y="170" width="130" height="55" rx="8"/><text class="sv-tb" x="555.0" y="194.0" text-anchor="middle">LLM</text><text class="sv-ts" x="555.0" y="211.0" text-anchor="middle">gera a resposta</text><polyline class="sv-l" points="620,197 660,197" marker-end="url(#ar-6b)"/><rect class="sv-ou" x="660" y="170" width="100" height="55" rx="8"/><text class="sv-tb" x="710.0" y="194.0" text-anchor="middle">Resposta</text><text class="sv-ts" x="710.0" y="211.0" text-anchor="middle">com fontes</text><polyline class="sv-lda" points="700,85 700,128 385,128 385,170" marker-end="url(#arA-6b)"/><text class="sv-ta" x="545" y="121" text-anchor="middle">similaridade</text><polyline class="sv-lda" points="375,85 375,108 215,108 215,170" marker-end="url(#arA-6b)"/><text class="sv-ta" x="295" y="101" text-anchor="middle">mesmo modelo</text></g></svg></div><figcaption>O RAG é dois pipelines. O de cima roda antes e alimenta o índice. O de baixo roda a cada pergunta. O mesmo modelo de embeddings precisa servir aos dois.</figcaption></figure>
+    <h3 class="sub">Ideias-chave</h3>
+    <div class="ideas">
+<article class="idea"><h4>Servir é entregar com confiança</h4><p>Analytics de negócio (relatórios e painéis), operacional (quase tempo real) e embarcado (dentro de produtos para clientes). Só se confia no que tem definições e qualidade claras.</p></article>
+<article class="idea"><h4>Camada semântica</h4><p>Definir uma vez o que é “receita” e usar em todo painel evita números diferentes para a mesma pergunta.</p></article>
+<article class="idea"><h4>ML: base sem vazamento</h4><p>Features calculadas só com o que se sabia na data de corte. O engenheiro de dados entrega uma base reproduzível, e as previsões voltam para o lake.</p></article>
+<article class="idea"><h4>Reverse ETL</h4><p>Levar o dado tratado de volta aos sistemas operacionais, como CRM e e-mail. A análise passa a mudar o que acontece, e não só o que se lê.</p></article>
+<article class="idea"><h4>IA generativa é mais um consumo</h4><p>Texto limpo e com metadados vira embeddings, vetores que capturam significado, guardados num índice vetorial. Na pergunta, busca-se por similaridade e o LLM responde com base nas evidências.</p></article>
+<article class="idea"><h4>Cuidados</h4><p>Mascarar dado pessoal antes de gerar embeddings, versionar o modelo de embeddings (trocar o modelo exige reindexar) e avaliar as respostas com perguntas de teste.</p></article>
+    </div>
+    <div class="ask"><span class="mono">Para pensar</span><p>Que dado do MercadoNordeste não deveria virar embedding? Por quê?</p></div>
+    <div class="ask link"><span class="mono">No nosso caso</span><p>No caso prático a Ouro serve dois consumos: três tabelas vão para o Postgres e o Metabase, e os comentários dos clientes viram chunks prontos para o banco vetorial.</p></div>
+  </div>
+</section>
+
+<section id="arquitetura" class="part" data-page data-title="Arquitetura">
+  <div class="wrap">
+    <header class="part-head">
+      <span class="mono">Parte 2</span>
+      <h2>A arquitetura que vamos construir</h2>
+      <p>Medalhão em três camadas sobre object storage, com Apache Iceberg organizando as tabelas e os metadados.</p>
+    </header>
+    <div class="flow" role="img" aria-label="Fluxo: fontes, landing, bronze, prata, ouro e consumo, sobre object storage e tabelas Iceberg">
+      <div class="node n-src">Fontes<small>CSV, JSON</small></div>
+      <div class="node n-src">Landing<small>arquivos crus</small></div>
+      <div class="node n-bronze">Bronze<small>dado cru</small></div>
+      <div class="node n-prata">Prata<small>dado limpo</small></div>
+      <div class="node n-ouro">Ouro<small>pronto para uso</small></div>
+      <div class="node n-use">Consumo<small>painel · IA</small></div>
+      <div class="band b-os"><b>Object storage</b> (MinIO, compatível com S3): buckets landing e warehouse</div>
+      <div class="band b-ice"><b>Apache Iceberg</b>: tabelas sobre Parquet</div>
+      <div class="band b-meta"><b>Metadados e qualidade</b> acompanham todas as camadas: origem, lote, regras e relatório.</div>
+    </div>
+    <h3 class="sub">Cada camada tem um contrato</h3>
+    <div class="tabs" data-tabs><div class="tablist" role="tablist"><button role="tab" id="cam-t0" aria-controls="cam-p0" aria-selected="false" tabindex="-1">Landing</button><button role="tab" id="cam-t1" aria-controls="cam-p1" aria-selected="true" tabindex="0">Bronze</button><button role="tab" id="cam-t2" aria-controls="cam-p2" aria-selected="false" tabindex="-1">Prata</button><button role="tab" id="cam-t3" aria-controls="cam-p3" aria-selected="false" tabindex="-1">Ouro</button></div><div role="tabpanel" id="cam-p0" aria-labelledby="cam-t0" hidden><div class="layer bronze-off"><p class="layer-lead">Os arquivos chegam como a origem os entrega: CSV, JSON, qualquer formato.</p><ul class="plain"><li>Nada é transformado.</li><li>Fica no bucket landing, no object storage.</li><li>É a prova do que a origem enviou.</li></ul></div></div><div role="tabpanel" id="cam-p1" aria-labelledby="cam-t1"><div class="layer bronze"><p class="layer-lead">O dado cru vira tabela Iceberg, sem ser julgado.</p><ul class="plain"><li>Tudo guardado como chegou (os CSVs entram como texto).</li><li>Colunas técnicas de rastreio: quando entrou, de qual arquivo, de qual lote.</li><li>Reexecutar o mesmo lote não duplica linhas.</li></ul></div></div><div role="tabpanel" id="cam-p2" aria-labelledby="cam-t2" hidden><div class="layer prata"><p class="layer-lead">Limpar, tipar, deduplicar e isolar o que está errado.</p><ul class="plain"><li>Tipos corretos, chaves únicas, valores válidos.</li><li>O que não passa vai para uma tabela de quarentena, nunca para o lixo.</li><li>A qualidade é medida antes e depois.</li></ul></div></div><div role="tabpanel" id="cam-p3" aria-labelledby="cam-t3" hidden><div class="layer ouro"><p class="layer-lead">Dados prontos para responder perguntas de negócio.</p><ul class="plain"><li>Cada tabela tem um consumidor e uma pergunta.</li><li>Tem regras de negócio escritas (por exemplo, pedido cancelado não é receita).</li><li>É daqui que saem painéis, modelos e IA.</li></ul></div></div></div>
+    <h3 class="sub">O que o Iceberg acrescenta ao Parquet</h3>
+    <div class="feats">
+<article class="feat"><h3>MERGE</h3><p>Atualiza o que mudou e insere o que é novo, em uma operação só.</p></article>
+<article class="feat"><h3>Time travel</h3><p>Consulta a tabela como ela estava antes de uma mudança.</p></article>
+<article class="feat"><h3>Evolução de esquema e partição</h3><p>Adiciona colunas ou muda a partição sem reescrever os dados antigos.</p></article>
+<article class="feat"><h3>Snapshots e rollback</h3><p>Cada mudança gera uma versão. Dá para descobrir o que houve e voltar.</p></article>
+    </div>
+    <p class="note">Delta Lake e Hudi aparecem na comparação conceitual. A prática é toda em Iceberg.</p>
+  </div>
+</section>
+
+<section id="caso" class="part" data-page data-title="Caso prático">
+  <div class="wrap">
+    <header class="part-head">
+      <span class="mono">Parte 3</span>
+      <h2>Caso prático: MercadoNordeste</h2>
+      <p>Um e-commerce regional de cinco estados do Nordeste. Chegam arquivos de clientes, produtos, pedidos e avaliações, e eles chegam sujos de propósito. Descobrir o que está errado faz parte da atividade.</p>
+    </header>
+    <h3 class="sub" style="margin-top:0">Um pipeline, três notebooks</h3>
+    <div class="trilhas">
+      <article class="trilha"><span class="trilha-k">1</span><h3>Bronze</h3><p>Os arquivos chegam ao object storage e viram tabelas Iceberg, como vieram, com rastreio de lote e origem. Reexecutar não duplica.</p></article>
+      <article class="trilha"><span class="trilha-k">2</span><h3>Prata</h3><p>Limpar, tipar, deduplicar. O que viola uma regra vai para a quarentena, e a qualidade é medida num relatório.</p></article>
+      <article class="trilha"><span class="trilha-k">3</span><h3>Ouro</h3><p>O foco do caso. Uma fonte de verdade alimentando dois consumos, descritos abaixo.</p></article>
+    </div>
+    <p class="note">No código as camadas se chamam <code>bronze</code>, <code>silver</code> e <code>gold</code>. Um quarto notebook, opcional, mostra o banco vetorial funcionando.</p>
+    <h3 class="sub">A Ouro serve dois consumos</h3>
+    <div class="two">
+      <article class="card"><h3>Para pessoas: painel</h3>
+        <p style="margin:0 0 12px;color:var(--muted)">A Ouro é gravada no Postgres e o Metabase lê de lá. O Iceberg continua sendo a fonte da verdade.</p>
+        <div class="case-grid" style="grid-template-columns:1fr">
+          <article class="otab"><code>gold.vendas_diarias</code><span class="mono">Painel</span><p>Quanto vendemos por dia, categoria, estado e canal?</p></article>
+          <article class="otab"><code>gold.clientes_360</code><span class="mono">Marketing</span><p>Quem são os campeões e quem está em risco?</p></article>
+          <article class="otab"><code>gold.avaliacoes_resumo</code><span class="mono">Satisfação</span><p>Como a nota média evolui por categoria?</p></article>
+        </div>
+      </article>
+      <article class="card"><h3>Para a IA: banco vetorial</h3>
+        <p style="margin:0 0 12px;color:var(--muted)">Os comentários dos clientes viram uma tabela de chunks, pronta para virar vetor. É a base do próximo módulo.</p>
+        <ul class="plain">
+          <li>Texto limpo e dados pessoais mascarados (CPF, telefone, e-mail).</li>
+          <li>Identificador estável por chunk e um hash do conteúdo.</li>
+          <li>Metadados para filtrar a busca: categoria, nota e data.</li>
+          <li>Guardada no Iceberg e copiada para o pgvector, com o embedding ainda por calcular.</li>
+          <li>O hash decide o que precisa de embedding novo: texto igual não paga de novo.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="ambiente" class="part" data-page data-title="Seu ambiente">
+  <div class="wrap">
+    <header class="part-head">
+      <span class="mono">Parte 4</span>
+      <h2>Seu ambiente</h2>
+      <p>Tudo roda no seu notebook, sem nuvem paga. O Spark roda dentro do seu Python, e o Docker só mantém os serviços.</p>
+    </header>
+    <div class="two">
+      <article class="card"><h3>PySpark local</h3>
+        <p style="margin:0 0 12px;color:var(--muted)">É o Spark de verdade, sem cluster, usando 2 núcleos e 2 GB de memória. Precisa de Java 17 e das bibliotecas do kit. No Windows, use o WSL2.</p>
+        <p style="margin:0;color:var(--muted)">Na primeira execução ele baixa cerca de 200 MB de bibliotecas. Faça isso em casa, com internet boa.</p>
+      </article>
+      <article class="card"><h3>Docker: os serviços</h3>
+        <p style="margin:0 0 12px;color:var(--muted)">Sobem o object storage, o Postgres com a extensão de vetores e o Metabase.</p>
+        <ul class="serv">
+<li><span>MinIO (console do object storage)</span><code>localhost:9001</code></li>
+<li><span>Metabase (painéis)</span><code>localhost:3000</code></li>
+<li><span>Postgres</span><code>localhost:5432</code></li>
+<li><span>Spark UI (durante um job)</span><code>localhost:4040</code></li>
+        </ul>
+      </article>
+    </div>
+    <h3 class="sub">Antes da aula</h3>
+    <ol class="check"><li>Instale o Java 17 (no Windows, use o WSL2) e crie um ambiente virtual com o requirements.txt do kit.</li><li>Na pasta docker do kit, rode docker compose up -d e espere cerca de um minuto.</li><li>Abra o notebook 01_bronze e rode o Passo 0. Ele diz o que ainda falta no ambiente.</li><li>Se algo falhar, copie a mensagem de erro inteira e peça ajuda.</li></ol>
+  </div>
+</section>
+
+<section id="fim" class="part end" data-page data-title="Encerramento" style="border-bottom:0">
+  <div class="wrap">
+    <span class="mono" style="color:var(--accent)">Encerramento</span>
+    <h2>Uma fonte de verdade, vários consumos.</h2>
+    <p class="eq">Bronze <mark>+</mark> Prata <mark>+</mark> Ouro <mark>=</mark> dado em que dá para confiar</p>
+    <p>Deixe o ambiente rodando antes da aula. O Passo 0 do notebook 01 diz o que falta.</p>
+  </div>
+</section>
+</main>
+<div class="pager" role="navigation" aria-label="Páginas da apresentação">
+  <button type="button" id="prev" class="pg-btn">← Anterior</button>
+  <div class="dots" id="dots"></div>
+  <span class="pg-count" id="count" aria-live="polite"></span>
+  <button type="button" id="next" class="pg-btn pg-next">Próxima →</button>
+</div>
+<script>
+(function(){
+  var pages = Array.prototype.slice.call(document.querySelectorAll('[data-page]'));
+  var dots = document.getElementById('dots'), count = document.getElementById('count');
+  var prev = document.getElementById('prev'), next = document.getElementById('next');
+  var cur = 0;
+  pages.forEach(function(p,i){
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'dot';
+    b.setAttribute('aria-label', 'Ir para: ' + p.getAttribute('data-title'));
+    b.addEventListener('click', function(){ show(i); });
+    dots.appendChild(b);
+  });
+  function show(i){
+    cur = Math.max(0, Math.min(pages.length-1, i));
+    pages.forEach(function(p,k){ p.hidden = (k !== cur); });
+    Array.prototype.forEach.call(dots.children, function(d,k){ d.setAttribute('aria-current', k === cur ? 'true' : 'false'); });
+    count.textContent = (cur+1) + ' de ' + pages.length;
+    prev.disabled = (cur === 0);
+    next.disabled = (cur === pages.length-1);
+    try { window.scrollTo(0,0); pages[cur].scrollIntoView({block:'start'}); } catch(e) {}
+    try { history.replaceState(null, '', '#' + pages[cur].id); } catch(e) {}
+  }
+  prev.addEventListener('click', function(){ show(cur-1); });
+  next.addEventListener('click', function(){ show(cur+1); });
+  document.addEventListener('keydown', function(ev){
+    if (ev.altKey || ev.ctrlKey || ev.metaKey) return;
+    if (ev.target.closest && ev.target.closest('[role=tablist]')) return;
+    if (ev.key === 'ArrowRight') { ev.preventDefault(); show(cur+1); }
+    if (ev.key === 'ArrowLeft')  { ev.preventDefault(); show(cur-1); }
+  });
+  document.addEventListener('click', function(ev){
+    var g = ev.target.closest && ev.target.closest('[data-goto]');
+    if (!g) return;
+    var id = g.getAttribute('data-goto');
+    pages.forEach(function(p,i){ if (p.id === id) show(i); });
+  });
+  var x0 = null, y0 = null;
+  document.addEventListener('touchstart', function(ev){ var t = ev.touches[0]; x0 = t.clientX; y0 = t.clientY; }, {passive:true});
+  document.addEventListener('touchend', function(ev){
+    if (x0 === null) return;
+    var t = ev.changedTouches[0], dx = t.clientX - x0, dy = t.clientY - y0;
+    x0 = null;
+    if (Math.abs(dx) > 70 && Math.abs(dy) < 40) show(cur + (dx < 0 ? 1 : -1));
+  }, {passive:true});
+  document.querySelectorAll('[data-tabs]').forEach(function(box){
+    var tabs = Array.prototype.slice.call(box.querySelectorAll('[role=tab]'));
+    function select(n, focus){
+      tabs.forEach(function(t,i){
+        var on = i === n;
+        t.setAttribute('aria-selected', on ? 'true':'false');
+        t.tabIndex = on ? 0 : -1;
+        document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+        if (on && focus) t.focus();
+      });
+    }
+    tabs.forEach(function(t,i){
+      t.addEventListener('click', function(){ select(i,false); });
+      t.addEventListener('keydown', function(ev){
+        if (ev.key === 'ArrowRight') { ev.preventDefault(); ev.stopPropagation(); select((i+1)%tabs.length,true); }
+        if (ev.key === 'ArrowLeft')  { ev.preventDefault(); ev.stopPropagation(); select((i-1+tabs.length)%tabs.length,true); }
+      });
+    });
+  });
+  var start = 0, h = (location.hash || '').replace('#','');
+  pages.forEach(function(p,i){ if (p.id === h) start = i; });
+  show(start);
+})();
+</script>
+
+</body></html>

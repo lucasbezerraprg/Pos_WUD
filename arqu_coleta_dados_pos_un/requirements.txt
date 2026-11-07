@@ -1,0 +1,9 @@
+# Python 3.10-3.12 + Java 17 (JDK). Use um ambiente virtual.
+pyspark==3.5.3
+jupyterlab
+pandas>=2.2.2
+pyarrow>=16.1.0
+boto3>=1.34.136
+psycopg2-binary>=2.9.9
+python-dotenv>=1.0.1
+fastembed          # embeddings locais (ONNX, sem GPU). Pode pular se for usar EMBED_BACKEND=hash

@@ -1,0 +1,602 @@
+cliente_id,nome,email,cidade,estado,data_cadastro,canal_aquisicao
+5001,Juliana Oliveira,juliana.oliveira5001@exemplo.com,Maceió,AL,2026-07-21,indicacao
+5002,Aline Ferreira,aline.ferreira5002@exemplo.com,Arapiraca,AL,2026-07-25,email
+5003,Larissa Gomes,larissa.gomes5003@exemplo.com,Lagarto,SE,2026-07-14,google_ads
+5004,Gabriel Souza,gabriel.souza5004@exemplo.com,Maceió,AL,2026-07-19,instagram
+5005,Aline Silva,aline.silva5005@exemplo.com,Campina Grande,PB,2026-07-16,google_ads
+5006,Bruno Costa,bruno.costa5006@exemplo.com,Parnamirim,RN,2026-07-28,organico
+5007,Fernanda Araújo,fernanda.araújo5007@exemplo.com,Cabedelo,PB,2026-07-17,email
+5008,Felipe Araújo,felipe.araújo5008@exemplo.com,Campina Grande,PB,2026-07-07,indicacao
+5009,Fernanda Silva,fernanda.silva5009@exemplo.com,Olinda,PE,2026-07-03,indicacao
+5010,João Gomes,joão.gomes5010@exemplo.com,Fortaleza,CE,2026-07-06,organico
+5011,Thiago Cavalcanti,thiago.cavalcanti5011@exemplo.com,Natal,RN,2026-07-29,google_ads
+5012,Ana Pereira,ana.pereira5012@exemplo.com,Arapiraca,AL,2026-07-24,google_ads
+5013,Aline Medeiros,aline.medeiros5013@exemplo.com,Mossoró,RN,2026-07-20,organico
+5014,Mateus Gomes,mateus.gomes5014@exemplo.com,Natal,RN,2026-07-25,instagram
+5015,João Alves,joão.alves5015@exemplo.com,Mossoró,RN,2026-07-08,email
+5016,Aline Alves,aline.alves5016@exemplo.com,Lagarto,SE,2026-07-20,organico
+5017,Bruno Silva,bruno.silva5017@exemplo.com,Fortaleza,CE,2026-07-21,indicacao
+5018,Lucas Oliveira,lucas.oliveira5018@exemplo.com,Cabedelo,PB,2026-07-11,organico
+5019,Thiago Pereira,thiago.pereira5019@exemplo.com,Arapiraca,AL,2026-07-30,indicacao
+5020,Lucas Ribeiro,lucas.ribeiro5020@exemplo.com,Lagarto,SE,2026-07-20,instagram
+5021,Aline Oliveira,aline.oliveira5021@exemplo.com,Mossoró,RN,2026-07-29,google_ads
+5022,Ana Pereira,ana.pereira5022@exemplo.com,Salvador,BA,2026-07-09,organico
+5023,Lucas Santos,lucas.santos5023@exemplo.com,Lagarto,SE,2026-07-18,instagram
+5024,Felipe Lima,felipe.lima5024@exemplo.com,Caruaru,PE,2026-07-17,indicacao
+5025,Diego Araújo,diego.araújo5025@exemplo.com,Aracaju,SE,2026-07-27,google_ads
+5026,Felipe Araújo,felipe.araújo5026@exemplo.com,Caruaru,PE,2026-07-05,instagram
+5027,Mateus Medeiros,mateus.medeiros5027@exemplo.com,Juazeiro do Norte,CE,2026-07-06,organico
+5028,Felipe Gomes,felipe.gomes5028@exemplo.com,Vitória da Conquista,BA,2026-07-08,instagram
+5029,Carla Ribeiro,carla.ribeiro5029@exemplo.com,Arapiraca,AL,2026-07-15,organico
+5030,Patrícia Araújo,patrícia.araújo5030@exemplo.com,Lagarto,SE,2026-07-18,email
+5031,Gabriel Ferreira,gabriel.ferreira5031@exemplo.com,Lagarto,SE,2026-07-27,organico
+5032,João Ribeiro,joão.ribeiro5032@exemplo.com,Lagarto,SE,2026-07-02,instagram
+5033,Gabriel Ribeiro,gabriel.ribeiro5033@exemplo.com,Vitória da Conquista,BA,2026-07-29,email
+5034,Thiago Santos,thiago.santos5034@exemplo.com,Parnamirim,RN,2026-07-04,email
+5035,Mateus Silva,mateus.silva5035@exemplo.com,Olinda,PE,2026-07-01,instagram
+5036,Juliana Santos,juliana.santos5036@exemplo.com,Fortaleza,CE,2026-07-27,email
+5037,Camila Alves,camila.alves5037@exemplo.com,Maceió,AL,2026-07-05,indicacao
+5038,Fernanda Medeiros,fernanda.medeiros5038@exemplo.com,Olinda,PE,2026-07-24,instagram
+5039,Aline Barbosa,aline.barbosa5039@exemplo.com,Cabedelo,PB,2026-07-08,organico
+5040,Lucas Ferreira,lucas.ferreira5040@exemplo.com,Recife,PE,2026-07-07,email
+5041,Bruno Barbosa,bruno.barbosa5041@exemplo.com,Fortaleza,CE,2026-07-24,organico
+5042,Aline Araújo,aline.araújo5042@exemplo.com,Maceió,AL,2026-07-19,indicacao
+5043,Larissa Souza,larissa.souza5043@exemplo.com,Campina Grande,PB,2026-07-22,instagram
+5044,Beatriz Ferreira,beatriz.ferreira5044@exemplo.com,João Pessoa,PB,2026-07-21,email
+5045,Carla Lima,carla.lima5045@exemplo.com,Sobral,CE,2026-07-30,google_ads
+5046,Maria Barbosa,maria.barbosa5046@exemplo.com,Lagarto,SE,2026-07-29,email
+5047,Beatriz Silva,beatriz.silva5047@exemplo.com,Aracaju,SE,2026-07-07,organico
+5048,Diego Ferreira,diego.ferreira5048@exemplo.com,Olinda,PE,2026-07-04,google_ads
+5049,Bruno Costa,bruno.costa5049@exemplo.com,Olinda,PE,2026-07-23,organico
+5050,Larissa Santos,larissa.santos5050@exemplo.com,Maceió,AL,2026-07-18,indicacao
+5051,Beatriz Gomes,beatriz.gomes5051@exemplo.com,Vitória da Conquista,BA,2026-07-12,indicacao
+5052,Fernanda Alves,fernanda.alves5052@exemplo.com,Petrolina,PE,2026-07-11,google_ads
+5053,Thiago Barbosa,thiago.barbosa5053@exemplo.com,João Pessoa,PB,2026-07-18,email
+5054,Lucas Cavalcanti,lucas.cavalcanti5054@exemplo.com,Aracaju,SE,2026-07-27,google_ads
+5055,Camila Ribeiro,camila.ribeiro5055@exemplo.com,Vitória da Conquista,BA,2026-07-28,indicacao
+5056,Mateus Ferreira,mateus.ferreira5056@exemplo.com,Aracaju,SE,2026-07-23,email
+5057,Rafael Lima,rafael.lima5057@exemplo.com,Maceió,AL,2026-07-23,email
+5058,Juliana Cavalcanti,juliana.cavalcanti5058@exemplo.com,Petrolina,PE,2026-07-21,email
+5059,Ana Gomes,ana.gomes5059@exemplo.com,Petrolina,PE,2026-07-20,instagram
+5060,Ana Souza,ana.souza5060@exemplo.com,Patos,PB,2026-07-09,indicacao
+5061,Maria Santos,maria.santos5061@exemplo.com,Fortaleza,CE,2026-07-08,email
+5062,Fernanda Costa,fernanda.costa5062@exemplo.com,Juazeiro do Norte,CE,2026-07-08,google_ads
+5063,Carla Silva,carla.silva5063@exemplo.com,Maceió,AL,2026-07-01,organico
+5064,Larissa Lima,larissa.lima5064@exemplo.com,Mossoró,RN,2026-07-02,google_ads
+5065,Maria Oliveira,maria.oliveira5065@exemplo.com,Lagarto,SE,2026-07-18,instagram
+5066,Fernanda Oliveira,fernanda.oliveira5066@exemplo.com,Fortaleza,CE,2026-07-05,indicacao
+5067,João Alves,joão.alves5067@exemplo.com,Caruaru,PE,2026-07-03,google_ads
+5068,Mateus Gomes,mateus.gomes5068@exemplo.com,Salvador,BA,2026-07-22,indicacao
+5069,Juliana Ferreira,juliana.ferreira5069@exemplo.com,Parnamirim,RN,2026-07-29,instagram
+5070,Lucas Gomes,lucas.gomes5070@exemplo.com,Salvador,BA,2026-07-27,indicacao
+5071,Camila Santos,camila.santos5071@exemplo.com,Patos,PB,2026-07-27,organico
+5072,Maria Silva,maria.silva5072@exemplo.com,Sobral,CE,2026-07-25,google_ads
+5073,João Gomes,joão.gomes5073@exemplo.com,Aracaju,SE,2026-07-03,organico
+5074,Diego Araújo,diego.araújo5074@exemplo.com,Lagarto,SE,2026-07-12,organico
+5075,Gabriel Costa,gabriel.costa5075@exemplo.com,Parnamirim,RN,2026-07-09,google_ads
+5076,Aline Alves,aline.alves5076@exemplo.com,Cabedelo,PB,2026-07-15,email
+5077,Larissa Lima,larissa.lima5077@exemplo.com,Aracaju,SE,2026-07-01,indicacao
+5078,Ana Medeiros,ana.medeiros5078@exemplo.com,Mossoró,RN,2026-07-14,organico
+5079,Aline Gomes,aline.gomes5079@exemplo.com,Mossoró,RN,2026-07-22,indicacao
+5080,Gabriel Alves,gabriel.alves5080@exemplo.com,Juazeiro do Norte,CE,2026-07-27,email
+5081,Ana Silva,ana.silva5081@exemplo.com,Natal,RN,2026-07-19,organico
+5082,Thiago Lima,thiago.lima5082@exemplo.com,João Pessoa,PB,2026-07-04,instagram
+5083,Mateus Alves,mateus.alves5083@exemplo.com,Vitória da Conquista,BA,2026-07-11,email
+5084,Gabriel Oliveira,gabriel.oliveira5084@exemplo.com,Caruaru,PE,2026-07-12,email
+5085,Camila Ribeiro,camila.ribeiro5085@exemplo.com,Recife,PE,2026-07-16,google_ads
+5086,Maria Ferreira,maria.ferreira5086@exemplo.com,Petrolina,PE,2026-07-01,instagram
+5087,Patrícia Oliveira,patrícia.oliveira5087@exemplo.com,Natal,RN,2026-07-09,organico
+5088,Aline Gomes,aline.gomes5088@exemplo.com,Fortaleza,CE,2026-07-11,instagram
+5089,Carla Nascimento,carla.nascimento5089@exemplo.com,Campina Grande,PB,2026-07-29,instagram
+5090,Gabriel Alves,gabriel.alves5090@exemplo.com,Olinda,PE,2026-07-25,instagram
+5091,Felipe Santos,felipe.santos5091@exemplo.com,Vitória da Conquista,BA,2026-07-26,instagram
+5092,João Pereira,joão.pereira5092@exemplo.com,Petrolina,PE,2026-07-17,indicacao
+5093,Aline Nascimento,aline.nascimento5093@exemplo.com,Lagarto,SE,2026-07-06,organico
+5094,Pedro Araújo,pedro.araújo5094@exemplo.com,Olinda,PE,2026-07-30,instagram
+5095,Diego Medeiros,diego.medeiros5095@exemplo.com,Olinda,PE,2026-07-28,organico
+5096,Thiago Medeiros,thiago.medeiros5096@exemplo.com,Salvador,BA,2026-07-08,indicacao
+5097,Bruno Santos,bruno.santos5097@exemplo.com,Juazeiro do Norte,CE,2026-07-13,organico
+5098,Carla Barbosa,carla.barbosa5098@exemplo.com,Lagarto,SE,2026-07-03,organico
+5099,Diego Gomes,diego.gomes5099@exemplo.com,João Pessoa,PB,2026-07-29,organico
+5100,Ana Costa,ana.costa5100@exemplo.com,Lagarto,SE,2026-07-07,instagram
+5101,Thiago Nascimento,thiago.nascimento5101@exemplo.com,Salvador,BA,2026-07-07,email
+5102,Thiago Alves,thiago.alves5102@exemplo.com,Natal,RN,2026-07-07,organico
+5103,João Gomes,joão.gomes5103@exemplo.com,Sobral,CE,2026-07-23,instagram
+5104,Carla Ferreira,carla.ferreira5104@exemplo.com,Lagarto,SE,2026-07-11,indicacao
+5105,Felipe Silva,felipe.silva5105@exemplo.com,Campina Grande,PB,2026-07-06,indicacao
+5106,Patrícia Lima,patrícia.lima5106@exemplo.com,Campina Grande,PB,2026-07-26,organico
+5107,Mateus Alves,mateus.alves5107@exemplo.com,Feira de Santana,BA,2026-07-21,email
+5108,Pedro Santos,pedro.santos5108@exemplo.com,Parnamirim,RN,2026-07-30,google_ads
+5109,Camila Alves,camila.alves5109@exemplo.com,Fortaleza,CE,2026-07-24,instagram
+5110,Fernanda Oliveira,fernanda.oliveira5110@exemplo.com,Cabedelo,PB,2026-07-03,google_ads
+5111,Rafael Nascimento,rafael.nascimento5111@exemplo.com,Sobral,CE,2026-07-24,google_ads
+5112,Juliana Araújo,juliana.araújo5112@exemplo.com,Maceió,AL,2026-07-23,email
+5113,Bruno Lima,bruno.lima5113@exemplo.com,Arapiraca,AL,2026-07-16,instagram
+5114,Patrícia Oliveira,patrícia.oliveira5114@exemplo.com,Aracaju,SE,2026-07-26,email
+5115,Lucas Silva,lucas.silva5115@exemplo.com,Salvador,BA,2026-07-03,instagram
+5116,Diego Silva,diego.silva5116@exemplo.com,Arapiraca,AL,2026-07-19,instagram
+5117,Maria Nascimento,maria.nascimento5117@exemplo.com,Vitória da Conquista,BA,2026-07-07,indicacao
+5118,Pedro Santos,pedro.santos5118@exemplo.com,Aracaju,SE,2026-07-04,instagram
+5119,Fernanda Nascimento,fernanda.nascimento5119@exemplo.com,Sobral,CE,2026-07-03,google_ads
+5120,João Barbosa,joão.barbosa5120@exemplo.com,Petrolina,PE,2026-07-23,google_ads
+5121,Maria Ribeiro,maria.ribeiro5121@exemplo.com,Sobral,CE,2026-07-16,email
+5122,Lucas Ferreira,lucas.ferreira5122@exemplo.com,Arapiraca,AL,2026-07-26,email
+5123,Gabriel Barbosa,gabriel.barbosa5123@exemplo.com,Juazeiro do Norte,CE,2026-07-17,email
+5124,Gabriel Ferreira,gabriel.ferreira5124@exemplo.com,Recife,PE,2026-07-09,email
+5125,Felipe Ferreira,felipe.ferreira5125@exemplo.com,Petrolina,PE,2026-07-02,indicacao
+5126,Mateus Souza,mateus.souza5126@exemplo.com,Natal,RN,2026-07-04,google_ads
+5127,Juliana Ferreira,juliana.ferreira5127@exemplo.com,Feira de Santana,BA,2026-07-28,instagram
+5128,Carla Ferreira,carla.ferreira5128@exemplo.com,Olinda,PE,2026-07-10,organico
+5129,Bruno Costa,bruno.costa5129@exemplo.com,Patos,PB,2026-07-04,instagram
+5130,Thiago Ribeiro,thiago.ribeiro5130@exemplo.com,Arapiraca,AL,2026-07-04,google_ads
+5131,Carla Ferreira,carla.ferreira5131@exemplo.com,Cabedelo,PB,2026-07-29,organico
+5132,Camila Ribeiro,camila.ribeiro5132@exemplo.com,Maceió,AL,2026-07-16,organico
+5133,Carla Pereira,carla.pereira5133@exemplo.com,Salvador,BA,2026-07-14,google_ads
+5134,Juliana Gomes,juliana.gomes5134@exemplo.com,Salvador,BA,2026-07-01,organico
+5135,Carla Oliveira,carla.oliveira5135@exemplo.com,Petrolina,PE,2026-07-28,organico
+5136,Fernanda Alves,fernanda.alves5136@exemplo.com,Lagarto,SE,2026-07-02,google_ads
+5137,Pedro Pereira,pedro.pereira5137@exemplo.com,Mossoró,RN,2026-07-01,organico
+5138,Beatriz Gomes,beatriz.gomes5138@exemplo.com,Lagarto,SE,2026-07-09,indicacao
+5139,Fernanda Medeiros,fernanda.medeiros5139@exemplo.com,Salvador,BA,2026-07-14,indicacao
+5140,Aline Gomes,aline.gomes5140@exemplo.com,Lagarto,SE,2026-07-22,indicacao
+5141,Patrícia Cavalcanti,patrícia.cavalcanti5141@exemplo.com,Aracaju,SE,2026-07-09,email
+5142,Thiago Souza,thiago.souza5142@exemplo.com,Natal,RN,2026-07-24,instagram
+5143,Bruno Ribeiro,bruno.ribeiro5143@exemplo.com,Maceió,AL,2026-07-04,email
+5144,João Silva,joão.silva5144@exemplo.com,Lagarto,SE,2026-07-01,instagram
+5145,Ana Pereira,ana.pereira5145@exemplo.com,Campina Grande,PB,2026-07-09,google_ads
+5146,Lucas Medeiros,lucas.medeiros5146@exemplo.com,Fortaleza,CE,2026-07-02,organico
+5147,Juliana Costa,juliana.costa5147@exemplo.com,Lagarto,SE,2026-07-11,google_ads
+5148,Patrícia Medeiros,patrícia.medeiros5148@exemplo.com,Natal,RN,2026-07-29,email
+5149,Beatriz Araújo,beatriz.araújo5149@exemplo.com,Salvador,BA,2026-07-15,organico
+5150,Maria Araújo,maria.araújo5150@exemplo.com,Arapiraca,AL,2026-07-16,email
+5151,Lucas Costa,lucas.costa5151@exemplo.com,Aracaju,SE,2026-07-17,organico
+5152,Pedro Alves,pedro.alves5152@exemplo.com,Juazeiro do Norte,CE,2026-07-13,instagram
+5153,Maria Barbosa,maria.barbosa5153@exemplo.com,João Pessoa,PB,2026-07-01,instagram
+5154,Felipe Santos,felipe.santos5154@exemplo.com,Patos,PB,2026-07-19,organico
+5155,Thiago Costa,thiago.costa5155@exemplo.com,Natal,RN,2026-07-14,organico
+5156,Aline Medeiros,aline.medeiros5156@exemplo.com,Parnamirim,RN,2026-07-08,instagram
+5157,Rafael Lima,rafael.lima5157@exemplo.com,Caruaru,PE,2026-07-07,indicacao
+5158,Diego Gomes,diego.gomes5158@exemplo.com,Petrolina,PE,2026-07-11,organico
+5159,Thiago Gomes,thiago.gomes5159@exemplo.com,Natal,RN,2026-07-10,email
+5160,Thiago Barbosa,thiago.barbosa5160@exemplo.com,Maceió,AL,2026-07-12,indicacao
+5161,Gabriel Medeiros,gabriel.medeiros5161@exemplo.com,Maceió,AL,2026-07-25,indicacao
+5162,Lucas Araújo,lucas.araújo5162@exemplo.com,Salvador,BA,2026-07-15,indicacao
+5163,Mateus Lima,mateus.lima5163@exemplo.com,Sobral,CE,2026-07-04,google_ads
+5164,Patrícia Oliveira,patrícia.oliveira5164@exemplo.com,Campina Grande,PB,2026-07-22,instagram
+5165,João Medeiros,joão.medeiros5165@exemplo.com,Lagarto,SE,2026-07-24,indicacao
+5166,Pedro Medeiros,pedro.medeiros5166@exemplo.com,Arapiraca,AL,2026-07-16,email
+5167,Larissa Ferreira,larissa.ferreira5167@exemplo.com,Sobral,CE,2026-07-23,email
+5168,João Alves,joão.alves5168@exemplo.com,Caruaru,PE,2026-07-01,google_ads
+5169,Lucas Santos,lucas.santos5169@exemplo.com,Campina Grande,PB,2026-07-04,email
+5170,Larissa Ribeiro,larissa.ribeiro5170@exemplo.com,Arapiraca,AL,2026-07-17,organico
+5171,Juliana Medeiros,juliana.medeiros5171@exemplo.com,Maceió,AL,2026-07-02,email
+5172,Camila Ferreira,camila.ferreira5172@exemplo.com,Aracaju,SE,2026-07-25,organico
+5173,Larissa Santos,larissa.santos5173@exemplo.com,Arapiraca,AL,2026-07-10,google_ads
+5174,Ana Barbosa,ana.barbosa5174@exemplo.com,Parnamirim,RN,2026-07-28,email
+5175,Aline Santos,aline.santos5175@exemplo.com,Lagarto,SE,2026-07-30,indicacao
+5176,Mateus Ferreira,mateus.ferreira5176@exemplo.com,João Pessoa,PB,2026-07-25,instagram
+5177,Lucas Gomes,lucas.gomes5177@exemplo.com,Arapiraca,AL,2026-07-01,instagram
+5178,Carla Nascimento,carla.nascimento5178@exemplo.com,Feira de Santana,BA,2026-07-24,email
+5179,Diego Gomes,diego.gomes5179@exemplo.com,Campina Grande,PB,2026-07-15,instagram
+5180,Fernanda Costa,fernanda.costa5180@exemplo.com,Fortaleza,CE,2026-07-26,organico
+5181,Bruno Medeiros,bruno.medeiros5181@exemplo.com,Parnamirim,RN,2026-07-22,organico
+5182,Beatriz Gomes,beatriz.gomes5182@exemplo.com,Mossoró,RN,2026-07-08,indicacao
+5183,Larissa Pereira,larissa.pereira5183@exemplo.com,Campina Grande,PB,2026-07-14,instagram
+5184,Larissa Oliveira,larissa.oliveira5184@exemplo.com,Patos,PB,2026-07-12,email
+5185,Mateus Oliveira,mateus.oliveira5185@exemplo.com,Aracaju,SE,2026-07-11,organico
+5186,Felipe Gomes,felipe.gomes5186@exemplo.com,Fortaleza,CE,2026-07-03,google_ads
+5187,Beatriz Barbosa,beatriz.barbosa5187@exemplo.com,Patos,PB,2026-07-16,instagram
+5188,Mateus Souza,mateus.souza5188@exemplo.com,Patos,PB,2026-07-26,instagram
+5189,Beatriz Nascimento,beatriz.nascimento5189@exemplo.com,Vitória da Conquista,BA,2026-07-17,google_ads
+5190,Carla Costa,carla.costa5190@exemplo.com,Lagarto,SE,2026-07-20,email
+5191,Lucas Alves,lucas.alves5191@exemplo.com,Natal,RN,2026-07-16,indicacao
+5192,Larissa Silva,larissa.silva5192@exemplo.com,Fortaleza,CE,2026-07-29,instagram
+5193,Lucas Costa,lucas.costa5193@exemplo.com,Natal,RN,2026-07-09,organico
+5194,Bruno Gomes,bruno.gomes5194@exemplo.com,Maceió,AL,2026-07-03,email
+5195,Bruno Nascimento,bruno.nascimento5195@exemplo.com,Salvador,BA,2026-07-02,indicacao
+5196,Bruno Alves,bruno.alves5196@exemplo.com,Patos,PB,2026-07-12,organico
+5197,Thiago Costa,thiago.costa5197@exemplo.com,Vitória da Conquista,BA,2026-07-02,google_ads
+5198,Patrícia Nascimento,patrícia.nascimento5198@exemplo.com,Petrolina,PE,2026-07-01,email
+5199,Lucas Gomes,lucas.gomes5199@exemplo.com,Fortaleza,CE,2026-07-18,indicacao
+5200,Camila Silva,camila.silva5200@exemplo.com,Petrolina,PE,2026-07-04,organico
+5201,Lucas Santos,lucas.santos5201@exemplo.com,Parnamirim,RN,2026-07-16,organico
+5202,Lucas Costa,lucas.costa5202@exemplo.com,Maceió,AL,2026-07-15,instagram
+5203,Felipe Cavalcanti,felipe.cavalcanti5203@exemplo.com,Recife,PE,2026-07-03,indicacao
+5204,Diego Pereira,diego.pereira5204@exemplo.com,Salvador,BA,2026-07-26,instagram
+5205,Larissa Gomes,larissa.gomes5205@exemplo.com,Sobral,CE,2026-07-15,email
+5206,Pedro Lima,pedro.lima5206@exemplo.com,Salvador,BA,2026-07-02,google_ads
+5207,Camila Santos,camila.santos5207@exemplo.com,Mossoró,RN,2026-07-04,email
+5208,Camila Barbosa,camila.barbosa5208@exemplo.com,Caruaru,PE,2026-07-13,instagram
+5209,João Souza,joão.souza5209@exemplo.com,Campina Grande,PB,2026-07-21,indicacao
+5210,Maria Pereira,maria.pereira5210@exemplo.com,Feira de Santana,BA,2026-07-04,email
+5211,Diego Souza,diego.souza5211@exemplo.com,Arapiraca,AL,2026-07-28,email
+5212,Larissa Nascimento,larissa.nascimento5212@exemplo.com,Feira de Santana,BA,2026-07-20,instagram
+5213,Ana Lima,ana.lima5213@exemplo.com,Petrolina,PE,2026-07-30,instagram
+5214,Felipe Santos,felipe.santos5214@exemplo.com,Juazeiro do Norte,CE,2026-07-11,instagram
+5215,Bruno Pereira,bruno.pereira5215@exemplo.com,Salvador,BA,2026-07-09,organico
+5216,Diego Araújo,diego.araújo5216@exemplo.com,Lagarto,SE,2026-07-22,indicacao
+5217,Rafael Cavalcanti,rafael.cavalcanti5217@exemplo.com,João Pessoa,PB,2026-07-15,email
+5218,Pedro Ribeiro,pedro.ribeiro5218@exemplo.com,Feira de Santana,BA,2026-07-13,organico
+5219,Bruno Costa,bruno.costa5219@exemplo.com,Feira de Santana,BA,2026-07-20,instagram
+5220,Beatriz Alves,beatriz.alves5220@exemplo.com,Patos,PB,2026-07-25,instagram
+5221,Aline Costa,aline.costa5221@exemplo.com,Olinda,PE,2026-07-06,email
+5222,Aline Souza,aline.souza5222@exemplo.com,Juazeiro do Norte,CE,2026-07-17,indicacao
+5223,Gabriel Oliveira,gabriel.oliveira5223@exemplo.com,Olinda,PE,2026-07-27,indicacao
+5224,Camila Souza,camila.souza5224@exemplo.com,Sobral,CE,2026-07-12,email
+5225,Ana Medeiros,ana.medeiros5225@exemplo.com,Salvador,BA,2026-07-12,google_ads
+5226,João Ribeiro,joão.ribeiro5226@exemplo.com,Patos,PB,2026-07-01,organico
+5227,João Oliveira,joão.oliveira5227@exemplo.com,Fortaleza,CE,2026-07-18,email
+5228,Aline Alves,aline.alves5228@exemplo.com,Lagarto,SE,2026-07-05,instagram
+5229,Aline Silva,aline.silva5229@exemplo.com,Campina Grande,PB,2026-07-28,organico
+5230,Rafael Oliveira,rafael.oliveira5230@exemplo.com,Petrolina,PE,2026-07-25,email
+5231,Diego Medeiros,diego.medeiros5231@exemplo.com,Cabedelo,PB,2026-07-15,email
+5232,Ana Medeiros,ana.medeiros5232@exemplo.com,Arapiraca,AL,2026-07-27,organico
+5233,Camila Gomes,camila.gomes5233@exemplo.com,João Pessoa,PB,2026-07-28,indicacao
+5234,Ana Medeiros,ana.medeiros5234@exemplo.com,Patos,PB,2026-07-21,email
+5235,Aline Barbosa,aline.barbosa5235@exemplo.com,Mossoró,RN,2026-07-28,indicacao
+5236,Maria Araújo,maria.araújo5236@exemplo.com,Olinda,PE,2026-07-24,indicacao
+5237,Maria Souza,maria.souza5237@exemplo.com,Lagarto,SE,2026-07-27,google_ads
+5238,Gabriel Gomes,gabriel.gomes5238@exemplo.com,Arapiraca,AL,2026-07-07,indicacao
+5239,Bruno Souza,bruno.souza5239@exemplo.com,Fortaleza,CE,2026-07-02,email
+5240,Lucas Cavalcanti,lucas.cavalcanti5240@exemplo.com,Arapiraca,AL,2026-07-11,instagram
+5241,Mateus Costa,mateus.costa5241@exemplo.com,Fortaleza,CE,2026-07-20,email
+5242,Gabriel Cavalcanti,gabriel.cavalcanti5242@exemplo.com,Lagarto,SE,2026-07-24,organico
+5243,Patrícia Santos,patrícia.santos5243@exemplo.com,Mossoró,RN,2026-07-12,indicacao
+5244,Felipe Ferreira,felipe.ferreira5244@exemplo.com,Juazeiro do Norte,CE,2026-07-01,email
+5245,Ana Araújo,ana.araújo5245@exemplo.com,Natal,RN,2026-07-28,email
+5246,Carla Costa,carla.costa5246@exemplo.com,Arapiraca,AL,2026-07-11,indicacao
+5247,Carla Souza,carla.souza5247@exemplo.com,Parnamirim,RN,2026-07-14,organico
+5248,Aline Ferreira,aline.ferreira5248@exemplo.com,Caruaru,PE,2026-07-22,instagram
+5249,Aline Araújo,aline.araújo5249@exemplo.com,Parnamirim,RN,2026-07-06,google_ads
+5250,Diego Souza,diego.souza5250@exemplo.com,Maceió,AL,2026-07-07,google_ads
+5251,Gabriel Santos,gabriel.santos5251@exemplo.com,Lagarto,SE,2026-07-15,organico
+5252,Ana Ferreira,ana.ferreira5252@exemplo.com,Feira de Santana,BA,2026-07-12,instagram
+5253,Diego Cavalcanti,diego.cavalcanti5253@exemplo.com,Lagarto,SE,2026-07-20,google_ads
+5254,Thiago Barbosa,thiago.barbosa5254@exemplo.com,Juazeiro do Norte,CE,2026-07-08,email
+5255,Gabriel Lima,gabriel.lima5255@exemplo.com,Feira de Santana,BA,2026-07-24,organico
+5256,Patrícia Ribeiro,patrícia.ribeiro5256@exemplo.com,João Pessoa,PB,2026-07-16,indicacao
+5257,Felipe Silva,felipe.silva5257@exemplo.com,Sobral,CE,2026-07-11,indicacao
+5258,Fernanda Silva,fernanda.silva5258@exemplo.com,Patos,PB,2026-07-26,email
+5259,Ana Cavalcanti,ana.cavalcanti5259@exemplo.com,Juazeiro do Norte,CE,2026-07-13,instagram
+5260,Felipe Nascimento,felipe.nascimento5260@exemplo.com,Feira de Santana,BA,2026-07-17,google_ads
+5261,Patrícia Araújo,patrícia.araújo5261@exemplo.com,Olinda,PE,2026-07-12,google_ads
+5262,Camila Barbosa,camila.barbosa5262@exemplo.com,Fortaleza,CE,2026-07-07,email
+5263,Aline Silva,aline.silva5263@exemplo.com,Aracaju,SE,2026-07-18,instagram
+5264,Ana Gomes,ana.gomes5264@exemplo.com,Juazeiro do Norte,CE,2026-07-10,google_ads
+5265,João Souza,joão.souza5265@exemplo.com,Cabedelo,PB,2026-07-25,instagram
+5266,Felipe Nascimento,felipe.nascimento5266@exemplo.com,Caruaru,PE,2026-07-05,email
+5267,Ana Pereira,ana.pereira5267@exemplo.com,Campina Grande,PB,2026-07-15,indicacao
+5268,Maria Ribeiro,maria.ribeiro5268@exemplo.com,Maceió,AL,2026-07-25,google_ads
+5269,Diego Araújo,diego.araújo5269@exemplo.com,Parnamirim,RN,2026-07-24,organico
+5270,Maria Costa,maria.costa5270@exemplo.com,Patos,PB,2026-07-18,email
+5271,Thiago Gomes,thiago.gomes5271@exemplo.com,João Pessoa,PB,2026-07-27,email
+5272,Aline Gomes,aline.gomes5272@exemplo.com,Caruaru,PE,2026-07-26,email
+5273,Rafael Medeiros,rafael.medeiros5273@exemplo.com,Caruaru,PE,2026-07-09,google_ads
+5274,Felipe Santos,felipe.santos5274@exemplo.com,Maceió,AL,2026-07-19,instagram
+5275,Maria Gomes,maria.gomes5275@exemplo.com,Parnamirim,RN,2026-07-25,email
+5276,João Alves,joão.alves5276@exemplo.com,Aracaju,SE,2026-07-09,instagram
+5277,Larissa Costa,larissa.costa5277@exemplo.com,Sobral,CE,2026-07-20,google_ads
+5278,Rafael Pereira,rafael.pereira5278@exemplo.com,Juazeiro do Norte,CE,2026-07-09,organico
+5279,Felipe Medeiros,felipe.medeiros5279@exemplo.com,Cabedelo,PB,2026-07-29,google_ads
+5280,Carla Pereira,carla.pereira5280@exemplo.com,Fortaleza,CE,2026-07-25,indicacao
+5281,João Pereira,joão.pereira5281@exemplo.com,Vitória da Conquista,BA,2026-07-21,instagram
+5282,Camila Lima,camila.lima5282@exemplo.com,Aracaju,SE,2026-07-05,email
+5283,Larissa Nascimento,larissa.nascimento5283@exemplo.com,Campina Grande,PB,2026-07-26,indicacao
+5284,Thiago Cavalcanti,thiago.cavalcanti5284@exemplo.com,Lagarto,SE,2026-07-09,instagram
+5285,Larissa Costa,larissa.costa5285@exemplo.com,Natal,RN,2026-07-27,google_ads
+5286,Larissa Oliveira,larissa.oliveira5286@exemplo.com,Arapiraca,AL,2026-07-28,google_ads
+5287,Maria Alves,maria.alves5287@exemplo.com,Caruaru,PE,2026-07-20,google_ads
+5288,Camila Medeiros,camila.medeiros5288@exemplo.com,Aracaju,SE,2026-07-13,organico
+5289,Camila Medeiros,camila.medeiros5289@exemplo.com,Parnamirim,RN,2026-07-29,indicacao
+5290,Gabriel Lima,gabriel.lima5290@exemplo.com,Maceió,AL,2026-07-13,instagram
+5291,Larissa Cavalcanti,larissa.cavalcanti5291@exemplo.com,Patos,PB,2026-07-06,email
+5292,Diego Alves,diego.alves5292@exemplo.com,Arapiraca,AL,2026-07-20,indicacao
+5293,Pedro Pereira,pedro.pereira5293@exemplo.com,Lagarto,SE,2026-07-27,organico
+5294,Mateus Ferreira,mateus.ferreira5294@exemplo.com,Natal,RN,2026-07-28,indicacao
+5295,Rafael Ribeiro,rafael.ribeiro5295@exemplo.com,Vitória da Conquista,BA,2026-07-20,organico
+5296,Juliana Barbosa,juliana.barbosa5296@exemplo.com,Campina Grande,PB,2026-07-06,google_ads
+5297,Felipe Gomes,felipe.gomes5297@exemplo.com,Parnamirim,RN,2026-07-13,email
+5298,Lucas Oliveira,lucas.oliveira5298@exemplo.com,Feira de Santana,BA,2026-07-06,email
+5299,João Medeiros,joão.medeiros5299@exemplo.com,Campina Grande,PB,2026-07-01,google_ads
+5300,Mateus Costa,mateus.costa5300@exemplo.com,Arapiraca,AL,2026-07-27,indicacao
+5301,Beatriz Nascimento,beatriz.nascimento5301@exemplo.com,Mossoró,RN,2026-07-15,indicacao
+5302,Aline Gomes,aline.gomes5302@exemplo.com,Vitória da Conquista,BA,2026-07-20,indicacao
+5303,Patrícia Gomes,patrícia.gomes5303@exemplo.com,Feira de Santana,BA,2026-07-25,organico
+5304,Felipe Souza,felipe.souza5304@exemplo.com,Caruaru,PE,2026-07-03,google_ads
+5305,Lucas Silva,lucas.silva5305@exemplo.com,Recife,PE,2026-07-14,instagram
+5306,Carla Araújo,carla.araújo5306@exemplo.com,Cabedelo,PB,2026-07-27,indicacao
+5307,Beatriz Alves,beatriz.alves5307@exemplo.com,Lagarto,SE,2026-07-10,email
+5308,Pedro Lima,pedro.lima5308@exemplo.com,Maceió,AL,2026-07-23,email
+5309,Pedro Araújo,pedro.araújo5309@exemplo.com,Maceió,AL,2026-07-06,organico
+5310,Carla Souza,carla.souza5310@exemplo.com,Salvador,BA,2026-07-08,google_ads
+5311,Rafael Araújo,rafael.araújo5311@exemplo.com,Aracaju,SE,2026-07-03,instagram
+5312,Ana Lima,ana.lima5312@exemplo.com,Aracaju,SE,2026-07-03,instagram
+5313,Camila Medeiros,camila.medeiros5313@exemplo.com,Maceió,AL,2026-07-23,email
+5314,Bruno Nascimento,bruno.nascimento5314@exemplo.com,Petrolina,PE,2026-07-26,google_ads
+5315,Thiago Souza,thiago.souza5315@exemplo.com,Feira de Santana,BA,2026-07-12,google_ads
+5316,Felipe Barbosa,felipe.barbosa5316@exemplo.com,Campina Grande,PB,2026-07-24,instagram
+5317,Bruno Silva,bruno.silva5317@exemplo.com,Mossoró,RN,2026-07-20,google_ads
+5318,João Lima,joão.lima5318@exemplo.com,Sobral,CE,2026-07-27,email
+5319,Fernanda Nascimento,fernanda.nascimento5319@exemplo.com,Juazeiro do Norte,CE,2026-07-19,indicacao
+5320,Gabriel Lima,gabriel.lima5320@exemplo.com,Sobral,CE,2026-07-07,email
+5321,Fernanda Lima,fernanda.lima5321@exemplo.com,Petrolina,PE,2026-07-11,instagram
+5322,Larissa Gomes,larissa.gomes5322@exemplo.com,Aracaju,SE,2026-07-16,email
+5323,Fernanda Gomes,fernanda.gomes5323@exemplo.com,Cabedelo,PB,2026-07-28,google_ads
+5324,Gabriel Pereira,gabriel.pereira5324@exemplo.com,Recife,PE,2026-07-01,indicacao
+5325,Bruno Costa,bruno.costa5325@exemplo.com,Sobral,CE,2026-07-28,indicacao
+5326,Juliana Ferreira,juliana.ferreira5326@exemplo.com,Fortaleza,CE,2026-07-09,indicacao
+5327,Thiago Gomes,thiago.gomes5327@exemplo.com,Salvador,BA,2026-07-12,google_ads
+5328,João Costa,joão.costa5328@exemplo.com,Olinda,PE,2026-07-23,organico
+5329,Bruno Barbosa,bruno.barbosa5329@exemplo.com,Salvador,BA,2026-07-06,instagram
+5330,João Medeiros,joão.medeiros5330@exemplo.com,Arapiraca,AL,2026-07-13,indicacao
+5331,Carla Souza,carla.souza5331@exemplo.com,Aracaju,SE,2026-07-30,instagram
+5332,Thiago Santos,thiago.santos5332@exemplo.com,Mossoró,RN,2026-07-15,google_ads
+5333,Felipe Medeiros,felipe.medeiros5333@exemplo.com,Aracaju,SE,2026-07-26,google_ads
+5334,Felipe Ribeiro,felipe.ribeiro5334@exemplo.com,Petrolina,PE,2026-07-05,instagram
+5335,Larissa Barbosa,larissa.barbosa5335@exemplo.com,Olinda,PE,2026-07-09,indicacao
+5336,Mateus Nascimento,mateus.nascimento5336@exemplo.com,Maceió,AL,2026-07-10,email
+5337,Maria Araújo,maria.araújo5337@exemplo.com,Recife,PE,2026-07-05,google_ads
+5338,Fernanda Lima,fernanda.lima5338@exemplo.com,Maceió,AL,2026-07-21,email
+5339,Felipe Medeiros,felipe.medeiros5339@exemplo.com,Cabedelo,PB,2026-07-18,organico
+5340,Mateus Oliveira,mateus.oliveira5340@exemplo.com,Lagarto,SE,2026-07-17,indicacao
+5341,Juliana Lima,juliana.lima5341@exemplo.com,Olinda,PE,2026-07-16,instagram
+5342,Gabriel Ribeiro,gabriel.ribeiro5342@exemplo.com,Aracaju,SE,2026-07-27,indicacao
+5343,Diego Ribeiro,diego.ribeiro5343@exemplo.com,Fortaleza,CE,2026-07-12,email
+5344,Ana Souza,ana.souza5344@exemplo.com,Campina Grande,PB,2026-07-12,indicacao
+5345,Camila Oliveira,camila.oliveira5345@exemplo.com,Arapiraca,AL,2026-07-05,organico
+5346,Fernanda Oliveira,fernanda.oliveira5346@exemplo.com,Arapiraca,AL,2026-07-20,indicacao
+5347,Diego Barbosa,diego.barbosa5347@exemplo.com,Patos,PB,2026-07-29,indicacao
+5348,Carla Costa,carla.costa5348@exemplo.com,Aracaju,SE,2026-07-03,indicacao
+5349,Patrícia Barbosa,patrícia.barbosa5349@exemplo.com,Arapiraca,AL,2026-07-25,email
+5350,Diego Silva,diego.silva5350@exemplo.com,Recife,PE,2026-07-15,indicacao
+5351,Thiago Medeiros,thiago.medeiros5351@exemplo.com,Campina Grande,PB,2026-07-17,email
+5352,Carla Barbosa,carla.barbosa5352@exemplo.com,Patos,PB,2026-07-23,instagram
+5353,Bruno Santos,bruno.santos5353@exemplo.com,Campina Grande,PB,2026-07-03,google_ads
+5354,Camila Oliveira,camila.oliveira5354@exemplo.com,Natal,RN,2026-07-12,organico
+5355,Gabriel Ferreira,gabriel.ferreira5355@exemplo.com,Caruaru,PE,2026-07-03,google_ads
+5356,Juliana Souza,juliana.souza5356@exemplo.com,Feira de Santana,BA,2026-07-15,instagram
+5357,Camila Gomes,camila.gomes5357@exemplo.com,Caruaru,PE,2026-07-14,instagram
+5358,Diego Medeiros,diego.medeiros5358@exemplo.com,Lagarto,SE,2026-07-22,google_ads
+5359,Ana Barbosa,ana.barbosa5359@exemplo.com,Arapiraca,AL,2026-07-26,google_ads
+5360,Patrícia Costa,patrícia.costa5360@exemplo.com,Juazeiro do Norte,CE,2026-07-01,organico
+5361,Diego Nascimento,diego.nascimento5361@exemplo.com,Parnamirim,RN,2026-07-18,indicacao
+5362,Lucas Alves,lucas.alves5362@exemplo.com,Fortaleza,CE,2026-07-20,organico
+5363,Felipe Costa,felipe.costa5363@exemplo.com,Mossoró,RN,2026-07-05,indicacao
+5364,Carla Araújo,carla.araújo5364@exemplo.com,Aracaju,SE,2026-07-28,indicacao
+5365,Juliana Pereira,juliana.pereira5365@exemplo.com,Lagarto,SE,2026-07-21,email
+5366,Bruno Gomes,bruno.gomes5366@exemplo.com,Parnamirim,RN,2026-07-12,email
+5367,Larissa Costa,larissa.costa5367@exemplo.com,Vitória da Conquista,BA,2026-07-29,organico
+5368,Camila Alves,camila.alves5368@exemplo.com,Campina Grande,PB,2026-07-18,email
+5369,Beatriz Cavalcanti,beatriz.cavalcanti5369@exemplo.com,Arapiraca,AL,2026-07-01,email
+5370,Fernanda Silva,fernanda.silva5370@exemplo.com,Natal,RN,2026-07-06,organico
+5371,Patrícia Barbosa,patrícia.barbosa5371@exemplo.com,Lagarto,SE,2026-07-18,google_ads
+5372,Mateus Ribeiro,mateus.ribeiro5372@exemplo.com,Recife,PE,2026-07-01,instagram
+5373,Camila Araújo,camila.araújo5373@exemplo.com,Petrolina,PE,2026-07-19,organico
+5374,João Pereira,joão.pereira5374@exemplo.com,Arapiraca,AL,2026-07-25,email
+5375,Juliana Souza,juliana.souza5375@exemplo.com,Natal,RN,2026-07-30,google_ads
+5376,Felipe Barbosa,felipe.barbosa5376@exemplo.com,Arapiraca,AL,2026-07-29,email
+5377,Thiago Ferreira,thiago.ferreira5377@exemplo.com,Juazeiro do Norte,CE,2026-07-14,email
+5378,Felipe Pereira,felipe.pereira5378@exemplo.com,Mossoró,RN,2026-07-18,instagram
+5379,Larissa Cavalcanti,larissa.cavalcanti5379@exemplo.com,Feira de Santana,BA,2026-07-28,instagram
+5380,Bruno Lima,bruno.lima5380@exemplo.com,Fortaleza,CE,2026-07-18,google_ads
+5381,Thiago Pereira,thiago.pereira5381@exemplo.com,João Pessoa,PB,2026-07-21,instagram
+5382,Beatriz Souza,beatriz.souza5382@exemplo.com,Parnamirim,RN,2026-07-19,google_ads
+5383,Carla Ribeiro,carla.ribeiro5383@exemplo.com,Maceió,AL,2026-07-04,indicacao
+5384,João Ferreira,joão.ferreira5384@exemplo.com,Petrolina,PE,2026-07-29,instagram
+5385,Maria Ferreira,maria.ferreira5385@exemplo.com,Sobral,CE,2026-07-09,instagram
+5386,Larissa Santos,larissa.santos5386@exemplo.com,Caruaru,PE,2026-07-20,google_ads
+5387,Maria Ferreira,maria.ferreira5387@exemplo.com,Vitória da Conquista,BA,2026-07-25,organico
+5388,Lucas Gomes,lucas.gomes5388@exemplo.com,Lagarto,SE,2026-07-04,instagram
+5389,Carla Pereira,carla.pereira5389@exemplo.com,Aracaju,SE,2026-07-04,organico
+5390,Patrícia Nascimento,patrícia.nascimento5390@exemplo.com,Patos,PB,2026-07-28,indicacao
+5391,Thiago Araújo,thiago.araújo5391@exemplo.com,Campina Grande,PB,2026-07-12,indicacao
+5392,Thiago Ribeiro,thiago.ribeiro5392@exemplo.com,João Pessoa,PB,2026-07-20,email
+5393,Mateus Barbosa,mateus.barbosa5393@exemplo.com,Petrolina,PE,2026-07-08,google_ads
+5394,Larissa Silva,larissa.silva5394@exemplo.com,Caruaru,PE,2026-07-26,google_ads
+5395,Mateus Pereira,mateus.pereira5395@exemplo.com,Caruaru,PE,2026-07-18,instagram
+5396,Patrícia Medeiros,patrícia.medeiros5396@exemplo.com,Fortaleza,CE,2026-07-04,indicacao
+5397,Beatriz Lima,beatriz.lima5397@exemplo.com,Parnamirim,RN,2026-07-14,instagram
+5398,Juliana Barbosa,juliana.barbosa5398@exemplo.com,Aracaju,SE,2026-07-23,google_ads
+5399,Juliana Ferreira,juliana.ferreira5399@exemplo.com,Juazeiro do Norte,CE,2026-07-15,indicacao
+5400,Aline Silva,aline.silva5400@exemplo.com,Recife,PE,2026-07-20,organico
+5401,Mateus Santos,mateus.santos5401@exemplo.com,Maceió,AL,2026-07-29,organico
+5402,Gabriel Lima,gabriel.lima5402@exemplo.com,Salvador,BA,2026-07-15,email
+5403,Ana Nascimento,ana.nascimento5403@exemplo.com,Natal,RN,2026-07-14,instagram
+5404,Felipe Ferreira,felipe.ferreira5404@exemplo.com,Vitória da Conquista,BA,2026-07-26,email
+5405,Mateus Costa,mateus.costa5405@exemplo.com,Vitória da Conquista,BA,2026-07-07,instagram
+5406,Ana Nascimento,ana.nascimento5406@exemplo.com,Aracaju,SE,2026-07-08,google_ads
+5407,Juliana Ferreira,juliana.ferreira5407@exemplo.com,Arapiraca,AL,2026-07-28,email
+5408,Felipe Santos,felipe.santos5408@exemplo.com,Petrolina,PE,2026-07-02,email
+5409,Bruno Ribeiro,bruno.ribeiro5409@exemplo.com,Salvador,BA,2026-07-23,indicacao
+5410,Camila Gomes,camila.gomes5410@exemplo.com,Recife,PE,2026-07-23,email
+5411,João Medeiros,joão.medeiros5411@exemplo.com,Sobral,CE,2026-07-03,email
+5412,Camila Silva,camila.silva5412@exemplo.com,Recife,PE,2026-07-28,instagram
+5413,Ana Araújo,ana.araújo5413@exemplo.com,Arapiraca,AL,2026-07-14,organico
+5414,Beatriz Oliveira,beatriz.oliveira5414@exemplo.com,Maceió,AL,2026-07-21,indicacao
+5415,Pedro Cavalcanti,pedro.cavalcanti5415@exemplo.com,Arapiraca,AL,2026-07-19,email
+5416,Patrícia Alves,patrícia.alves5416@exemplo.com,Fortaleza,CE,2026-07-24,organico
+5417,Carla Costa,carla.costa5417@exemplo.com,Maceió,AL,2026-07-26,instagram
+5418,Rafael Nascimento,rafael.nascimento5418@exemplo.com,João Pessoa,PB,2026-07-20,indicacao
+5419,Fernanda Araújo,fernanda.araújo5419@exemplo.com,Natal,RN,2026-07-03,google_ads
+5420,Maria Oliveira,maria.oliveira5420@exemplo.com,Salvador,BA,2026-07-15,instagram
+5421,Bruno Santos,bruno.santos5421@exemplo.com,Aracaju,SE,2026-07-04,indicacao
+5422,Lucas Silva,lucas.silva5422@exemplo.com,Aracaju,SE,2026-07-06,email
+5423,João Medeiros,joão.medeiros5423@exemplo.com,Olinda,PE,2026-07-14,organico
+5424,Patrícia Cavalcanti,patrícia.cavalcanti5424@exemplo.com,Cabedelo,PB,2026-07-17,email
+5425,Mateus Cavalcanti,mateus.cavalcanti5425@exemplo.com,Aracaju,SE,2026-07-19,instagram
+5426,Mateus Silva,mateus.silva5426@exemplo.com,Salvador,BA,2026-07-10,organico
+5427,Maria Costa,maria.costa5427@exemplo.com,Sobral,CE,2026-07-20,google_ads
+5428,Maria Ribeiro,maria.ribeiro5428@exemplo.com,Juazeiro do Norte,CE,2026-07-07,google_ads
+5429,Mateus Pereira,mateus.pereira5429@exemplo.com,Maceió,AL,2026-07-26,indicacao
+5430,Maria Nascimento,maria.nascimento5430@exemplo.com,Recife,PE,2026-07-20,instagram
+5431,Juliana Araújo,juliana.araújo5431@exemplo.com,Olinda,PE,2026-07-15,indicacao
+5432,Rafael Medeiros,rafael.medeiros5432@exemplo.com,Salvador,BA,2026-07-13,instagram
+5433,Thiago Costa,thiago.costa5433@exemplo.com,Natal,RN,2026-07-02,organico
+5434,Aline Costa,aline.costa5434@exemplo.com,Petrolina,PE,2026-07-14,indicacao
+5435,Ana Alves,ana.alves5435@exemplo.com,Recife,PE,2026-07-20,indicacao
+5436,Thiago Pereira,thiago.pereira5436@exemplo.com,Olinda,PE,2026-07-24,indicacao
+5437,João Gomes,joão.gomes5437@exemplo.com,Arapiraca,AL,2026-07-28,instagram
+5438,Thiago Barbosa,thiago.barbosa5438@exemplo.com,Natal,RN,2026-07-08,email
+5439,Diego Medeiros,diego.medeiros5439@exemplo.com,Juazeiro do Norte,CE,2026-07-03,email
+5440,Gabriel Ferreira,gabriel.ferreira5440@exemplo.com,Juazeiro do Norte,CE,2026-07-11,indicacao
+5441,Lucas Pereira,lucas.pereira5441@exemplo.com,Fortaleza,CE,2026-07-07,google_ads
+5442,Bruno Santos,bruno.santos5442@exemplo.com,Salvador,BA,2026-07-26,organico
+5443,Mateus Santos,mateus.santos5443@exemplo.com,Aracaju,SE,2026-07-28,instagram
+5444,João Costa,joão.costa5444@exemplo.com,Salvador,BA,2026-07-02,organico
+5445,Thiago Alves,thiago.alves5445@exemplo.com,Lagarto,SE,2026-07-22,email
+5446,Felipe Costa,felipe.costa5446@exemplo.com,Recife,PE,2026-07-10,email
+5447,Larissa Ribeiro,larissa.ribeiro5447@exemplo.com,Patos,PB,2026-07-01,indicacao
+5448,Juliana Oliveira,juliana.oliveira5448@exemplo.com,Salvador,BA,2026-07-06,google_ads
+5449,Lucas Medeiros,lucas.medeiros5449@exemplo.com,Parnamirim,RN,2026-07-22,google_ads
+5450,Pedro Nascimento,pedro.nascimento5450@exemplo.com,Recife,PE,2026-07-30,google_ads
+5451,João Ferreira,joão.ferreira5451@exemplo.com,João Pessoa,PB,2026-07-13,email
+5452,Bruno Alves,bruno.alves5452@exemplo.com,Arapiraca,AL,2026-07-29,email
+5453,Pedro Santos,pedro.santos5453@exemplo.com,Salvador,BA,2026-07-05,email
+5454,Juliana Silva,juliana.silva5454@exemplo.com,Sobral,CE,2026-07-05,instagram
+5455,Gabriel Costa,gabriel.costa5455@exemplo.com,Cabedelo,PB,2026-07-09,email
+5456,Diego Cavalcanti,diego.cavalcanti5456@exemplo.com,Salvador,BA,2026-07-14,organico
+5457,Thiago Alves,thiago.alves5457@exemplo.com,Patos,PB,2026-07-17,email
+5458,Diego Santos,diego.santos5458@exemplo.com,Vitória da Conquista,BA,2026-07-19,google_ads
+5459,Beatriz Santos,beatriz.santos5459@exemplo.com,Patos,PB,2026-07-22,instagram
+5460,Ana Silva,ana.silva5460@exemplo.com,Lagarto,SE,2026-07-14,organico
+5461,Ana Barbosa,ana.barbosa5461@exemplo.com,Olinda,PE,2026-07-04,email
+5462,Maria Silva,maria.silva5462@exemplo.com,Parnamirim,RN,2026-07-11,organico
+5463,Felipe Araújo,felipe.araújo5463@exemplo.com,Aracaju,SE,2026-07-13,google_ads
+5464,Mateus Gomes,mateus.gomes5464@exemplo.com,Recife,PE,2026-07-20,organico
+5465,Lucas Silva,lucas.silva5465@exemplo.com,Aracaju,SE,2026-07-06,indicacao
+5466,Juliana Gomes,juliana.gomes5466@exemplo.com,Mossoró,RN,2026-07-28,organico
+5467,Bruno Oliveira,bruno.oliveira5467@exemplo.com,Mossoró,RN,2026-07-09,organico
+5468,João Costa,joão.costa5468@exemplo.com,Cabedelo,PB,2026-07-22,instagram
+5469,Larissa Silva,larissa.silva5469@exemplo.com,Arapiraca,AL,2026-07-05,indicacao
+5470,Larissa Cavalcanti,larissa.cavalcanti5470@exemplo.com,Juazeiro do Norte,CE,2026-07-11,organico
+5471,Felipe Cavalcanti,felipe.cavalcanti5471@exemplo.com,Arapiraca,AL,2026-07-18,instagram
+5472,Rafael Barbosa,rafael.barbosa5472@exemplo.com,Salvador,BA,2026-07-01,email
+5473,Aline Alves,aline.alves5473@exemplo.com,Patos,PB,2026-07-07,email
+5474,Aline Santos,aline.santos5474@exemplo.com,Lagarto,SE,2026-07-07,organico
+5475,Beatriz Lima,beatriz.lima5475@exemplo.com,Juazeiro do Norte,CE,2026-07-30,organico
+5476,Ana Medeiros,ana.medeiros5476@exemplo.com,Recife,PE,2026-07-03,email
+5477,Juliana Araújo,juliana.araújo5477@exemplo.com,João Pessoa,PB,2026-07-10,indicacao
+5478,Gabriel Souza,gabriel.souza5478@exemplo.com,Cabedelo,PB,2026-07-07,indicacao
+5479,Beatriz Alves,beatriz.alves5479@exemplo.com,Maceió,AL,2026-07-15,organico
+5480,Carla Pereira,carla.pereira5480@exemplo.com,Cabedelo,PB,2026-07-24,instagram
+5481,Lucas Cavalcanti,lucas.cavalcanti5481@exemplo.com,Arapiraca,AL,2026-07-25,google_ads
+5482,Rafael Barbosa,rafael.barbosa5482@exemplo.com,Natal,RN,2026-07-25,email
+5483,Larissa Alves,larissa.alves5483@exemplo.com,Mossoró,RN,2026-07-01,indicacao
+5484,Larissa Medeiros,larissa.medeiros5484@exemplo.com,João Pessoa,PB,2026-07-28,indicacao
+5485,João Costa,joão.costa5485@exemplo.com,Mossoró,RN,2026-07-29,indicacao
+5486,Camila Ferreira,camila.ferreira5486@exemplo.com,Olinda,PE,2026-07-17,email
+5487,Fernanda Gomes,fernanda.gomes5487@exemplo.com,Mossoró,RN,2026-07-21,email
+5488,Carla Alves,carla.alves5488@exemplo.com,Campina Grande,PB,2026-07-09,instagram
+5489,Thiago Souza,thiago.souza5489@exemplo.com,Lagarto,SE,2026-07-03,instagram
+5490,Carla Silva,carla.silva5490@exemplo.com,João Pessoa,PB,2026-07-18,organico
+5491,Gabriel Gomes,gabriel.gomes5491@exemplo.com,Salvador,BA,2026-07-21,email
+5492,Rafael Pereira,rafael.pereira5492@exemplo.com,Feira de Santana,BA,2026-07-06,email
+5493,Thiago Pereira,thiago.pereira5493@exemplo.com,Recife,PE,2026-07-12,email
+5494,Patrícia Gomes,patrícia.gomes5494@exemplo.com,Recife,PE,2026-07-24,google_ads
+5495,Pedro Alves,pedro.alves5495@exemplo.com,Patos,PB,2026-07-24,email
+5496,Carla Cavalcanti,carla.cavalcanti5496@exemplo.com,Aracaju,SE,2026-07-24,email
+5497,Rafael Silva,rafael.silva5497@exemplo.com,Patos,PB,2026-07-10,instagram
+5498,Fernanda Lima,fernanda.lima5498@exemplo.com,Aracaju,SE,2026-07-27,indicacao
+5499,Mateus Ribeiro,mateus.ribeiro5499@exemplo.com,Maceió,AL,2026-07-17,google_ads
+5500,Lucas Araújo,lucas.araújo5500@exemplo.com,Mossoró,RN,2026-07-01,indicacao
+5501,Aline Ferreira,aline.ferreira5501@exemplo.com,Sobral,CE,2026-07-26,organico
+5502,Bruno Costa,bruno.costa5502@exemplo.com,Cabedelo,PB,2026-07-25,organico
+5503,Larissa Araújo,larissa.araújo5503@exemplo.com,Olinda,PE,2026-07-16,email
+5504,Juliana Barbosa,juliana.barbosa5504@exemplo.com,Maceió,AL,2026-07-23,organico
+5505,João Medeiros,joão.medeiros5505@exemplo.com,Fortaleza,CE,2026-07-25,organico
+5506,Patrícia Medeiros,patrícia.medeiros5506@exemplo.com,Salvador,BA,2026-07-25,organico
+5507,Camila Costa,camila.costa5507@exemplo.com,Arapiraca,AL,2026-07-21,indicacao
+5508,Beatriz Oliveira,beatriz.oliveira5508@exemplo.com,Parnamirim,RN,2026-07-04,organico
+5509,Larissa Silva,larissa.silva5509@exemplo.com,Caruaru,PE,2026-07-01,organico
+5510,Beatriz Santos,beatriz.santos5510@exemplo.com,Caruaru,PE,2026-07-29,email
+5511,Camila Nascimento,camila.nascimento5511@exemplo.com,Patos,PB,2026-07-26,google_ads
+5512,Aline Costa,aline.costa5512@exemplo.com,Mossoró,RN,2026-07-05,indicacao
+5513,João Nascimento,joão.nascimento5513@exemplo.com,Arapiraca,AL,2026-07-13,google_ads
+5514,Maria Silva,maria.silva5514@exemplo.com,Feira de Santana,BA,2026-07-13,email
+5515,Lucas Silva,lucas.silva5515@exemplo.com,Sobral,CE,2026-07-10,organico
+5516,João Araújo,joão.araújo5516@exemplo.com,Juazeiro do Norte,CE,2026-07-02,google_ads
+5517,Carla Alves,carla.alves5517@exemplo.com,Patos,PB,2026-07-24,email
+5518,Mateus Santos,mateus.santos5518@exemplo.com,Maceió,AL,2026-07-30,organico
+5519,Mateus Costa,mateus.costa5519@exemplo.com,João Pessoa,PB,2026-07-16,instagram
+5520,Mateus Medeiros,mateus.medeiros5520@exemplo.com,Campina Grande,PB,2026-07-21,indicacao
+5521,Camila Pereira,camila.pereira5521@exemplo.com,Juazeiro do Norte,CE,2026-07-21,indicacao
+5522,Mateus Ribeiro,mateus.ribeiro5522@exemplo.com,Juazeiro do Norte,CE,2026-07-09,instagram
+5523,Diego Barbosa,diego.barbosa5523@exemplo.com,João Pessoa,PB,2026-07-16,google_ads
+5524,Juliana Silva,juliana.silva5524@exemplo.com,João Pessoa,PB,2026-07-19,google_ads
+5525,Felipe Ferreira,felipe.ferreira5525@exemplo.com,Vitória da Conquista,BA,2026-07-25,organico
+5526,João Pereira,joão.pereira5526@exemplo.com,Fortaleza,CE,2026-07-24,instagram
+5527,Rafael Nascimento,rafael.nascimento5527@exemplo.com,Vitória da Conquista,BA,2026-07-14,instagram
+5528,Patrícia Medeiros,patrícia.medeiros5528@exemplo.com,Juazeiro do Norte,CE,2026-07-09,email
+5529,Aline Santos,aline.santos5529@exemplo.com,Arapiraca,AL,2026-07-21,google_ads
+5530,Mateus Santos,mateus.santos5530@exemplo.com,Feira de Santana,BA,2026-07-09,indicacao
+5531,Rafael Cavalcanti,rafael.cavalcanti5531@exemplo.com,Cabedelo,PB,2026-07-04,email
+5532,Juliana Barbosa,juliana.barbosa5532@exemplo.com,Feira de Santana,BA,2026-07-18,google_ads
+5533,Gabriel Lima,gabriel.lima5533@exemplo.com,Salvador,BA,2026-07-15,indicacao
+5534,Gabriel Alves,gabriel.alves5534@exemplo.com,Campina Grande,PB,2026-07-18,indicacao
+5535,Fernanda Oliveira,fernanda.oliveira5535@exemplo.com,Olinda,PE,2026-07-06,google_ads
+5536,Patrícia Medeiros,patrícia.medeiros5536@exemplo.com,Arapiraca,AL,2026-07-18,instagram
+5537,Felipe Alves,felipe.alves5537@exemplo.com,Olinda,PE,2026-07-09,instagram
+5538,Larissa Silva,larissa.silva5538@exemplo.com,Sobral,CE,2026-07-26,indicacao
+5539,Camila Araújo,camila.araújo5539@exemplo.com,Parnamirim,RN,2026-07-25,instagram
+5540,Aline Cavalcanti,aline.cavalcanti5540@exemplo.com,Caruaru,PE,2026-07-10,indicacao
+5541,Larissa Cavalcanti,larissa.cavalcanti5541@exemplo.com,Natal,RN,2026-07-03,email
+5542,Ana Cavalcanti,ana.cavalcanti5542@exemplo.com,Natal,RN,2026-07-24,organico
+5543,Ana Medeiros,ana.medeiros5543@exemplo.com,Parnamirim,RN,2026-07-29,organico
+5544,Ana Ferreira,ana.ferreira5544@exemplo.com,Sobral,CE,2026-07-12,organico
+5545,João Silva,joão.silva5545@exemplo.com,Campina Grande,PB,2026-07-01,indicacao
+5546,Larissa Santos,larissa.santos5546@exemplo.com,Campina Grande,PB,2026-07-01,indicacao
+5547,Gabriel Souza,gabriel.souza5547@exemplo.com,Olinda,PE,2026-07-09,organico
+5548,Larissa Oliveira,larissa.oliveira5548@exemplo.com,Lagarto,SE,2026-07-20,instagram
+5549,Mateus Cavalcanti,mateus.cavalcanti5549@exemplo.com,Lagarto,SE,2026-07-30,google_ads
+5550,Ana Santos,ana.santos5550@exemplo.com,Salvador,BA,2026-07-07,organico
+5551,Patrícia Medeiros,patrícia.medeiros5551@exemplo.com,Feira de Santana,BA,2026-07-18,organico
+5552,Lucas Medeiros,lucas.medeiros5552@exemplo.com,Fortaleza,CE,2026-07-20,email
+5553,Bruno Silva,bruno.silva5553@exemplo.com,Parnamirim,RN,2026-07-18,instagram
+5554,Beatriz Araújo,beatriz.araújo5554@exemplo.com,Lagarto,SE,2026-07-13,indicacao
+5555,Juliana Gomes,juliana.gomes5555@exemplo.com,Lagarto,SE,2026-07-01,google_ads
+5556,João Oliveira,joão.oliveira5556@exemplo.com,Lagarto,SE,2026-07-20,google_ads
+5557,João Silva,joão.silva5557@exemplo.com,Cabedelo,PB,2026-07-02,organico
+5558,Maria Ribeiro,maria.ribeiro5558@exemplo.com,Mossoró,RN,2026-07-10,instagram
+5559,Lucas Araújo,lucas.araújo5559@exemplo.com,João Pessoa,PB,2026-07-22,google_ads
+5560,Bruno Ribeiro,bruno.ribeiro5560@exemplo.com,Feira de Santana,BA,2026-07-03,indicacao
+5561,Camila Oliveira,camila.oliveira5561@exemplo.com,Arapiraca,AL,2026-07-26,organico
+5562,Lucas Alves,lucas.alves5562@exemplo.com,Arapiraca,AL,2026-07-11,instagram
+5563,Fernanda Araújo,fernanda.araújo5563@exemplo.com,Aracaju,SE,2026-07-10,indicacao
+5564,Bruno Souza,bruno.souza5564@exemplo.com,Juazeiro do Norte,CE,2026-07-09,email
+5565,Beatriz Lima,beatriz.lima5565@exemplo.com,Sobral,CE,2026-07-21,google_ads
+5566,Larissa Nascimento,larissa.nascimento5566@exemplo.com,Juazeiro do Norte,CE,2026-07-13,instagram
+5567,Juliana Lima,juliana.lima5567@exemplo.com,Petrolina,PE,2026-07-18,indicacao
+5568,Felipe Lima,felipe.lima5568@exemplo.com,Mossoró,RN,2026-07-21,google_ads
+5569,Felipe Ferreira,felipe.ferreira5569@exemplo.com,Cabedelo,PB,2026-07-29,indicacao
+5570,Mateus Lima,mateus.lima5570@exemplo.com,Caruaru,PE,2026-07-20,instagram
+5571,Beatriz Souza,beatriz.souza5571@exemplo.com,Cabedelo,PB,2026-07-10,instagram
+5572,Lucas Cavalcanti,lucas.cavalcanti5572@exemplo.com,Vitória da Conquista,BA,2026-07-09,google_ads
+5573,Mateus Lima,mateus.lima5573@exemplo.com,Aracaju,SE,2026-07-15,indicacao
+5574,Lucas Araújo,lucas.araújo5574@exemplo.com,Salvador,BA,2026-07-22,indicacao
+5575,Lucas Ferreira,lucas.ferreira5575@exemplo.com,Natal,RN,2026-07-20,indicacao
+5576,Ana Silva,ana.silva5576@exemplo.com,Vitória da Conquista,BA,2026-07-30,instagram
+5577,João Nascimento,joão.nascimento5577@exemplo.com,Maceió,AL,2026-07-26,indicacao
+5578,Beatriz Alves,beatriz.alves5578@exemplo.com,Feira de Santana,BA,2026-07-29,organico
+5579,Lucas Pereira,lucas.pereira5579@exemplo.com,Aracaju,SE,2026-07-08,email
+5580,Rafael Araújo,rafael.araújo5580@exemplo.com,Aracaju,SE,2026-07-09,organico
+5581,Larissa Alves,larissa.alves5581@exemplo.com,Lagarto,SE,2026-07-02,organico
+5582,João Medeiros,joão.medeiros5582@exemplo.com,Arapiraca,AL,2026-07-24,instagram
+5583,Beatriz Ferreira,beatriz.ferreira5583@exemplo.com,Patos,PB,2026-07-22,email
+5584,Beatriz Ribeiro,beatriz.ribeiro5584@exemplo.com,Petrolina,PE,2026-07-19,google_ads
+5585,Beatriz Araújo,beatriz.araújo5585@exemplo.com,Lagarto,SE,2026-07-28,email
+5586,Gabriel Lima,gabriel.lima5586@exemplo.com,Natal,RN,2026-07-27,email
+5587,Aline Ribeiro,aline.ribeiro5587@exemplo.com,Mossoró,RN,2026-07-12,email
+5588,Aline Santos,aline.santos5588@exemplo.com,Olinda,PE,2026-07-07,indicacao
+5589,Larissa Ferreira,larissa.ferreira5589@exemplo.com,Salvador,BA,2026-07-09,google_ads
+5590,Aline Alves,aline.alves5590@exemplo.com,Natal,RN,2026-07-09,indicacao
+5591,Fernanda Ferreira,fernanda.ferreira5591@exemplo.com,Natal,RN,2026-07-26,indicacao
+5592,Thiago Barbosa,thiago.barbosa5592@exemplo.com,Sobral,CE,2026-07-30,organico
+5593,João Medeiros,joão.medeiros5593@exemplo.com,Parnamirim,RN,2026-07-27,email
+5594,Ana Santos,ana.santos5594@exemplo.com,Maceió,AL,2026-07-28,email
+5595,Fernanda Gomes,fernanda.gomes5595@exemplo.com,Lagarto,SE,2026-07-29,instagram
+5596,Fernanda Lima,fernanda.lima5596@exemplo.com,Olinda,PE,2026-07-12,email
+5597,Felipe Nascimento,felipe.nascimento5597@exemplo.com,Vitória da Conquista,BA,2026-07-01,instagram
+5598,Felipe Ribeiro,felipe.ribeiro5598@exemplo.com,Vitória da Conquista,BA,2026-07-08,indicacao
+5599,Juliana Araújo,juliana.araújo5599@exemplo.com,Juazeiro do Norte,CE,2026-07-26,instagram
+5600,Bruno Ribeiro,bruno.ribeiro5600@exemplo.com,Mossoró,RN,2026-07-04,indicacao
+10,Mateus Nascimento,mateus.nascimento10@exemplo.com,Recife,PE,2025-06-19,organico
